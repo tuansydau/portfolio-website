@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center">
-      <div className="fixed flex w-3/4 justify-between items-center space-x-12 mt-4">
+      <div className="fixed bg-white flex w-full justify-between items-center space-x-12 py-2 px-8 border-b border-black">
         <Image
           src="/logo1.png"
           alt=""
@@ -14,6 +14,7 @@ export default function Home() {
           width={50}
           height={50}
         />
+        <Link href="/"><div>Home</div></Link>
         <Link href="/about"><div>About</div></Link>
         <div>Work</div>
         <div>Resume</div>
@@ -21,7 +22,7 @@ export default function Home() {
       </div>
 
       {/* intro section */}
-      <div className="flex flex-col w-full min-h-screen justify-center items-center">
+      <div className="flex flex-col w-full min-h-screen justify-center items-center -mt-8">
         <div className="flex flex-col -mt-16 md:flex-row items-center justify-center w-3/4 md:space-x-4">
           <div className="flex text-4xl w-full">
             this empty box will be a photo or something
@@ -46,7 +47,7 @@ export default function Home() {
       */}
 
 
-      <div className="flex w-3/4 justify-between items-end space-x-12 mt-16 mb-8">
+      <div className="flex w-3/4 justify-between items-end space-x-12 -mt-8 mb-8">
         <div>Designed and coded by Tuan Dau • 2023</div>
         <div className="flex justify-center items-center space-x-4 md:space-x-12">
           <div className="flex justify-center h-fit px-2 hover:border-white hover:bg-black hover:text-white hover:cursor-pointer items-center text-lg border border-b-2 rounded-2xl border-black">

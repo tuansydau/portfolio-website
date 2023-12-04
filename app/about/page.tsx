@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center">
-      <div className="fixed flex w-3/4 justify-between items-center space-x-12 mt-4">
+      <div className="fixed bg-white flex w-full justify-between items-center space-x-12 py-2 px-8 border-b border-black">
         <Image
           src="/logo1.png"
           alt=""
@@ -12,6 +12,7 @@ export default function Home() {
           width={50}
           height={50}
         />
+        <Link href="/"><div>Home</div></Link>
         <Link href="/about"><div>About</div></Link>
         <div>Work</div>
         <div>Resume</div>
