@@ -68,7 +68,7 @@ export default function Home() {
       </div>
 
       {/* Work experience */}
-      <div className="flex w-full justify-center mt-96">
+      <div className="flex w-full justify-center mt-48">
         <div className="flex flex-col w-3/4">
           {/* TODO: Add a button to link to my resume */}
           <div className="flex mb-4 items-center justify-between">
