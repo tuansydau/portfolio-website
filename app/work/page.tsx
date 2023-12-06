@@ -4,11 +4,12 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center">
+    <div className="flex min-h-screen flex-col items-center justify-between">
       <Navbar />
 
+      <div></div>
       {/* Work experience */}
-      <div className="flex w-full justify-center mt-24">
+      <div className="flex w-full justify-center">
         <div className="flex flex-col w-3/4">
           {/* TODO: Add a button to link to my resume */}
           <div className="flex mb-4 items-center justify-between">
