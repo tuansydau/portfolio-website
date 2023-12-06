@@ -1,3 +1,5 @@
+`use client`;
+
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -9,7 +11,7 @@ export default function Home() {
       {/* intro section */}
       <div className="flex flex-col w-full h-screen justify-between items-center">
         <div></div>
-        <div className="flex flex-col -mt-16 md:flex-row items-center justify-center w-3/4 md:space-x-4 mt-12">
+        <div className="flex flex-col md:flex-row items-center justify-center w-3/4 md:space-x-4 mt-12">
           <div className="flex text-4xl w-full">
             this empty box will be a photo or something
           </div>

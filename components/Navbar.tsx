@@ -6,7 +6,7 @@ const buttonClass =
 
 export default function Navbar() {
   return (
-    <div className="fixed flex w-full justify-between items-center space-x-12 py-2 px-8 border-black">
+    <div className="fixed z-0 flex w-full justify-between items-center space-x-12 py-2 px-8 border-black">
       <Link href="/">
         <Image
           src="/logo1.png"
