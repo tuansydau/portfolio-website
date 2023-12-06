@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center">
-      <Navbar />
+      <Navbar highlightedButton={'home'} />
 
       {/* intro section */}
       <div className="flex flex-col w-full h-screen justify-between items-center">

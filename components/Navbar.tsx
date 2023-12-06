@@ -1,10 +1,15 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const buttonClass =
   'border-black border rounded-full py-2 px-8 bg-white hover:bg-black hover:text-white border-b-2';
 
-export default function Navbar() {
+const highlightedClass =
+  'border-black border rounded-full py-2 px-8 bg-black text-white border-b-2';
+
+export default function Navbar({ highlightedButton }: any) {
   return (
     <div className="fixed z-0 flex w-full justify-between items-center space-x-12 py-2 px-8 border-black">
       <Link href="/">
@@ -19,15 +24,39 @@ export default function Navbar() {
       </Link>
       <div className="flex space-x-4">
         <Link href="/">
-          <div className={buttonClass}>Home</div>
+          <div
+            className={
+              highlightedButton === 'home' ? highlightedClass : buttonClass
+            }
+          >
+            Home
+          </div>
         </Link>
         <Link href="/about">
-          <div className={buttonClass}>About</div>
+          <div
+            className={
+              highlightedButton === 'about' ? highlightedClass : buttonClass
+            }
+          >
+            About
+          </div>
         </Link>
         <Link href="/work">
-          <div className={buttonClass}>Work</div>
+          <div
+            className={
+              highlightedButton === 'work' ? highlightedClass : buttonClass
+            }
+          >
+            Work
+          </div>
         </Link>
-        <div className={buttonClass}>Resume</div>
+        <div
+          className={
+            highlightedButton === 'resume' ? highlightedClass : buttonClass
+          }
+        >
+          Resume
+        </div>
       </div>
     </div>
   );

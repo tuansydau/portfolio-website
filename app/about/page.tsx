@@ -4,10 +4,10 @@ import Footer from '@/components/Footer';
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-between">
-      <Navbar />
+      <Navbar highlightedButton={'about'} />
       <div />
       {/* About me */}
-      <div className="flex w-full">
+      <div className="flex w-full h-fit mt-16">
         <div className="flex w-full justify-center items-center">
           <div className="flex flex-col w-3/4 items-center md:flex-row md:space-x-4 md:justify-center">
             <div className="w-full md:w-2/5 break-words">
@@ -41,8 +41,8 @@ export default function Home() {
               <div>
                 <p>
                   💤 When I&apos;m not coding, you can find me in my room
-                  listening to music with a cup of tea in hand 🍵, playing F1
-                  23, watching an F1 race 🏎️, or at a venue doing concert
+                  listening to music with a cup of tea in hand 🍵, playing
+                  Runescape, watching an F1 race 🏎️, or at a venue doing concert
                   photography! See my work @{' '}
                   <a className="text-[#24AF4C]" href="https://www.tuandau.ca">
                     www.tuandau.ca
