@@ -22,7 +22,7 @@ export default function Home() {
           <div>Work</div>
         </Link>
         <div>Resume</div>
-        <div>Contact Me</div>
+        <div></div>
       </div>
 
       {/* Work experience */}
