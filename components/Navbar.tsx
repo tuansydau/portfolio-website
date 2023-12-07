@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 
 const buttonClass =
   'border-black border rounded-full py-2 px-8 bg-white hover:bg-black hover:text-white border-b-2';
@@ -15,7 +14,7 @@ export default function Navbar({ highlightedButton }: any) {
       <Link href="/">
         <Image
           src="/logo1.png"
-          className="ml-4"
+          className="invisible sm:visible sm:ml-4"
           alt=""
           title="isnt he cute i made him myself"
           width={50}

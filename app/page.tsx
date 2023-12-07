@@ -2,6 +2,7 @@
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 export default function Home() {
   const projectRowClasses =
@@ -19,7 +20,7 @@ export default function Home() {
             this empty box will be a photo or something
           </div> */}
           <div className="flex flex-col space-y-6 items-center justify-center mt-64 mb-64">
-            <div className="flex flex-row text-4xl text-center w-1/2">
+            <div className="flex flex-row text-4xl text-center md:w-1/2">
               Hey, I&apos;m Tuan, a new-grad full-stack developer with a love
               for designing web apps and APIs.
             </div>
@@ -36,21 +37,23 @@ export default function Home() {
         <div className="flex flex-col w-full justify-center items-center space-y-16 mb-32">
           <div className={projectRowClasses}>
             <div className="w-[32rem] h-full">
-              <div className="w-full h-72 bg-gray-100 mb-6">Image</div>
+              <div className="w-full h-72 bg-gray-100 mb-4">Image</div>
               <div className="text-3xl w-full border-b border-black mb-4">
                 Tesla Vehicle Firmware Tools
               </div>
-              <div className="font-light">
+              <div>
                 Design and implement a set of tools and data dashboards to help
                 accelerate the speed of infotainment system testing.
               </div>
             </div>
             <div className="w-[32rem] h-full">
-              <div className="w-full h-72 bg-gray-100 mb-6">Image</div>
+              <div className="w-full h-72 bg-gray-100 mb-4 relative">
+                <Image src="/bwl_homepage.png" alt="" layout="fill"></Image>
+              </div>
               <div className="text-3xl w-full border-b border-black mb-4">
                 Big Whale Labs Homepage
               </div>
-              <div className="font-light">
+              <div>
                 Implement a stunning website to capture the attention of
                 audiences.
               </div>
@@ -59,23 +62,27 @@ export default function Home() {
           <div className={projectRowClasses}>
             <a href="https://github.com/tuansydau/shader-work" target="_blank">
               <div className="w-[32rem] h-full">
-                <div className="w-full h-72 bg-gray-100 mb-6">Image</div>
+                <div className="w-full h-72 bg-gray-100 mb-4 relative">
+                  <Image src={'/Animation.gif'} alt="" layout="fill" />
+                </div>
                 <div className="text-3xl w-full border-b border-black mb-4">
                   Shaders
                 </div>
-                <div className="font-light">
+                <div>
                   Program a set of realtime OpenGL fragment shaders to create
-                  high definition visuals, in GLSL.
+                  high definition visuals, written in GLSL.
                 </div>
               </div>
             </a>
             <a href="https://github.com/tuansydau/TAB2XML" target="_blank">
               <div className="w-[32rem] h-full">
-                <div className="w-full h-72 bg-gray-100 mb-6">Image</div>
+                <div className="w-full h-72 bg-gray-100 mb-4 relative">
+                  <Image src={'/tab2xml.png'} alt="" layout="fill" />
+                </div>
                 <div className="text-3xl w-full border-b border-black mb-4">
                   Tab2XML
                 </div>
-                <div className="font-light">
+                <div>
                   Create a program to convert plaintext guitar tablature into
                   playable music files.
                 </div>
