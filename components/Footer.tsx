@@ -10,7 +10,7 @@ export default function Footer() {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <div className="flex w-3/4 justify-between items-end space-x-12 mt-16 mb-8">
+    <div className="flex w-3/4 justify-between items-end space-x-12 mt-4 mb-8">
       <Modal isModalOpen={modalOpen} modalSetter={setModalOpen} />
       <div>Designed and coded by Tuan Dau • 2023</div>
       <div className="flex justify-center items-center space-x-4 md:space-x-12">

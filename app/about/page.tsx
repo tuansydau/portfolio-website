@@ -27,12 +27,12 @@ export default function Home() {
                 Engineering at York University
               </div>
               <div>
-                🔨 I focus on full-stack web development nowadays, but I always
-                love being involved in all parts of the development process -
+                🔨 I focus on full-stack web development nowadays, but I have
+                always loved working on all parts of the development process -
                 especially UI/UX design.
               </div>
               <div>
-                🌴 Previously, I&apos;ve interned at Tesla, CertiK, Skinopathy,
+                ✍️ Previously, I&apos;ve interned at Tesla, CertiK, Skinopathy,
                 Artemis Data, Big Whale Labs, and 4Pay Inc. I&apos;ve done
                 everything from web development to data engineering to DevOps,
                 so I&apos;d like to think that I&apos;ve become a well-rounded

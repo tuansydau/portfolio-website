@@ -48,7 +48,10 @@ export default function Modal({ isModalOpen, modalSetter }: ModalProps) {
               <a href="https://www.linkedin.com/in/tuansydau" target="_blank">
                 <div className={buttonClass}>Yes!</div>
               </a>
-              <div className={buttonClass} onClick={() => modalSetter(false)}>
+              <div
+                className={buttonClass.concat(' bg-black text-white')}
+                onClick={() => modalSetter(false)}
+              >
                 Cancel!
               </div>
             </div>
