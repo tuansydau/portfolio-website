@@ -12,11 +12,11 @@ export default function Home() {
       <div className="flex flex-col w-full h-screen justify-between items-center">
         <div></div>
         <div className="flex flex-col md:flex-row items-center justify-center w-3/4 md:space-x-4 mt-12">
-          <div className="flex text-4xl w-full">
+          {/* <div className="flex text-4xl w-full">
             this empty box will be a photo or something
-          </div>
-          <div className="flex flex-col space-y-6">
-            <div className="flex flex-row text-4xl w-full font-['Helvetica Neue']">
+          </div> */}
+          <div className="flex flex-col space-y-6 items-center">
+            <div className="flex flex-row text-4xl text-center w-1/2 font-['Helvetica Neue']">
               Hey, I&apos;m Tuan, a new-grad full-stack developer with a love
               for designing web apps and APIs.
             </div>

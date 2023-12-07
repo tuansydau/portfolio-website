@@ -50,13 +50,13 @@ export default function Navbar({ highlightedButton }: any) {
             Work
           </div>
         </Link>
-        <div
+        {/* <div
           className={
             highlightedButton === 'resume' ? highlightedClass : buttonClass
           }
         >
           Resume
-        </div>
+        </div> */}
       </div>
     </div>
   );

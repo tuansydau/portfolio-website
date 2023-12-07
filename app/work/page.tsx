@@ -14,7 +14,9 @@ export default function Home() {
           <div className="flex mb-4 items-center justify-between">
             <div className="text-4xl">Work</div>
             <div className="flex items-center border text-white bg-black h-full rounded-full px-4 hover:cursor-pointer">
-              Download Resume
+              <a href="https://drive.google.com/file/d/1iTs_RH33Y4NZ_lGwUKvYfPWT43p34JAe/view?usp=sharing">
+                See Resume
+              </a>
             </div>
           </div>
           <div className="flex flex-col space-y-4 mb-4">
