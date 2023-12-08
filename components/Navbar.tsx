@@ -10,7 +10,7 @@ const highlightedClass =
 
 export default function Navbar({ highlightedButton }: any) {
   return (
-    <div className="fixed z-0 flex w-full justify-between items-center space-x-12 py-2 px-8 border-black">
+    <div className="fixed z-10 flex w-full justify-between items-center space-x-12 py-2 px-8 border-black">
       <Link href="/">
         <Image
           src="/logo1.png"

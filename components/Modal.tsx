@@ -23,7 +23,7 @@ export default function Modal({ isModalOpen, modalSetter }: ModalProps) {
 
   return (
     isModalOpen && (
-      <div className="fixed w-screen h-screen z-10">
+      <div className="fixed w-screen h-screen z-50">
         <div
           className="fixed w-screen h-screen opacity-30 bg-black left-0 bottom-0"
           onClick={() => modalSetter(false)}
@@ -37,22 +37,22 @@ export default function Modal({ isModalOpen, modalSetter }: ModalProps) {
           </div>
           <div className="flex flex-col h-full items-center justify-center p-8 space-y-4">
             <div className="flex text-3xl justify-center font-bold text-center">
-              Wait! Do you want to go silent?
+              Wait! This sends you to my LinkedIn!
             </div>
             <div className="flex w-full text-center">
-              This will send you to my LinkedIn, which means that I&apos;ll be
-              able to see that you checked my profile if you&apos;re not in
-              private mode. Are you ready to go?
+              This will send you to my LinkedIn, which means that I&apos;ll see
+              that you checked my profile if you&apos;re not in private mode.
+              Are you ready to go?
             </div>
             <div className="flex space-x-4 mt-8">
               <a href="https://www.linkedin.com/in/tuansydau" target="_blank">
-                <div className={buttonClass}>Yes!</div>
+                <div className={buttonClass}>Yes</div>
               </a>
               <div
                 className={buttonClass.concat(' bg-black text-white')}
                 onClick={() => modalSetter(false)}
               >
-                Cancel!
+                Cancel
               </div>
             </div>
           </div>
