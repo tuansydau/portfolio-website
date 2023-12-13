@@ -19,20 +19,20 @@ export default function Home() {
       <Modal isModalOpen={modalOpen} modalSetter={setModalOpen} />
       {/* intro section */}
       <div className="flex flex-col w-full items-center justify-between">
-        <div className="flex flex-col lg:flex-row items-center justify-center max-w-[1200px] md:space-x-4 mt-16 md:mt-24 lg:mt-12 lg:px-4">
+        <div className="flex flex-col lg:flex-row items-center justify-center max-w-[1000px] md:space-x-4 mt-16 md:mt-24 lg:mt-12 lg:px-4">
           {/* <div className="flex text-4xl w-2/5 justify-center">
             <Image src={'/teabath.png'} alt="" width={400} height={400}></Image>
           </div> */}
-          <div className="flex flex-col w-4/5 md:w-3/5 space-y-6 justify-center items-center">
-            <div className="flex flex-row text-4xl font-light text-center mb-4">
+          <div className="flex flex-col w-4/5 md:w-5/5 space-y-6 justify-center items-center">
+            <div className="flex flex-col text-4xl font-light text-center items-center mb-2 bg-white border border-black rounded-xl py-8 px-16">
               Hey, I&apos;m Tuan, a full-stack developer. Currently obsessed
               with designing web apps, APIs, and occasionally green tea.
-            </div>
-            <div
-              className="flex text-black hover:border-white hover:bg-black hover:text-white hover:cursor-pointer border-b-3 border-r-2 h-12 w-fit rounded-full mt-4 px-4 border border-black border-b2 items-center justify-center"
-              onClick={() => setModalOpen(true)}
-            >
-              Let&apos;s talk!
+              <div
+                className="flex bg-white text-black hover:border-white hover:bg-black hover:text-white hover:cursor-pointer border-b-3 border-r-2 h-12 w-fit rounded-full mt-4 px-4 border border-black border-b2 items-center justify-center"
+                onClick={() => setModalOpen(true)}
+              >
+                Let&apos;s talk!
+              </div>
             </div>
           </div>
         </div>
