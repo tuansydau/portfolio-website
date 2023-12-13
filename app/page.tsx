@@ -36,7 +36,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Projects */}
+        <div className="flex w-full h-24"></div>
+
+        {/*         
         <div className="flex flex-col w-full justify-center items-center space-y-16 mb-32">
           <div className={projectRowClasses}>
             <div className="w-[32rem] h-full">
@@ -95,7 +97,7 @@ export default function Home() {
               </div>
             </a>
           </div>
-        </div>
+        </div> */}
         <Footer />
       </div>
     </div>

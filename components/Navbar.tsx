@@ -12,13 +12,21 @@ export default function Navbar({ highlightedButton }: any) {
   return (
     <div className="fixed z-10 flex w-full justify-between items-center space-x-12 py-2 px-8 border-black">
       <Link href="/">
-        <Image
+        {/* <Image
           src="/logo1.png"
           className="invisible sm:visible sm:ml-4"
           alt=""
           title="isnt he cute i made him myself"
           width={50}
           height={50}
+        /> */}
+        <Image
+          src="/tuan-dau.gif"
+          className="invisible sm:visible sm:ml-16"
+          alt=""
+          title=""
+          width={200}
+          height={80}
         />
       </Link>
       <div className="flex space-x-4">
