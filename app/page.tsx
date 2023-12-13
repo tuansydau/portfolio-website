@@ -24,7 +24,7 @@ export default function Home() {
             <Image src={'/teabath.png'} alt="" width={400} height={400}></Image>
           </div> */}
           <div className="flex flex-col w-4/5 md:w-5/5 space-y-6 justify-center items-center">
-            <div className="flex flex-col text-4xl font-light text-center items-center mb-2 bg-white border border-black rounded-xl py-8 px-16">
+            <div className="flex flex-col text-4xl font-light text-center items-center mb-2 bg-white border border-black rounded-xl py-20 px-16">
               Hey, I&apos;m Tuan, a full-stack developer. Currently obsessed
               with designing web apps, APIs, and occasionally green tea.
               <div
