@@ -3,14 +3,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const buttonClass =
-  'border-black border rounded-full py-2 px-8 bg-white hover:bg-black hover:text-white border-b-2';
+  'border-black border rounded-full py-2 px-8 bg-white hover:bg-black hover:text-white border-b-3 border-r-2';
 
 const highlightedClass =
   'border-black border rounded-full py-2 px-8 bg-black text-white border-b-2';
 
 export default function Navbar({ highlightedButton }: any) {
   return (
-    <div className="fixed z-10 flex w-full justify-between items-center space-x-12 py-2 px-8 border-black">
+    <div className="fixed z-10 flex w-full justify-between items-center space-x-12 py-6 px-8 border-black">
       <Link href="/">
         {/* <Image
           src="/logo1.png"
@@ -22,7 +22,7 @@ export default function Navbar({ highlightedButton }: any) {
         /> */}
         <Image
           src="/tuan-dau.gif"
-          className="invisible sm:visible sm:ml-16"
+          className="invisible sm:visible md:ml-16"
           alt=""
           title=""
           width={200}

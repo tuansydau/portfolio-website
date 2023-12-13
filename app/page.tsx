@@ -12,23 +12,24 @@ export default function Home() {
     'flex flex-col 2xl:flex-row 2xl:space-x-36 space-y-24 2xl:space-y-0';
 
   return (
-    <div className="flex min-h-screen flex-col items-center">
+    <div className="flex min-h-screen flex-col items-center justify-between">
       <Navbar highlightedButton={'home'} />
+      <div></div>
 
       <Modal isModalOpen={modalOpen} modalSetter={setModalOpen} />
       {/* intro section */}
-      <div className="flex flex-col w-full items-center">
-        <div className="flex flex-col lg:flex-row items-center justify-center w-3/5 md:space-x-4 mt-16 md:mt-24 lg:mt-12">
-          <div className="flex text-4xl w-full justify-center">
+      <div className="flex flex-col w-full items-center justify-between">
+        <div className="flex flex-col lg:flex-row items-center justify-center max-w-[1200px] md:space-x-4 mt-16 md:mt-24 lg:mt-12 lg:px-4">
+          <div className="flex text-4xl w-2/5 justify-center">
             <Image src={'/teabath.png'} alt="" width={400} height={400}></Image>
           </div>
-          <div className="flex flex-col space-y-6 justify-center items-center lg:items-start mt-8 mb-32 lg:mt-64 lg:mb-64">
-            <div className="flex flex-row text-4xl">
+          <div className="flex flex-col w-4/5 md:w-3/5 space-y-6 justify-center items-center lg:items-start">
+            <div className="flex flex-row text-4xl font-light">
               Hey, I&apos;m Tuan, a new-grad full-stack developer obsessed with
               designing web apps and APIs, and occasionally tea.
             </div>
             <div
-              className="flex text-black hover:border-white hover:bg-black hover:text-white hover:cursor-pointer border-b-2 h-12 w-fit rounded-xl mt-4 px-4 border border-black border-b2 items-center justify-center"
+              className="flex text-black hover:border-white hover:bg-black hover:text-white hover:cursor-pointer border-b-3 border-r-2 h-12 w-fit rounded-full mt-4 px-4 border border-black border-b2 items-center justify-center"
               onClick={() => setModalOpen(true)}
             >
               Let&apos;s talk!
@@ -36,7 +37,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex w-full h-24"></div>
+        {/* <div className="flex w-full h-24"></div> */}
 
         {/*         
         <div className="flex flex-col w-full justify-center items-center space-y-16 mb-32">
@@ -98,8 +99,8 @@ export default function Home() {
             </a>
           </div>
         </div> */}
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

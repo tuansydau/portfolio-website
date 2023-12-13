@@ -21,10 +21,10 @@ export default function Home() {
                 in Guelph, and moved to Toronto for school when I was 18.
               </div>
               <div>
-                📖 I&apos;ve been programming since I was 12 years old, starting
-                by programming Roblox games and making websites with my friends!
-                I continued programming in university, and completed Software
-                Engineering at York University
+                📖 I&apos;ve been programming since I was 12 years old - I
+                started by programming Roblox games and making websites with my
+                friends! I continued programming in university, and completed a
+                Bachelor&apos;s in Software Engineering at York University.
               </div>
               <div>
                 🔨 I focus on full-stack web development nowadays, but I have
