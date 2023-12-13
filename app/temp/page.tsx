@@ -1,17 +1,84 @@
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import '@/app/globals.css';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between">
+    <div className="flex min-h-screen flex-col items-center">
       <Navbar highlightedButton="work" />
 
-      <div></div>
-      <div className="flex flex-col items-center">
-        <Image src="/tuan-dau.gif" width={350} height={75} alt=""></Image>
-        isnt it so cool look LOOOL
+      <div className="space-y-16 mb-36">
+        <div className="flex flex-col bg-white w-full max-w-[1000px] border border-black py-8 px-24 rounded-xl mt-36">
+          <p className="text-3xl font-bold underline mb-4">
+            dec 13 5:43pm - font testing
+          </p>
+          <br />
+          <h1
+            style={{
+              fontFamily: 'Comico, cursive',
+              fontSize: '2.5rem',
+              lineHeight: '3rem'
+            }}
+          >
+            &quot;Hello, we are about to launch an all-out attack on your
+            houze&quot;, says zombies to plants.(Comico/Zodiak)
+          </h1>
+          <br />
+          <p style={{ fontFamily: 'Zodiak, serif', fontSize: '1.25rem' }}>
+            Good grief, what a day it&apos;s been. After dealing with a mountain
+            of homework and the chaos of recess, I&apos;m utterly exhausted.
+            Finally, I can crash and get some well-deserved sleep in my comfy
+            bed. But hold on a minute... What&apos;s that sound? Did my closet
+            door just creak open? Oh, come on! Is there another one of those
+            annoying creatures lurking in my closet? Why is it that every night
+            I have to deal with these creepy noises and mysterious creatures?
+            Enough is enough! I&apos;ve done my bedtime routine – brushed my
+            teeth, put on my pajamas, and even got tucked in by Mom. I&apos;m
+            all set for a peaceful night&apos;s sleep, and now I have to lie
+            here in the darkness, wondering if some zombie or monster is going
+            to invade my space? Give me a break!
+          </p>
+          <br />
+          <br />
+          <h1
+            style={{
+              fontFamily: 'Array, sans-serif',
+              fontSize: '3rem',
+              lineHeight: '3rem'
+            }}
+          >
+            Ah, Great, I Think I Got A Goddamned Monster In My Closet Again
+            (Array/Khand)
+          </h1>
+          <br />
+          <p style={{ fontFamily: 'Khand, sans-serif', fontSize: '1.5rem' }}>
+            Man oh man, what a day. I tell you, all that homework and running
+            around at recess must really be catching up with me, because
+            brother, I am bushed. So thank God I can finally get some damned
+            shut-eye around here. Yes, sir, after another hard day at school,
+            nothing feels better than drifting off to sleep here in my big,
+            cozy—whoa, wait a second…what was that? Did my closet door just
+            creak open? Ah, for Christ&apos;s sake. Is that a goddamned monster
+            in my closet again? What is it with these son of a bitch monsters?
+            Every night with the creaking and the crawling. Enough, already,
+            will ya? Give it a rest! Look, I&apos;ve brushed my teeth, I&apos;ve
+            put on my jammies, Mommy&apos;s tucked me in—I&apos;m all ready for
+            beddy-bye here, for crying out loud. And now I have to lie here in
+            the darkness like a putz and wait for some stupid monster to tear me
+            limb from limb? Give me a break!
+          </p>
+        </div>
+
+        <div className="flex flex-col bg-white space-y-4 border border-black p-8 rounded-xl">
+          <p className="text-3xl font-bold underline">
+            dec 13 2:29am - name gif
+          </p>
+          <Image src="/tuan-dau.gif" width={350} height={75} alt=""></Image>
+          <p>isnt it so cool look LOOOL</p>
+        </div>
       </div>
+
       <Footer />
     </div>
   );
