@@ -48,13 +48,22 @@ export default function Navbar({ highlightedButton }: any) {
             About
           </div>
         </Link>
-        <Link href="/work">
+        {/* <Link href="/work">
           <div
             className={
               highlightedButton === 'work' ? highlightedClass : buttonClass
             }
           >
             Work
+          </div>
+        </Link> */}
+        <Link href="/temp">
+          <div
+            className={
+              highlightedButton === 'work' ? highlightedClass : buttonClass
+            }
+          >
+            Temp
           </div>
         </Link>
         {/* <div
