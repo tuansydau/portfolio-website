@@ -14,7 +14,7 @@ export default function Home() {
               PHOTO IS HERE
               AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
             </div> */}
-            <div className="w-full md:w-3/5 space-y-6">
+            <div className="w-full md:w-3/5 space-y-6 text-xl">
               <div className="text-4xl">Some fun tidbits about me</div>
               <div>
                 😀 I&apos;m a full-stack software engineer in Toronto. I grew up
@@ -23,8 +23,8 @@ export default function Home() {
               <div>
                 📖 I&apos;ve been programming since I was 12 years old - I
                 started by programming Roblox games and making websites with my
-                friends! I continued programming in university, and completed a
-                Bachelor&apos;s in Software Engineering at York University.
+                friends! I did Software Engineering at York University and loved
+                it.
               </div>
               <div>
                 🔨 I focus on full-stack web development nowadays, but I have
@@ -32,11 +32,11 @@ export default function Home() {
                 especially UI/UX design.
               </div>
               <div>
-                ✍️ Previously, I&apos;ve interned at Tesla, CertiK, Skinopathy,
-                Artemis Data, Big Whale Labs, and 4Pay Inc. I&apos;ve done
-                everything from web development to data engineering to DevOps,
-                so I&apos;d like to think that I&apos;ve become a well-rounded
-                dev!
+                ✍️ Previously, I&apos;ve interned at Tesla, CertiK, Artemis
+                Data, and a few other startups. I&apos;ve mainly done web and
+                tools development, and I have found it to be really satisfying.
+                I also love digging into other fields of programming in my free
+                time (like shaders!).
               </div>
               <div>
                 <p>
