@@ -28,7 +28,7 @@ export default function Home() {
               Hey, I&apos;m Tuan, a full-stack developer. Currently obsessed
               with designing web apps, APIs, and occasionally green tea.
               <div
-                className="flex bg-white text-black hover:border-white hover:bg-black hover:text-white hover:cursor-pointer border-b-3 border-r-2 h-12 w-fit rounded-full mt-4 px-4 border border-black border-b2 items-center justify-center"
+                className="flex bg-white text-black text-xl hover:border-white hover:bg-black hover:text-white hover:cursor-pointer border-b-3 border-r-2 h-12 w-fit rounded-full mt-4 px-4 border border-black border-b2 items-center justify-center"
                 onClick={() => setModalOpen(true)}
               >
                 Let&apos;s talk!
