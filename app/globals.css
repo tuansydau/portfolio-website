@@ -55,5 +55,5 @@ body {
   top: 0;
   left: 0;
   pointer-events: none;
-  transition-duration: 150ms;
+  /* transition-duration: 25ms; */
 }
