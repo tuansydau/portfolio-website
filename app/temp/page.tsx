@@ -21,7 +21,7 @@ export default function Home() {
             }}
           >
             &quot;Hello, we are about to launch an all-out attack on your
-            houze&quot;, says zombies to plants.(Comico/Zodiak)
+            houze&quot;, says zombies to plants. (Comico/Zodiak)
           </h1>
           <br />
           <p style={{ fontFamily: 'Zodiak, serif', fontSize: '1.25rem' }}>
