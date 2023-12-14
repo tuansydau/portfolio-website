@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center">
       <Navbar highlightedButton="work" />
-
       <div className="space-y-16 mb-36">
         <div className="flex flex-col bg-white w-full max-w-[1000px] border border-black py-8 px-24 rounded-xl mt-36">
           <p className="text-3xl font-bold underline mb-4">
@@ -78,7 +77,6 @@ export default function Home() {
           <p>isnt it so cool look LOOOL</p>
         </div>
       </div>
-
       <Footer />
     </div>
   );
