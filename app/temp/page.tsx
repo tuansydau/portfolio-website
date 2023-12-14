@@ -1,13 +1,69 @@
+'use client';
+
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import '@/app/globals.css';
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 export default function Home() {
+  const [mousePosition, setMousePosition] = useState({
+    x: 0,
+    y: 0
+  });
+  const [cursorVariant, setCursorVariant] = useState('default');
+
+  useEffect(() => {
+    const mouseMove = (e: MouseEvent) => {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY
+      });
+    };
+
+    window.addEventListener('mousemove', mouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', mouseMove);
+    };
+  }, []);
+
+  const variants = {
+    default: {
+      x: mousePosition.x - 10,
+      y: mousePosition.y - 10
+    },
+    text: {
+      height: 500,
+      width: 500,
+      x: mousePosition.x - 250,
+      y: mousePosition.y - 250,
+      backgroundColor: 'white',
+      mixBlendMode: 'difference'
+    }
+  };
+
+  const textEnter = () => setCursorVariant('text');
+  const textLeave = () => setCursorVariant('default');
+
   return (
     <div className="flex min-h-screen flex-col items-center">
       <Navbar highlightedButton="work" />
-      <div className="space-y-16 mb-36">
+      <motion.div
+        className="cursor"
+        /* 
+        //@ts-ignore */
+        variants={variants}
+        /* 
+        //@ts-ignore */
+        animate={cursorVariant}
+      />
+      <div
+        onMouseEnter={textEnter}
+        onMouseLeave={textLeave}
+        className="space-y-16 mb-36"
+      >
         <div className="flex flex-col bg-white w-full max-w-[1000px] border border-black py-8 px-24 rounded-xl mt-36">
           <p className="text-3xl font-bold underline mb-4">
             dec 13 5:43pm - font testing
