@@ -25,27 +25,6 @@ body {
   background-image: radial-gradient(circle, #979797 1px, rgba(0, 0, 0, 0) 1px);
 }
 
-/* Small zigzag line */
-.smallLine {
-  position: absolute;
-  height: 10px;
-  width: 100%;
-  transform: translate(-25%) scale(3)
-}
-
-.smallLine1 {
-  background: linear-gradient(45deg, transparent, transparent 49%, black 49%, transparent 51%);
-}
-
-.smallLine2 {
-  background: linear-gradient(-45deg, transparent, transparent 49%, black 49%, transparent 51%);
-}
-
-.smallLine {
-  background-size: 20px 20px;
-}
-
-
 .cursor {
   background-color: #111;
   height: 10px;
