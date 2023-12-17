@@ -69,18 +69,14 @@ export default function Home() {
       />
       <div />
       <Modal isModalOpen={modalOpen} modalSetter={setModalOpen} />
-      {/* intro section */}
       <div className="flex flex-col w-full items-center justify-between">
-        <div
-          onMouseEnter={textEnter}
-          onMouseLeave={textLeave}
-          className="flex flex-col lg:flex-row items-center justify-center max-w-[1000px] md:space-x-4 mt-16 md:mt-24 lg:mt-12 lg:px-4"
-        >
-          {/* <div className="flex text-4xl w-2/5 justify-center">
-            <Image src={'/teabath.png'} alt="" width={400} height={400}></Image>
-          </div> */}
+        <div className="flex flex-col lg:flex-row items-center justify-center max-w-[1000px] md:space-x-4 mt-16 md:mt-24 lg:mt-12 lg:px-4">
           <div className="flex flex-col w-4/5 md:w-5/5 justify-center items-center">
-            <div className="flex flex-col text-4xl font-light text-center items-center mb-2 bg-white border border-black rounded-xl py-12 px-16">
+            <div
+              className="flex flex-col text-4xl font-light text-center items-center mb-2 bg-white border border-black rounded-xl py-12 px-16"
+              onMouseEnter={textEnter}
+              onMouseLeave={textLeave}
+            >
               Hey, I&apos;m Tuan, a full-stack developer. Currently obsessed
               with designing web apps, APIs, and occasionally green tea.
               <div
@@ -92,70 +88,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* <div className="flex w-full h-24"></div> */}
-
-        {/*         
-        <div className="flex flex-col w-full justify-center items-center space-y-16 mb-32">
-          <div className={projectRowClasses}>
-            <div className="w-[32rem] h-full">
-              <div className="w-full h-72 mb-4 relative">
-                <Image src={'/tesla_summary.png'} alt="" layout="fill"></Image>
-              </div>
-              <div className="text-3xl w-full border-b border-black mb-4">
-                Tesla Vehicle Firmware Tools
-              </div>
-              <div className="font-light">
-                Designed and implemented a set of automation tools, bots, and
-                data dashboards to accelerate Tesla&apos;s infotainment system
-                testing.
-              </div>
-            </div>
-            <div className="w-[32rem] h-full">
-              <div className="w-full h-72 mb-4 relative">
-                <Image src="/bwl_homepage.png" alt="" layout="fill"></Image>
-              </div>
-              <div className="text-3xl w-full border-b border-black mb-4">
-                Big Whale Labs Homepage
-              </div>
-              <div className="font-light">
-                Implemented website designs for Big Whale Labs and their
-                products in React, TailwindCSS, koa, and valtio.
-              </div>
-            </div>
-          </div>
-          <div className={projectRowClasses}>
-            <a href="https://github.com/tuansydau/shader-work" target="_blank">
-              <div className="w-[32rem] h-full">
-                <div className="w-full h-72 mb-4 relative">
-                  <Image src={'/Animation.gif'} alt="" layout="fill" />
-                </div>
-                <div className="text-3xl w-full border-b border-black mb-4">
-                  Shaders
-                </div>
-                <div className="font-light">
-                  Programmed a set of realtime OpenGL fragment shaders to create
-                  high definition visuals, written in GLSL.
-                </div>
-              </div>
-            </a>
-            <a href="https://github.com/tuansydau/TAB2XML" target="_blank">
-              <div className="w-[32rem] h-full">
-                <div className="w-full h-72 mb-4 relative">
-                  <Image src={'/tab2xml.png'} alt="" layout="fill" />
-                </div>
-                <div className="text-3xl w-full border-b border-black mb-4">
-                  Tab2XML
-                </div>
-                <div className="font-light">
-                  Created a program to convert plaintext guitar tablature into
-                  playable music files.
-                </div>
-              </div>
-            </a>
-          </div>
-        </div> */}
       </div>
+
+      <div>
+        <div>Projects</div>
+      </div>
+
+      <div></div>
       <Footer />
     </div>
   );
