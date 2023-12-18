@@ -14,7 +14,7 @@ export default function Home() {
               PHOTO IS HERE
               AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
             </div> */}
-            <div className="w-full md:w-4/5 max-w-[1000px] space-y-6 text-xl border-black border bg-white px-16 py-8 rounded-xl">
+            <div className="w-full md:w-4/5 max-w-[1000px] space-y-6 text-lg border-black border bg-white px-16 py-8 rounded-xl">
               <div className="text-4xl">Some fun tidbits about me</div>
               <div>
                 😀 I&apos;m a full-stack software engineer in Toronto. I grew up
