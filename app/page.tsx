@@ -40,6 +40,12 @@ export default function Home() {
       x: mousePosition.x - 10,
       y: mousePosition.y - 10
     },
+    button: {
+      x: mousePosition.x - 10,
+      y: mousePosition.y - 10,
+      backgroundColor: 'white',
+      mixBlendMode: 'difference'
+    },
     text: {
       height: 200,
       width: 200,
@@ -52,14 +58,20 @@ export default function Home() {
 
   const textEnter = () => setCursorVariant('text');
   const textLeave = () => setCursorVariant('default');
+  const buttonEnter = () => setCursorVariant('button');
+  const buttonLeave = () => setCursorVariant('default');
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-between">
-      <Navbar highlightedButton={'home'} />
+      <Navbar
+        highlightedButton={'home'}
+        buttonEnterFunction={buttonEnter}
+        buttonLeaveFunction={buttonLeave}
+      />
 
       {/* Custom cursor element */}
       <motion.div
-        className="cursor"
+        className="cursor z-50"
         /* 
         //@ts-ignore */
         variants={variants}
@@ -73,7 +85,10 @@ export default function Home() {
         textExitFunction={textLeave}
         modalFunction={setModalOpen}
       />
-      <Footer />
+      <Footer
+        buttonEnterFunction={buttonEnter}
+        buttonLeaveFunction={buttonLeave}
+      />
     </div>
   );
 }

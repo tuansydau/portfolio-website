@@ -8,18 +8,20 @@ const buttonClass =
 const highlightedClass =
   'border-black border rounded-full py-2 px-8 bg-black text-white border-b-2';
 
-export default function Navbar({ highlightedButton }: any) {
+interface NavbarPropTypes {
+  highlightedButton: string;
+  buttonEnterFunction?: () => void;
+  buttonLeaveFunction?: () => void;
+}
+
+export default function Navbar({
+  highlightedButton,
+  buttonEnterFunction,
+  buttonLeaveFunction
+}: NavbarPropTypes) {
   return (
     <div className="fixed z-10 flex w-full justify-between items-center space-x-12 py-6 px-8 border-black">
       <Link href="/">
-        {/* <Image
-          src="/logo1.png"
-          className="invisible sm:visible sm:ml-4"
-          alt=""
-          title="isnt he cute i made him myself"
-          width={50}
-          height={50}
-        /> */}
         <Image
           src="/tuan-dau.gif"
           className="invisible sm:visible md:ml-16"
@@ -35,6 +37,8 @@ export default function Navbar({ highlightedButton }: any) {
             className={
               highlightedButton === 'home' ? highlightedClass : buttonClass
             }
+            onMouseEnter={buttonEnterFunction}
+            onMouseLeave={buttonLeaveFunction}
           >
             Home
           </div>
@@ -44,35 +48,23 @@ export default function Navbar({ highlightedButton }: any) {
             className={
               highlightedButton === 'about' ? highlightedClass : buttonClass
             }
+            onMouseEnter={buttonEnterFunction}
+            onMouseLeave={buttonLeaveFunction}
           >
             About
           </div>
         </Link>
-        {/* <Link href="/work">
-          <div
-            className={
-              highlightedButton === 'work' ? highlightedClass : buttonClass
-            }
-          >
-            Work
-          </div>
-        </Link> */}
         <Link href="/temp">
           <div
             className={
               highlightedButton === 'work' ? highlightedClass : buttonClass
             }
+            onMouseEnter={buttonEnterFunction}
+            onMouseLeave={buttonLeaveFunction}
           >
             Temp
           </div>
         </Link>
-        {/* <div
-          className={
-            highlightedButton === 'resume' ? highlightedClass : buttonClass
-          }
-        >
-          Resume
-        </div> */}
       </div>
     </div>
   );
