@@ -6,6 +6,8 @@ import Modal from '@/components/Modal';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import IntroSection from '@/components/App/IntroSection';
+// import Image from 'next/image';
+import BoxIcon from '@/components/App/BoxIcon';
 
 interface MousePosition {
   x: number;
@@ -85,6 +87,27 @@ export default function Home() {
         textExitFunction={textLeave}
         modalFunction={setModalOpen}
       />
+
+      {/*  Project Section 2 */}
+      <div className="mt-80 w-full max-w-[1800px] max-h-[800px] h-screen px-8 mb-32">
+        <div className="flex w-full h-full">
+          <div className="w-96 h-full bg-black border border-black text-white">
+            <div className="flex w-full justify-center">
+              <div className="flex flex-col w-2/3 text-xl items-center text-center mt-8">
+                <div className="mb-6">
+                  <BoxIcon />
+                </div>
+                A collection of my coding projects that I&apos;ve curated for
+                your viewing
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-full bg-white border-t border-b border-r border-black p-16 text-4xl">
+            yeah i have no projects
+          </div>
+        </div>
+      </div>
+
       <Footer
         buttonEnterFunction={buttonEnter}
         buttonLeaveFunction={buttonLeave}

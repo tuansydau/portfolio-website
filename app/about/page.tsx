@@ -5,9 +5,8 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-between">
       <Navbar highlightedButton={'about'} />
-      <div />
       {/* About me */}
-      <div className="flex w-full h-fit mt-16">
+      <div className="flex w-full h-fit">
         <div className="flex w-full justify-center items-center">
           <div className="flex flex-col w-3/4 items-center md:flex-row md:space-x-4 md:justify-center">
             {/* <div className="w-full md:w-2/5 break-words">
@@ -54,6 +53,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );
