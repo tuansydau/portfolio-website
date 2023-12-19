@@ -89,11 +89,11 @@ export default function Home() {
       />
 
       {/*  Project Section 2 */}
-      <div className="mt-80 w-full max-w-[1800px] max-h-[800px] h-screen px-8 mb-32">
+      <div className="mt-80 w-full max-w-[1800px] max-h-[800px] h-screen mb-32">
         <div className="flex w-full h-full">
-          <div className="w-96 h-full bg-black border border-black text-white">
+          <div className="w-96 h-full bg-white border border-black">
             <div className="flex w-full justify-center">
-              <div className="flex flex-col w-2/3 text-xl items-center text-center mt-8">
+              <div className="flex flex-col w-full text-2xl items-center text-center mt-8 px-8">
                 <div className="mb-6">
                   <BoxIcon />
                 </div>
@@ -102,9 +102,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full h-full bg-white border-t border-b border-r border-black p-16 text-4xl">
-            yeah i have no projects
-          </div>
+          <div className="w-full h-full  border-t border-b border-r border-black p-16 text-4xl"></div>
         </div>
       </div>
 
