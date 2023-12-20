@@ -6,7 +6,6 @@ import Modal from '@/components/Modal';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import IntroSection from '@/components/App/IntroSection';
-// import Image from 'next/image';
 import BoxIcon from '@/components/App/BoxIcon';
 
 interface MousePosition {
@@ -88,10 +87,10 @@ export default function Home() {
         modalFunction={setModalOpen}
       />
 
-      {/*  Project Section 2 */}
-      <div className="mt-80 w-full max-w-[1800px] max-h-[800px] h-screen mb-32">
+      {/* Project Section 2 */}
+      <div className="mt-80 w-full max-w-[1500px] max-h-[900px] bg-white h-screen mb-32 rounded">
         <div className="flex w-full h-full">
-          <div className="w-96 h-full bg-white border border-black">
+          <div className="w-96 h-full bg-white border border-black rounded-l-xl">
             <div className="flex w-full justify-center">
               <div className="flex flex-col w-full text-2xl items-center text-center mt-8 px-8">
                 <div className="mb-6">
@@ -102,7 +101,44 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full h-full  border-t border-b border-r border-black p-16 text-4xl"></div>
+          <div className="flex flex-col w-full h-full border-t border-b border-r border-black rounded-r-xl p-8 space-y-8">
+            <div className="flex w-full h-1/2 space-x-8">
+              <div className="w-1/2 h-full">
+                <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
+                <div className="border-b border-black mb-1">Title</div>
+                <div className="font-light">
+                  Description oh man is this the project template that I want? i
+                  really cant tell but time is running low
+                </div>
+              </div>
+              <div className="w-1/2 h-full">
+                <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
+                <div className="border-b border-black mb-1">Title</div>
+                <div className="font-light">
+                  Description oh man is this the project template that I want? i
+                  really cant tell but time is running low
+                </div>
+              </div>
+            </div>
+            <div className="flex w-full h-1/2 space-x-8">
+              <div className="w-1/2 h-full">
+                <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
+                <div className="border-b border-black mb-1">Title</div>
+                <div className="font-light">
+                  Description oh man is this the project template that I want? i
+                  really cant tell but time is running low
+                </div>
+              </div>
+              <div className="w-1/2 h-full">
+                <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
+                <div className="border-b border-black mb-1">Title</div>
+                <div className="font-light">
+                  Description oh man is this the project template that I want? i
+                  really cant tell but time is running low
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
