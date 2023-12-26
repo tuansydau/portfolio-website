@@ -1,4 +1,4 @@
-The portfolio is temporarily live [here](tuan-dau.vercel.app)
+The portfolio is temporarily live [here](http://tuan-dau.vercel.app)
 
 ## Getting Started
 
