@@ -105,28 +105,32 @@ export default function Home() {
             <div className="flex w-full h-1/2 space-x-8">
               <div className="w-1/2 h-full">
                 <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
-                <div className="border-b border-black mb-1">Title</div>
+                <div className="border-b border-black mb-1">OpenGL Shaders</div>
                 <div className="font-light">
-                  Description oh man is this the project template that I want? i
-                  really cant tell but time is running low
+                  A collection of OpenGL fragment shaders that I made while
+                  learning graphics processing.
                 </div>
               </div>
               <div className="w-1/2 h-full">
                 <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
-                <div className="border-b border-black mb-1">Title</div>
+                <div className="border-b border-black mb-1">
+                  Tesla Firmware OTA Tools
+                </div>
                 <div className="font-light">
-                  Description oh man is this the project template that I want? i
-                  really cant tell but time is running low
+                  Tools that I created during my work term at Tesla to help
+                  speed up firmware testing within the Infotainment QA team.
                 </div>
               </div>
             </div>
             <div className="flex w-full h-1/2 space-x-8">
               <div className="w-1/2 h-full">
                 <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
-                <div className="border-b border-black mb-1">Title</div>
+                <div className="border-b border-black mb-1">
+                  OSRS Coaching Note Website
+                </div>
                 <div className="font-light">
-                  Description oh man is this the project template that I want? i
-                  really cant tell but time is running low
+                  A website that I made in order to help coach my friends and
+                  clanmates on their Raids
                 </div>
               </div>
               <div className="w-1/2 h-full">

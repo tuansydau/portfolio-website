@@ -64,7 +64,7 @@ export default function Home() {
         onMouseLeave={textLeave}
         className="space-y-16 mb-36"
       >
-        <div className="flex flex-col bg-white w-full max-w-[1000px] border border-black py-8 px-24 rounded-xl mt-36">
+        <div className="flex flex-col bg-white w-full max-w-[1000px] border border-black py-8 px-24 rounded-xl mt-16">
           <p className="text-3xl font-bold underline mb-4">
             dec 13 5:43pm - font testing
           </p>
