@@ -9,7 +9,7 @@ const highlightedClass =
   'border-black border rounded-full py-2 px-8 bg-black text-white border-b-2';
 
 interface NavbarPropTypes {
-  highlightedButton: string;
+  highlightedButton?: string;
   buttonEnterFunction?: () => void;
   buttonLeaveFunction?: () => void;
 }
