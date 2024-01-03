@@ -7,6 +7,8 @@ import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import IntroSection from '@/components/App/IntroSection';
 import BoxIcon from '@/components/App/BoxIcon';
+import Link from 'next/link';
+import Image from 'next/image';
 
 interface MousePosition {
   x: number;
@@ -88,7 +90,7 @@ export default function Home() {
       />
 
       {/* Project Section 2 */}
-      <div className="mt-80 w-full max-w-[1500px] max-h-[900px] bg-white h-screen mb-32 rounded">
+      <div className="mt-80 w-full max-w-[1500px] h-[750px] bg-white mb-32 rounded">
         <div className="flex w-full h-full">
           <div className="w-96 h-full bg-white border border-black rounded-l-xl">
             <div className="flex w-full justify-center">
@@ -101,15 +103,26 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-full h-full border-t border-b border-r border-black rounded-r-xl p-8 space-y-8">
-            <div className="flex w-full h-1/2 space-x-8">
+          <div className="flex flex-col w-full h-full border-t border-b border-r border-black rounded-r-xl p-12 space-y-12">
+            <div className="flex w-full h-1/2 space-x-12">
               <div className="w-1/2 h-full">
-                <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
-                <div className="border-b border-black mb-1">OpenGL Shaders</div>
-                <div className="font-light">
-                  A collection of OpenGL fragment shaders that I made while
-                  learning graphics processing.
-                </div>
+                <Link href="/shaders">
+                  <div className="relative w-full h-3/4 rounded-xl mb-2">
+                    <Image
+                      className="rounded-xl"
+                      src="/starfield-static.png"
+                      alt=""
+                      fill
+                    ></Image>
+                  </div>
+                  <div className="border-b border-black mb-1">
+                    OpenGL Shaders
+                  </div>
+                  <div className="font-light">
+                    A collection of OpenGL fragment shaders that I made while
+                    learning graphics processing.
+                  </div>
+                </Link>
               </div>
               <div className="w-1/2 h-full">
                 <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
@@ -122,7 +135,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex w-full h-1/2 space-x-8">
+            <div className="flex w-full h-1/2 space-x-12">
               <div className="w-1/2 h-full">
                 <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
                 <div className="border-b border-black mb-1">
