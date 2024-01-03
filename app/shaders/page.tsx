@@ -30,8 +30,8 @@ export default function Shaders() {
               <div>
                 A collection of shaders that I created after binge watching
                 Acerola&apos;s YouTube videos. These shaders are all written in
-                GLSL, which means that they can be used in a variety of places -
-                from video games, to websites, to videos, and etc.
+                GLSL, and can be used in a variety of places - including video
+                games, websites, videos, and etc.
               </div>
             </div>
             <div className="font-bold">2023</div>
@@ -43,12 +43,16 @@ export default function Shaders() {
       </div>
 
       {/* What the heck are shaders? */}
-      <div className="flex w-full mt-48 px-24 justify-center mb-96">
+      <div className="flex w-full mt-24 px-24 justify-center mb-96">
         <div className="flex flex-col w-full items-center">
-          <div className="text-6xl w-2/3 text-center font-extralight border bg-black text-white p-24 border-black border-2 rounded-xl">
-            <b>&quot;So, what&apos;s a shader?&quot;</b>
+          <div className="w-full text-center font-extralight border bg-[#141414] text-white p-24 border-black border-2 rounded-xl">
+            <p className="text-6xl font-extrabold">
+              &quot;So, what&apos;s a shader?&quot;
+            </p>
             <br />
-            <br />- All of my friends, basically
+            <p className="text-2xl font-light">
+              - All of my friends, basically
+            </p>
           </div>
         </div>
       </div>
