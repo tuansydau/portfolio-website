@@ -11,7 +11,7 @@ export default function Shaders() {
 
       {/* Intro section */}
       <div className="flex flex-col w-full h-full items-center">
-        <div className="mt-32 px-24">
+        <div className="mt-24 px-24">
           <div className="flex relative w-full bg-black h-[400px] mb-12">
             <Image
               className=""
@@ -25,13 +25,13 @@ export default function Shaders() {
           </div>
           <div className="flex justify-between mt-8 text-xl">
             <div className="font-bold">Side Project</div>
-            <div className="w-1/2">
+            <div className="w-2/3">
               <div className="font-bold">Overview</div>
               <div>
                 A collection of shaders that I created after binge watching
                 Acerola&apos;s YouTube videos. These shaders are all written in
-                GLSL, and can be used in a variety of places - including video
-                games, websites, videos, and etc.
+                GLSL, and can be used in a variety of places, like video games
+                and ThreeJS websites.
               </div>
             </div>
             <div className="font-bold">2023</div>
