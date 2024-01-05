@@ -6,10 +6,10 @@ import Image from 'next/image';
 
 export default function Shaders() {
   return (
-    <div className="bg-white flex min-h-screen flex-col justify-between text-xl">
+    <div className="bg-white flex min-h-screen flex-col justify-between">
       <Navbar />
       {/* Intro section */}
-      <div className="flex flex-col w-full h-full items-center">
+      <div className="flex flex-col w-full h-full items-center text-xl">
         <div className="mt-16 px-72">
           <div className="w-full flex bg-black h-[400px] mb-12">
             <div className="flex relative w-1/3 bg-black h-[400px]">
@@ -70,7 +70,7 @@ export default function Shaders() {
         </div>
       </div>
 
-      <div className="flex w-full mt-48 px-72">
+      <div className="flex w-full mt-48 px-72 text-xl">
         <div className="w-2/3 pr-32">
           <p className="text-4xl font-bold">Introduction</p>
           <p className="mt-6 leading-9">
@@ -80,10 +80,17 @@ export default function Shaders() {
             programmers want them to be.
           </p>
           <p className="mt-6 leading-9">
-            As an avid video game player, I&apos;ve had a lot of exposure to
-            shaders, but never fully understood how they worked. This
-            programming project helped me understand the games that I play a
-            little bit better.
+            As an{' '}
+            <a
+              className="text-blue-500 underline"
+              href="http://how-dry-is-moo.vercel.app"
+              target="_blank"
+            >
+              avid video game player
+            </a>
+            , I&apos;ve had a lot of exposure to shaders, but never fully
+            understood how they worked. This programming project helped me
+            understand the games that I play a little bit better.
           </p>
         </div>
         <div className="-mt-8 w-[450px] h-[550px] border-3 border-black px-4 pt-4 pb-8 rounded-md rotate-2">
@@ -103,7 +110,7 @@ export default function Shaders() {
         </div>
       </div>
 
-      <div className="flex w-full mt-48 px-72 mb-96">
+      <div className="flex w-full mt-48 px-72">
         <div className="w-full">
           <p className="text-4xl font-bold">Examples of Shaders</p>
           <div className="flex mt-8 space-x-4">
@@ -115,6 +122,7 @@ export default function Shaders() {
                 <a
                   className="text-blue-600 underline"
                   href="https://www.shadertoy.com/view/XstGWn"
+                  target="_blank"
                 >
                   River of Styx
                 </a>{' '}
@@ -129,6 +137,7 @@ export default function Shaders() {
                 <a
                   className="text-blue-600 underline"
                   href="https://store.steampowered.com/app/261570/Ori_and_the_Blind_Forest/"
+                  target="_blank"
                 >
                   Ori and the Blind Forest
                 </a>{' '}
@@ -143,6 +152,7 @@ export default function Shaders() {
                 <a
                   className="text-blue-600 underline"
                   href="https://minecraftshader.com/bsl-shaders/"
+                  target="_blank"
                 >
                   Minecraft BSL Shader Pack
                 </a>{' '}
@@ -153,6 +163,70 @@ export default function Shaders() {
           </div>
         </div>
       </div>
+
+      <div className="mt-48 px-96 text-center">
+        <div
+          className="mt-6 text-3xl font-light"
+          style={{ lineHeight: '4rem' }}
+        >
+          There are lots of different types of shaders that do different things.
+          However, there was one type of shader that I found the most
+          interesting:
+        </div>
+        <div
+          className="mt-8 leading-10"
+          style={{
+            fontFamily: 'Comico, sans-serif',
+            fontSize: '10rem',
+            lineHeight: '10rem'
+          }}
+        >
+          Fragment Shaders
+        </div>
+      </div>
+
+      <div className="flex w-full mt-48 px-72 text-xl">
+        <div className="-mt-8 w-[450px] h-[550px] border-3 border-black px-4 pt-4 pb-8 rounded-md -rotate-2">
+          <div className="relative w-[400px] h-[400px] mx-auto">
+            <Image src="/Animation.gif" alt="" fill objectFit="cover" />
+          </div>
+          <p
+            className="mt-4 text-center"
+            style={{
+              fontFamily: 'Comico, cursive',
+              fontSize: '1.5rem',
+              lineHeight: '3rem'
+            }}
+          >
+            Proof: Fragment shaders are cool (also, i coded this!)
+          </p>
+        </div>
+        <div className="w-2/3 pl-32">
+          <p className="text-4xl font-bold">Introduction</p>
+          <p className="mt-6 leading-9">
+            Shaders are programs that are used to create any kind of computer
+            graphics. Every video game and animated movie is created with
+            shaders, and they can be as complex or as simple as the artists and
+            programmers want them to be.
+          </p>
+          <p className="mt-6 leading-9">
+            As an{' '}
+            <a
+              className="text-blue-500 underline"
+              href="http://how-dry-is-moo.vercel.app"
+              target="_blank"
+            >
+              avid video game player
+            </a>
+            , I&apos;ve had a lot of exposure to shaders, but never fully
+            understood how they worked. This programming project helped me
+            understand the games that I play a little bit better.
+          </p>
+        </div>
+      </div>
+
+      <div className="mb-96" />
+
       <Footer />
     </div>
   );
