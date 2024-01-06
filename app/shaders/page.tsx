@@ -11,7 +11,7 @@ export default function Shaders() {
       {/* Intro section */}
       <div className="flex flex-col w-full h-full items-center text-xl">
         <div className="mt-16 px-72">
-          <div className="w-full flex bg-black h-[400px] mb-12">
+          <div className="w-full flex bg-black h-[400px]">
             <div className="flex relative w-1/3 bg-black h-[400px]">
               <Image
                 className=""
@@ -54,10 +54,9 @@ export default function Shaders() {
                 and ThreeJS websites.
               </div>
               <div className="mt-4 leading-8">
-                This collection of shaders is an ongoing passion project, and
-                will be mainly a display of the shaders that I&apos;ve created,
-                and some explanations of the cool math and floatpoint black
-                magic used in some of them.
+                This is an ongoing passion project, and will be mainly a display
+                of how much I love fragment shaders, and some explanations of
+                the cool math and floatpoint black magic that I&apos;ve learned.
               </div>
             </div>
             <div className="font-bold text-right">
@@ -70,7 +69,7 @@ export default function Shaders() {
         </div>
       </div>
 
-      <div className="flex w-full mt-48 px-72 text-xl">
+      <div className="flex w-full mt-96 px-72 text-xl">
         <div className="w-2/3 pr-32">
           <p className="text-4xl font-bold">Introduction</p>
           <p className="mt-6 leading-9">
@@ -110,7 +109,7 @@ export default function Shaders() {
         </div>
       </div>
 
-      <div className="flex w-full mt-48 px-72">
+      <div className="flex w-full mt-96 px-72">
         <div className="w-full">
           <p className="text-4xl font-bold">Examples of Shaders</p>
           <div className="flex mt-8 space-x-4">
@@ -141,7 +140,7 @@ export default function Shaders() {
                 >
                   Ori and the Blind Forest
                 </a>{' '}
-                - This game uses shaders to add glow to objects in the game.
+                - Uses shaders to add glow to objects in the game.
               </div>
             </div>
             <div className="w-1/3 text-lg text-center">
@@ -156,22 +155,20 @@ export default function Shaders() {
                 >
                   Minecraft BSL Shader Pack
                 </a>{' '}
-                - One of many shader packs that adds additional lighting effects
-                to Minecraft.
+                - Adds additional lighting effects to Minecraft.
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="mt-48 px-96 text-center">
+      <div className="mt-96 px-96 text-center mb-16">
         <div
           className="mt-6 text-3xl font-light"
           style={{ lineHeight: '4rem' }}
         >
           There are lots of different types of shaders that do different things.
-          However, there was one type of shader that I found the most
-          interesting:
+          However, the type that I found the most interesting was:
         </div>
         <div
           className="mt-8 leading-10"
@@ -185,7 +182,7 @@ export default function Shaders() {
         </div>
       </div>
 
-      <div className="flex w-full mt-48 px-72 text-xl">
+      <div className="flex w-full mt-96 px-72 text-xl">
         <div className="-mt-8 w-[450px] h-[550px] border-3 border-black px-4 pt-4 pb-8 rounded-md -rotate-2">
           <div className="relative w-[400px] h-[400px] mx-auto">
             <Image src="/Animation.gif" alt="" fill objectFit="cover" />
@@ -198,34 +195,71 @@ export default function Shaders() {
               lineHeight: '3rem'
             }}
           >
-            Proof: Fragment shaders are cool (also, i coded this!)
+            Proof: Fragment shaders are cool (i coded this!)
           </p>
         </div>
         <div className="w-2/3 pl-32">
-          <p className="text-4xl font-bold">Introduction</p>
+          <p className="text-4xl font-bold">Fragment Shaders</p>
           <p className="mt-6 leading-9">
-            Shaders are programs that are used to create any kind of computer
-            graphics. Every video game and animated movie is created with
-            shaders, and they can be as complex or as simple as the artists and
-            programmers want them to be.
+            Fragment shaders, or pixel shaders, are shaders that determine the
+            final colour of each individual pixel on the screen, depending on a
+            number of factors, such as:
           </p>
+          <ul
+            style={{ listStyleType: 'disc', listStylePosition: 'inside' }}
+            className="mt-4"
+          >
+            <li>Objects in view</li>
+            <li>Lighting direction/strength</li>
+            <li>Texture of objects</li>
+            <li>Distance from camera</li>
+            <li>Light reflections from other objects</li>
+            <li>Bloom (if desired)</li>
+          </ul>
           <p className="mt-6 leading-9">
-            As an{' '}
-            <a
-              className="text-blue-500 underline"
-              href="http://how-dry-is-moo.vercel.app"
-              target="_blank"
-            >
-              avid video game player
-            </a>
-            , I&apos;ve had a lot of exposure to shaders, but never fully
-            understood how they worked. This programming project helped me
-            understand the games that I play a little bit better.
+            Fragment shaders, in combination with things like Vertex shaders,
+            can be used to create complicated graphics effects and scenes, like
+            in the above examples.
           </p>
         </div>
       </div>
 
-      <div className="mb-96" />
+      <div className="flex w-full mt-96 px-72">
+        <div className="w-full">
+          <p className="text-4xl font-bold">
+            Shaders that I&apos;ve Made So Far (too lazy to post the others rn
+            icl)
+          </p>
+          <div className="flex mt-8 space-x-4">
+            <div className="w-1/3 text-center text-lg">
+              <div className="relative w-full h-[400px] bg-black">
+                <Image src="/Animation.gif" alt="" fill objectFit="cover" />
+              </div>
+            </div>
+            <div className="w-1/3 text-lg text-center">
+              <div className="relative w-full h-[400px] bg-black">
+                <Image src="/ori-shaders.png" alt="" fill />
+              </div>
+            </div>
+            <div className="w-1/3 text-lg text-center">
+              <div className="relative w-full h-[400px] bg-black">
+                <Image src="/minecraft-shader.png" alt="" fill />
+              </div>
+            </div>
+          </div>
+          <div className="mt-4 text-xl">
+            My up to date shader work will be posted here:{' '}
+            <a
+              className="text-blue-500 underline"
+              href="https://github.com/tuansydau/shader-work/"
+            >
+              https://github.com/tuansydau/shader-work/
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="mb-48" />
 
       <Footer />
     </div>
