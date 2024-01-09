@@ -124,7 +124,7 @@ export default function Home() {
                   </div>
                 </Link>
               </div>
-              <div className="w-1/2 h-full">
+              {/* <div className="w-1/2 h-full">
                 <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
                 <div className="border-b border-black mb-1">
                   Tesla Firmware OTA Tools
@@ -133,10 +133,10 @@ export default function Home() {
                   Tools that I created during my work term at Tesla to help
                   speed up firmware testing within the Infotainment QA team.
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="flex w-full h-1/2 space-x-12">
-              <div className="w-1/2 h-full">
+              {/* <div className="w-1/2 h-full">
                 <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
                 <div className="border-b border-black mb-1">
                   OSRS Coaching Note Website
@@ -152,7 +152,7 @@ export default function Home() {
                   A Java application that turns plaintext guitar tablature into
                   a playable MusicXML file format.
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

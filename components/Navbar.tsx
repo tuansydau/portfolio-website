@@ -54,7 +54,10 @@ export default function Navbar({
             About
           </div>
         </Link>
-        <Link href="/temp">
+        <Link
+          href="https://drive.google.com/file/d/13_iJP0JkfQjlhcstHD4d2dKtHxFbpoe4/view?usp=drive_link"
+          target="_blank"
+        >
           <div
             className={
               highlightedButton === 'work' ? highlightedClass : buttonClass
@@ -62,7 +65,7 @@ export default function Navbar({
             onMouseEnter={buttonEnterFunction}
             onMouseLeave={buttonLeaveFunction}
           >
-            Temp
+            Resume
           </div>
         </Link>
       </div>

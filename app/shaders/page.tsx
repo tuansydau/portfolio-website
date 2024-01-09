@@ -225,8 +225,7 @@ export default function Shaders() {
           </div>
           <div className="w-full mt-48">
             <p className="text-4xl font-bold">
-              Shaders that I&apos;ve Made So Far (too lazy to post the others rn
-              icl)
+              Shaders that I&apos;ve Made So Far (More to come!)
             </p>
             <div className="flex mt-8 space-x-4">
               <div className="w-1/3 text-center text-lg">
@@ -234,7 +233,7 @@ export default function Shaders() {
                   <Image src="/Animation.gif" alt="" fill objectFit="cover" />
                 </div>
               </div>
-              <div className="w-1/3 text-lg text-center">
+              {/* <div className="w-1/3 text-lg text-center">
                 <div className="relative w-full h-[400px] bg-black">
                   <Image src="/Animation.gif" alt="" fill objectFit="cover" />
                 </div>
@@ -243,7 +242,7 @@ export default function Shaders() {
                 <div className="relative w-full h-[400px] bg-black">
                   <Image src="/Animation.gif" alt="" fill objectFit="cover" />
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="mt-4 text-xl">
               My up to date shader work will be posted here:{' '}
