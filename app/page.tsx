@@ -112,6 +112,7 @@ export default function Home() {
                       className="rounded-xl"
                       src="/starfield-static.png"
                       alt=""
+                      objectFit="cover"
                       fill
                     ></Image>
                   </div>
@@ -141,7 +142,15 @@ export default function Home() {
                   href="https://github.com/jamesmqle/TablatureConverter"
                   target="_blank"
                 >
-                  <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
+                  <div className="relative w-full h-3/4 rounded-xl mb-2">
+                    <Image
+                      className="rounded-xl"
+                      src="/tab2xml.png"
+                      alt=""
+                      objectFit="cover"
+                      fill
+                    ></Image>
+                  </div>
                   <div className="border-b border-black mb-1 font-medium">
                     Tab2XML
                   </div>
