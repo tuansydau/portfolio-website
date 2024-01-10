@@ -55,7 +55,7 @@ export default function Navbar({
           </div>
         </Link>
         <Link
-          href="https://drive.google.com/file/d/13_iJP0JkfQjlhcstHD4d2dKtHxFbpoe4/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1oj6qSUW23p4jZxEMGuhqXzd7lqEUuPBL/view?usp=sharing"
           target="_blank"
         >
           <div

@@ -57,7 +57,7 @@ export default function Shaders() {
                 <p>2023 - Present</p>
               </div>
             </div>
-            <div className="mt-16">
+            <div className="mt-8">
               <b>Keywords:</b> GLSL, Graphics Processing, Web Graphics, Shaders
             </div>
           </div>

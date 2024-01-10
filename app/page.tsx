@@ -115,7 +115,7 @@ export default function Home() {
                       fill
                     ></Image>
                   </div>
-                  <div className="border-b border-black mb-1">
+                  <div className="border-b border-black mb-1 font-medium">
                     OpenGL Shaders
                   </div>
                   <div className="font-light">
@@ -136,6 +136,21 @@ export default function Home() {
               </div> */}
             </div>
             <div className="flex w-full h-1/2 space-x-12">
+              <div className="w-1/2 h-full">
+                <Link
+                  href="https://github.com/jamesmqle/TablatureConverter"
+                  target="_blank"
+                >
+                  <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
+                  <div className="border-b border-black mb-1 font-medium">
+                    Tab2XML
+                  </div>
+                  <div className="font-light">
+                    A Java application that turns plaintext guitar tablature
+                    into a playable MusicXML file format.
+                  </div>
+                </Link>
+              </div>
               {/* <div className="w-1/2 h-full">
                 <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
                 <div className="border-b border-black mb-1">
@@ -143,14 +158,6 @@ export default function Home() {
                 </div>
                 <div className="font-light">
                   A website that I made in order to store notes.
-                </div>
-              </div>
-              <div className="w-1/2 h-full">
-                <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
-                <div className="border-b border-black mb-1">Tab2XML</div>
-                <div className="font-light">
-                  A Java application that turns plaintext guitar tablature into
-                  a playable MusicXML file format.
                 </div>
               </div> */}
             </div>
