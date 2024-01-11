@@ -9,6 +9,7 @@ import IntroSection from '@/components/App/IntroSection';
 import BoxIcon from '@/components/App/BoxIcon';
 import Link from 'next/link';
 import Image from 'next/image';
+import useMousePosition from '@/utils/useMousePosition';
 
 interface MousePosition {
   x: number;
@@ -17,70 +18,34 @@ interface MousePosition {
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
-  const [mousePosition, setMousePosition] = useState<MousePosition>({
-    x: 0,
-    y: 0
-  });
-  const [cursorVariant, setCursorVariant] = useState('default');
+  const { x, y } = useMousePosition();
+  const [isHover, setIsHover] = useState<boolean>(false);
+  var size = isHover ? 200 : 10;
+  var color = isHover ? 'white' : 'black';
+  var mixBlendMode = isHover ? 'difference' : 'normal';
 
-  useEffect(() => {
-    const mouseMove = (e: MouseEvent) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY
-      });
-    };
-
-    window.addEventListener('mousemove', mouseMove);
-
-    return () => {
-      window.removeEventListener('mousemove', mouseMove);
-    };
-  }, []);
-
-  const variants = {
-    default: {
-      x: mousePosition.x - 10,
-      y: mousePosition.y - 10
-    },
-    button: {
-      x: mousePosition.x - 10,
-      y: mousePosition.y - 10,
-      backgroundColor: 'white',
-      mixBlendMode: 'difference'
-    },
-    text: {
-      height: 200,
-      width: 200,
-      x: mousePosition.x - 100,
-      y: mousePosition.y - 100,
-      backgroundColor: 'white',
-      mixBlendMode: 'difference'
-    }
-  };
-
-  const textEnter = () => setCursorVariant('text');
-  const textLeave = () => setCursorVariant('default');
-  const buttonEnter = () => setCursorVariant('button');
-  const buttonLeave = () => setCursorVariant('default');
+  const textEnter = () => setIsHover(true);
+  const textLeave = () => setIsHover(false);
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-between">
-      <Navbar
-        highlightedButton={'home'}
-        buttonEnterFunction={buttonEnter}
-        buttonLeaveFunction={buttonLeave}
-      />
+      <Navbar highlightedButton={'home'} />
 
-      {/* Custom cursor element */}
+      <div className="cursor-outline" data-cursor-outline></div>
+
       <motion.div
         className="cursor z-50"
-        /* 
-        //@ts-ignore */
-        variants={variants}
-        /* 
-        //@ts-ignore */
-        animate={cursorVariant}
+        style={{
+          x: x - size / 2,
+          y: y - size / 2,
+          backgroundColor: color,
+          /* 
+          // @ts-ignore */
+          mixBlendMode: mixBlendMode
+        }}
+        /*
+        // @ts-ignore */
+        animate={{ height: size, width: size }}
       />
       <Modal isModalOpen={modalOpen} modalSetter={setModalOpen} />
       <IntroSection
@@ -126,14 +91,16 @@ export default function Home() {
                 </Link>
               </div>
               {/* <div className="w-1/2 h-full">
-                <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
-                <div className="border-b border-black mb-1">
-                  Tesla Firmware OTA Tools
-                </div>
-                <div className="font-light">
-                  Tools that I created during my work term at Tesla to help
-                  speed up firmware testing within the Infotainment QA team.
-                </div>
+                <Link href="/tesla-tools">
+                  <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
+                  <div className="border-b border-black mb-1">
+                    Tesla Firmware OTA Tools
+                  </div>
+                  <div className="font-light">
+                    Tools that I created during my work term at Tesla to help
+                    speed up firmware testing within the Infotainment QA team.
+                  </div>
+                </Link>
               </div> */}
             </div>
             <div className="flex w-full h-1/2 space-x-12">
@@ -174,10 +141,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Footer
-        buttonEnterFunction={buttonEnter}
-        buttonLeaveFunction={buttonLeave}
-      />
+      <Footer />
     </div>
   );
 }

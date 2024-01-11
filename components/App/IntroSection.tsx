@@ -1,6 +1,6 @@
 interface IntroSectionProps {
-  textEnterFunction: () => void;
-  textExitFunction: () => void;
+  textEnterFunction?: () => void;
+  textExitFunction?: () => void;
   modalFunction: (isOpen: boolean) => void;
 }
 
