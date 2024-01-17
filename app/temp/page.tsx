@@ -64,6 +64,51 @@ export default function Home() {
         onMouseLeave={textLeave}
         className="space-y-16 mb-36"
       >
+        <div className="flex flex-col bg-white w-full max-w-[1200px] border border-black py-8 px-24 rounded-xl mt-16 text-justify">
+          <p className="text-3xl font-bold underline mb-4">
+            jan 17 2024 12:44am - hero section testing
+          </p>
+          <br />
+          <h1
+            className="text-center"
+            style={{
+              fontFamily: 'Zodiak, serif',
+              fontSize: '13rem',
+              lineHeight: '6rem'
+            }}
+          >
+            Tuan Dau
+          </h1>
+          <br />
+          <br />
+          <br />
+          <p
+            style={{
+              fontFamily: 'Zodiak, serif',
+              fontSize: '2rem',
+              lineHeight: '3rem',
+              fontWeight: 100
+            }}
+          >
+            Full-stack engineer, designer, and occasional DevOps developer.
+            I&apos;ve worked at industry leaders like Tesla and CertiK, creating
+            tools to automate away work that people hate.
+          </p>
+          <br />
+          <p
+            style={{
+              fontFamily: 'Zodiak, serif',
+              fontSize: '1.25rem',
+              lineHeight: '3rem',
+              fontWeight: 900
+            }}
+          >
+            Currently blasting Knock2/Space Laces and programming all day (ie.
+            I&apos;m unemployed)
+          </p>
+          <br />
+          <br />
+        </div>
         <div className="flex flex-col bg-white w-full max-w-[1000px] border border-black py-8 px-24 rounded-xl mt-16">
           <p className="text-3xl font-bold underline mb-4">
             dec 13 5:43pm - font testing

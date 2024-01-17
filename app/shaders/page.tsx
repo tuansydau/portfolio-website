@@ -233,12 +233,12 @@ export default function Shaders() {
                   <Image src="/Animation.gif" alt="" fill objectFit="cover" />
                 </div>
               </div>
-              {/* <div className="w-1/3 text-lg text-center">
+              <div className="w-1/3 text-lg text-center">
                 <div className="relative w-full h-[400px] bg-black">
-                  <Image src="/Animation.gif" alt="" fill objectFit="cover" />
+                  <Image src="/Animation-2.gif" alt="" fill objectFit="cover" />
                 </div>
               </div>
-              <div className="w-1/3 text-lg text-center">
+              {/* <div className="w-1/3 text-lg text-center">
                 <div className="relative w-full h-[400px] bg-black">
                   <Image src="/Animation.gif" alt="" fill objectFit="cover" />
                 </div>

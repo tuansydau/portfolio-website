@@ -9,10 +9,6 @@ export default function Home() {
       <div className="flex w-full h-fit -mt-16">
         <div className="flex w-full justify-center items-center">
           <div className="flex flex-col w-3/4 items-center md:flex-row md:space-x-4 md:justify-center">
-            {/* <div className="w-full md:w-2/5 break-words">
-              PHOTO IS HERE
-              AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            </div> */}
             <div className="w-full md:w-4/5 max-w-[1000px] space-y-6 text-lg border-black border bg-white px-16 py-8 rounded-xl">
               <div className="text-4xl">Some fun tidbits about me</div>
               <div>
