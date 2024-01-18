@@ -22,6 +22,7 @@
 
 body {
   background-size: 80px 80px;
+  background-color: white;
   /* background-image: radial-gradient(circle, #d2d2d2 2px, rgba(0, 0, 0, 0) 1px); */
 }
 
