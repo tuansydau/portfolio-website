@@ -28,14 +28,13 @@ export default function ProjectCard({
   return (
     <div className="w-full h-[600px]">
       <Link href={linkTo} target={targetBlank ? '_blank' : ''}>
-        <div className="relative w-full h-full mb-2 hover:bg-gray-50">
+        <div className="relative w-full h-full mb-2 hover:opacity-70">
           <Image
-            className=" hover:opacity-70"
             src={imagePath}
             alt=""
             objectFit={noCover ? '' : 'cover'}
             fill
-          ></Image>
+          />
           <p
             className="absolute text-white"
             style={{

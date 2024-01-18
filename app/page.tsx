@@ -55,7 +55,7 @@ export default function Home() {
           title="OpenGL Shaders"
           description="A collection of OpenGL fragment shaders that I made while
                   learning graphics processing."
-          imagePath="/starfield-static.png"
+          imagePath="/Animation.gif"
           linkTo="/shaders"
         />
         <ProjectCard
@@ -63,7 +63,7 @@ export default function Home() {
           title="Big Whale Labs Website"
           description="A website redesign that I helped program while interning at Big Whale Labs."
           imagePath="/bwl_homepage.png"
-          linkTo="/tesla-tools"
+          linkTo="/bwl-homepage"
         />
       </div>
       <div className="flex w-full">
@@ -72,7 +72,7 @@ export default function Home() {
           title="3D Globe Visualizing Global Transactions"
           description="A remake of a previous hackathon submission completed with Float's team at Decode 2021. Inspired by the GitHub globe."
           imagePath="/three-globe.png"
-          linkTo="/shaders"
+          linkTo="/the-globe"
         />
       </div>
       <Footer />
