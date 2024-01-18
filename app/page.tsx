@@ -23,7 +23,7 @@ export default function Home() {
   var color = isHover ? 'white' : 'black';
   var mixBlendMode = isHover ? 'difference' : 'normal';
 
-  const textEnter = () => setIsHover(true);
+  const textEnter = () => setIsHover(false);
   const textLeave = () => setIsHover(false);
 
   return (
@@ -53,11 +53,11 @@ export default function Home() {
         modalFunction={setModalOpen}
       />
 
-      {/* Project Section 2 */}
+      {/* Project Section */}
       <div className="px-4">
-        <div className="w-full bg-white mt-64 mb-32 max-w-[1600px] rounded-md border border-black">
+        <div className="w-full bg-white mt-16 mb-32 max-w-[1600px] rounded-md border-black">
           <div>
-            <p
+            {/* <p
               className="border-b-2 w-fit border-black pt-8"
               style={{
                 fontFamily: 'Zodiak, serif',
@@ -68,9 +68,9 @@ export default function Home() {
               }}
             >
               Projects
-            </p>
+            </p> */}
           </div>
-          <div className="flex w-full h-[900px]">
+          <div className="flex w-full h-[1300px]">
             <div className="flex flex-col w-full h-full rounded-r-xl p-12 space-y-12">
               <div className="flex w-full h-1/2 space-x-12">
                 <div className="w-1/2 h-full">
