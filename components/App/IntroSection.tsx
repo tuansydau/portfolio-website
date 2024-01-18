@@ -11,8 +11,8 @@ export default function IntroSection({
 }: IntroSectionProps) {
   return (
     <div className="flex flex-col w-full items-center justify-between pl-24">
-      <div className="flex flex-col lg:flex-row items-center justify-center md:space-x-4 mt-32 md:mt-32 px-4">
-        <div className="flex flex-col max-w-[1600px] justify-center items-center">
+      <div className="flex flex-col lg:flex-row items-center bg-white justify-center md:space-x-4 mt-8 md:mt-8 px-4">
+        <div className="flex flex-col max-w-[1700px] justify-center items-center">
           <div className="flex">
             <div className="bg-black w-4 h-[450px] mt-24 -mr-8" />
             <div

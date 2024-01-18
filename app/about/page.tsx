@@ -5,48 +5,50 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-between">
       <Navbar highlightedButton={'about'} />
-      {/* About me */}
-      <div className="flex w-full h-fit -mt-16">
-        <div className="flex w-full justify-center items-center">
-          <div className="flex flex-col w-3/4 items-center md:flex-row md:space-x-4 md:justify-center">
-            <div className="w-full md:w-4/5 max-w-[1000px] space-y-6 text-lg border-black border bg-white px-16 py-8 rounded-xl">
-              <div className="text-4xl">Some fun tidbits about me</div>
-              <div>
-                😀 I&apos;m a full-stack software engineer in Toronto. I grew up
-                in Guelph, and moved to Toronto for school when I was 18.
-              </div>
-              <div>
-                📖 I&apos;ve been programming since I was 12 years old - I
-                started by programming Roblox games and making websites with my
-                friends! I did Software Engineering at York University and loved
-                it.
-              </div>
-              <div>
-                🔨 I focus on full-stack web development nowadays, but I have
-                always loved working on all parts of the development process -
-                especially UI/UX design.
-              </div>
-              <div>
-                ✍️ Previously, I&apos;ve interned at Tesla, CertiK, Artemis
-                Data, and a few other startups. I&apos;ve mainly done web and
-                tools development, and I have found it to be really satisfying.
-                I also love digging into other fields of programming in my free
-                time (like shaders!).
-              </div>
-              <div>
-                <p>
-                  💤 When I&apos;m not coding, you can find me in my room
-                  listening to music with a cup of tea in hand 🍵, playing
-                  Runescape, watching an F1 race 🏎️, or at a venue doing concert
-                  photography! See my work @{' '}
-                  <a className="text-[#24AF4C]" href="https://www.tuandau.ca">
-                    www.tuandau.ca
-                  </a>
-                  .
-                </p>
-              </div>
-            </div>
-          </div>
+      <div className="max-w-[800px] mt-16 mb-16">
+        <div className="flex flex-col border bg-[#eee] text-[#000] items-center px-36 py-12">
+          <p
+            className="border-b text-center w-fit"
+            style={{
+              fontFamily: 'Zodiak, serif',
+              fontSize: '3rem',
+              lineHeight: '3rem'
+            }}
+          >
+            Hi, I&apos;m Tuan!
+          </p>
+          <br />
+          <p
+            className="text-center"
+            style={{
+              fontFamily: 'Zodiak, serif',
+              fontSize: '1.5rem',
+              lineHeight: '2rem'
+            }}
+          >
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum." Section
+            1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45
+            BC "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+            sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+            aliquid ex ea commodi consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+            pariatur?"
+          </p>
         </div>
       </div>
 
