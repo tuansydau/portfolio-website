@@ -41,10 +41,10 @@ export default function IntroSection({
                   fontWeight: 100
                 }}
               >
-                Full-stack developer, designer, and occasional DevOps engineer.
-                I&apos;ve worked at industry leaders like Tesla and CertiK,
-                creating tools and pipelines to automate work that people hate
-                doing. I also love designing websites :)
+                Full-stack developer, designer, and DevOps engineer. I&apos;ve
+                worked at industry leaders like Tesla and CertiK, creating tools
+                and pipelines to automate work that people hate doing. Also an
+                avid tea, music, and book enjoyer.
               </p>
               <br />
               <p
@@ -55,8 +55,7 @@ export default function IntroSection({
                   fontWeight: 600
                 }}
               >
-                Currently: Blasting Knock2 and programming all day (I&apos;m
-                unemployed)
+                Currently: Blasting Knock2 and redesigning this website
               </p>
               <br />
               <div

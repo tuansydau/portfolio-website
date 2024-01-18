@@ -67,16 +67,16 @@ export default function Home() {
                   imagePath="/starfield-static.png"
                   linkTo="/shaders"
                 />
-                <ProjectCard
+                {/* <ProjectCard
                   title="02. Tesla Firmware OTA Tools"
                   description="Tools that I created at Tesla to help
                   speed up firmware testing within the Infotainment QA team."
                   imagePath="/tesla.png"
                   linkTo="/tesla-tools"
                   noCover
-                />
+                /> */}
                 <ProjectCard
-                  title="03. Tab2XML"
+                  title="02. Tab2XML"
                   description="A Java application that turns plaintext guitar tablature
                   into a playable MusicXML file format."
                   imagePath="/tab2xml.png"
@@ -85,7 +85,7 @@ export default function Home() {
                 />
               </div>
               <div className="flex w-full h-1/2 space-x-12">
-                <ProjectCard
+                {/* <ProjectCard
                   title="04. Tab2XML"
                   description="A Java application that turns plaintext guitar tablature
                   into a playable MusicXML file format."
@@ -100,7 +100,7 @@ export default function Home() {
                   imagePath="/tab2xml.png"
                   linkTo="https://github.com/jamesmqle/TablatureConverter"
                   targetBlank={true}
-                />
+                /> */}
                 {/* <div className="w-1/2 h-full">
                 <div className="bg-black w-full h-3/4 rounded-xl mb-2" />
                 <div className="border-b border-black mb-1">
