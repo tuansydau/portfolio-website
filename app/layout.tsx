@@ -22,7 +22,15 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <link
-          href="https://api.fontshare.com/v2/css?f[]=zodiak@400&f[]=comico@400&display=swap"
+          href="https://api.fontshare.com/v2/css?f[]=zodiak@901,700,800,401,301,400,101,1,801,701,900,300,100,2&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=comico@400&display=swap"
           rel="stylesheet"
         ></link>
       </head>

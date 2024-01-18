@@ -2,38 +2,78 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 interface ProjectCardProps {
+  category: string;
   title: string;
   imagePath: string;
   description: string;
   linkTo: string;
   targetBlank?: boolean;
   noCover?: boolean;
+  textColor?: string;
 }
 
 export default function ProjectCard({
+  category,
   title,
   imagePath,
   description,
   linkTo,
   targetBlank,
-  noCover
+  noCover,
+  textColor
 }: ProjectCardProps) {
+  const topMargin = 1;
+  const leftMargin = '2rem';
+
   return (
-    <div className="w-1/2 h-full">
+    <div className="w-full h-[600px]">
       <Link href={linkTo} target={targetBlank ? '_blank' : ''}>
-        <div className="relative w-full h-3/4 rounded-xl mb-2">
+        <div className="relative w-full h-full mb-2 hover:bg-gray-50">
           <Image
-            className=""
+            className=" hover:opacity-70"
             src={imagePath}
             alt=""
             objectFit={noCover ? '' : 'cover'}
             fill
           ></Image>
+          <p
+            className="absolute text-white"
+            style={{
+              fontFamily: 'Satoshi, sans-serif',
+              fontSize: '1rem',
+              top: topMargin.toString().concat('rem'),
+              left: leftMargin,
+              color: textColor,
+              fontWeight: 700
+            }}
+          >
+            {category}
+          </p>
+          <p
+            className="absolute text-white"
+            style={{
+              fontFamily: 'Satoshi, sans-serif',
+              fontSize: '1.25rem',
+              top: (1.75 + topMargin).toString().concat('rem'),
+              left: leftMargin,
+              color: textColor,
+              fontWeight: 900
+            }}
+          >
+            {title}
+          </p>
+          <p
+            className="absolute text-white"
+            style={{
+              width: '20vw',
+              top: (4 + topMargin).toString().concat('rem'),
+              left: leftMargin,
+              color: textColor
+            }}
+          >
+            {description}
+          </p>
         </div>
-        <div className="border-b border-black mb-1 font-medium text-2xl">
-          {title}
-        </div>
-        <div className="font-light text-2xl text-gray-700">{description}</div>
       </Link>
     </div>
   );

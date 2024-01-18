@@ -1,14 +1,16 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-between">
       <Navbar highlightedButton={'about'} />
-      <div className="max-w-[800px] mt-16 mb-16">
-        <div className="flex flex-col border bg-[#eee] text-[#000] items-center px-36 py-12">
+
+      <div className="flex space-x-16 w-full justify-center -mt-32 mb-16">
+        <div className="flex flex-col text-[#000] items-center space-y-16">
           <p
-            className="border-b text-center w-fit"
+            className="text-center w-fit"
             style={{
               fontFamily: 'Zodiak, serif',
               fontSize: '3rem',
@@ -17,19 +19,11 @@ export default function Home() {
           >
             Hi, I&apos;m Tuan!
           </p>
-          <br />
-          <p
-            className="text-center"
-            style={{
-              fontFamily: 'Zodiak, serif',
-              fontSize: '1.5rem',
-              lineHeight: '2rem'
-            }}
-          >
-            The website is currently under maintenance - If you&apos;re an
-            employer, my bad :)
-          </p>
+          <div className="relative w-48 h-64">
+            <Image src="/me.jpg" alt="" fill objectFit="cover" />
+          </div>
         </div>
+        <div className="mt-32"></div>
       </div>
 
       <Footer />
