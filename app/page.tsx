@@ -75,7 +75,7 @@ export default function Home() {
           linkTo="/the-globe"
         />
       </div>
-      <Footer />
+      <Footer dark />
     </div>
   );
 }
