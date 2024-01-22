@@ -43,7 +43,7 @@ export default function IntroSection({
                 Full-stack developer, designer, and DevOps engineer. I&apos;ve
                 worked at industry leaders like Tesla and CertiK, creating tools
                 and pipelines to automate work that people hate doing. Also an
-                avid tea, music, and book enjoyer.
+                avid tea, music, and Runescape enjoyer.
               </p>
               <br />
               <p

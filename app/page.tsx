@@ -49,13 +49,13 @@ export default function Home() {
         textExitFunction={textLeave}
         modalFunction={setModalOpen}
       />
-      <div className="flex w-full">
+      <div className="flex w-4/5 space-x-4">
         <ProjectCard
           category="Project"
           title="OpenGL Shaders"
           description="A collection of OpenGL fragment shaders that I made while
                   learning graphics processing."
-          imagePath="/Animation.gif"
+          imagePath="/Animation-3.gif"
           linkTo="/shaders"
         />
         <ProjectCard
@@ -64,18 +64,24 @@ export default function Home() {
           description="A website redesign that I helped program while interning at Big Whale Labs."
           imagePath="/bwl_homepage.png"
           linkTo="/bwl-homepage"
+          filter="grayscale(100%)"
         />
       </div>
-      <div className="flex w-full">
+      <br />
+      <div className="flex w-4/5">
         <ProjectCard
           category="Project"
           title="3D Globe Visualizing Global Transactions"
           description="A remake of a previous hackathon submission completed with Float's team at Decode 2021. Inspired by the GitHub globe."
           imagePath="/three-globe.png"
-          linkTo="/the-globe"
+          linkTo="https://github.com/trentstauff/decode-2021/tree/main/frontend"
+          targetBlank
+          filter="grayscale(100%)"
         />
       </div>
-      <Footer dark />
+      <br />
+      <br />
+      <Footer />
     </div>
   );
 }

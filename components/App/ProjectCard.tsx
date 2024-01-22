@@ -10,6 +10,8 @@ interface ProjectCardProps {
   targetBlank?: boolean;
   noCover?: boolean;
   textColor?: string;
+  imageOpacity?: string;
+  filter?: string;
 }
 
 export default function ProjectCard({
@@ -20,7 +22,9 @@ export default function ProjectCard({
   linkTo,
   targetBlank,
   noCover,
-  textColor
+  textColor,
+  imageOpacity,
+  filter
 }: ProjectCardProps) {
   const topMargin = 1;
   const leftMargin = '2rem';
@@ -34,6 +38,10 @@ export default function ProjectCard({
             alt=""
             objectFit={noCover ? '' : 'cover'}
             fill
+            style={{
+              opacity: imageOpacity ? imageOpacity : '100%',
+              filter: filter ? filter : ''
+            }}
           />
           <p
             className="absolute text-white"
