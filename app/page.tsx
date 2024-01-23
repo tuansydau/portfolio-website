@@ -27,11 +27,7 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col items-center">
-      <Navbar
-        highlightedButton={'home'}
-        buttonEnterFunction={textEnter}
-        buttonLeaveFunction={textLeave}
-      />
+      <Navbar highlightedButton={'home'} />
       <div className="cursor-outline" data-cursor-outline></div>
       <motion.div
         className="cursor z-50"

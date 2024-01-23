@@ -3,12 +3,12 @@ import Footer from '@/components/Footer';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Home() {
+export default function About() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-between">
       <Navbar highlightedButton={'about'} />
-
-      <div className="flex flex-col max-w-[2000px]">
+      <div className="mt-8" />
+      <div className="flex flex-col w-full max-w-[2000px]">
         <div className="flex justify-center w-full px-36">
           <p
             className="w-fit mb-16"
@@ -141,7 +141,79 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      <div className="mt-16" />
+      <div
+        className="flex w-full max-w-[2200px] px-36 justify-between space-x-64"
+        style={{
+          fontFamily: 'Zodiak, serif',
+          fontSize: '1.25rem',
+          lineHeight: '2rem',
+          fontWeight: 375
+        }}
+      >
+        <div className="w-full">
+          <div style={{ fontWeight: 700 }}>Work Experience</div>
+          <div>
+            <ul className="space-y-4">
+              <li className="flex flex-col">
+                <div className="flex justify-between">
+                  <p>job 1</p>
+                  <p>Year 1</p>
+                </div>
+                Role
+              </li>
+              <li className="flex flex-col">
+                <div className="flex justify-between">
+                  <p>job 1</p>
+                  <p>Year 1</p>
+                </div>
+                Role
+              </li>
+              <li className="flex flex-col">
+                <div className="flex justify-between">
+                  <p>job 1</p>
+                  <p>Year 1</p>
+                </div>
+                Role
+              </li>
+              <li className="flex flex-col">
+                <div className="flex justify-between">
+                  <p>job 1</p>
+                  <p>Year 1</p>
+                </div>
+                Role
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="w-full">
+          <div style={{ fontWeight: 700 }}>Languages & Tools</div>
+          <ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+          </ul>
+        </div>
+        <div className="w-full">
+          <div style={{ fontWeight: 700 }}>Skills</div>
+          <ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+          </ul>
+        </div>
+      </div>
+      <div className="mt-16" />
       <Footer />
     </div>
   );
