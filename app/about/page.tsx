@@ -1,15 +1,58 @@
+'use client';
+
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
 import Link from 'next/link';
+import useMousePosition from '@/utils/useMousePosition';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+
+interface MousePosition {
+  x: number;
+  y: number;
+}
 
 export default function About() {
+  const { x, y } = useMousePosition();
+  const [isHover, setIsHover] = useState<boolean>(false);
+
+  var size = isHover ? 300 : 100;
+  var color = 'white';
+  var mixBlendMode = 'difference';
+
+  const textEnter = () => setIsHover(true);
+  const textLeave = () => setIsHover(false);
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between">
+    <div className="flex min-h-screen w-full flex-col items-center justify-between">
+      <motion.div
+        className="cursor z-50"
+        style={{
+          x: x - size / 2,
+          y: y - size / 2,
+          backgroundColor: color,
+          /* 
+          // @ts-ignore */
+          mixBlendMode: mixBlendMode
+        }}
+        /*
+        // @ts-ignore */
+        animate={{
+          height: size,
+          width: size
+        }}
+        transition={{ type: 'spring', stiffness: 300 }}
+      />
       <Navbar highlightedButton={'about'} />
+
       <div className="mt-8" />
+
       <div className="flex flex-col w-full max-w-[2000px]">
-        <div className="flex w-full px-80">
+        <div
+          className="flex w-full px-80"
+          onMouseEnter={textEnter}
+          onMouseLeave={textLeave}
+        >
           <p
             className="w-full mb-16"
             style={{

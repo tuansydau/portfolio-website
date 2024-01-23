@@ -18,9 +18,9 @@ export default function Home() {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const { x, y } = useMousePosition();
   const [isHover, setIsHover] = useState<boolean>(false);
-  var size = isHover ? 250 : 15;
-  var color = isHover ? 'white' : 'black';
-  var mixBlendMode = isHover ? 'difference' : 'normal';
+  var size = isHover ? 300 : 50;
+  var color = 'white';
+  var mixBlendMode = 'difference';
 
   const textEnter = () => setIsHover(true);
   const textLeave = () => setIsHover(false);
@@ -45,7 +45,7 @@ export default function Home() {
           height: size,
           width: size
         }}
-        transition={{ type: 'tween', stiffness: '250' }}
+        transition={{ type: 'spring', stiffness: 300 }}
       />
       <Modal isModalOpen={modalOpen} modalSetter={setModalOpen} />
       <IntroSection
