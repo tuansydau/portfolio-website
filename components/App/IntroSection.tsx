@@ -10,16 +10,16 @@ export default function IntroSection({
   modalFunction
 }: IntroSectionProps) {
   return (
-    <div className="flex flex-col w-full items-center h-[800px] justify-between mt-16">
-      <div className="flex flex-col lg:flex-row items-center bg-white justify-center md:space-x-4 mt-8 md:mt-8 px-4">
+    <div
+      className="flex flex-col w-full items-center h-[800px] justify-center "
+      onMouseEnter={textEnterFunction}
+      onMouseLeave={textExitFunction}
+    >
+      <div className="flex flex-col lg:flex-row items-center bg-white justify-center md:space-x-4 -mt-16 px-4">
         <div className="flex flex-col max-w-[1200px] justify-center items-center -ml-16">
           <div className="flex">
             <div className="bg-black w-4 h-[360px] mt-8 -mr-8" />
-            <div
-              className="flex flex-col text-4xl rounded-md px-32 border-black"
-              onMouseEnter={textEnterFunction}
-              onMouseLeave={textExitFunction}
-            >
+            <div className="flex flex-col text-4xl rounded-md px-32 border-black">
               <div className="border-b-3 w-fit border-black">
                 <p
                   style={{

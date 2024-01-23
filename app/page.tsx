@@ -18,7 +18,7 @@ export default function Home() {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const { x, y } = useMousePosition();
   const [isHover, setIsHover] = useState<boolean>(false);
-  var size = isHover ? 250 : 5;
+  var size = isHover ? 250 : 15;
   var color = isHover ? 'white' : 'black';
   var mixBlendMode = isHover ? 'difference' : 'normal';
 
@@ -26,8 +26,12 @@ export default function Home() {
   const textLeave = () => setIsHover(false);
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between">
-      <Navbar highlightedButton={'home'} />
+    <div className="flex min-h-screen flex-col items-center">
+      <Navbar
+        highlightedButton={'home'}
+        buttonEnterFunction={textEnter}
+        buttonLeaveFunction={textLeave}
+      />
       <div className="cursor-outline" data-cursor-outline></div>
       <motion.div
         className="cursor z-50"
@@ -41,7 +45,11 @@ export default function Home() {
         }}
         /*
         // @ts-ignore */
-        animate={{ height: size, width: size }}
+        animate={{
+          height: size,
+          width: size
+        }}
+        transition={{ type: 'tween', stiffness: '250' }}
       />
       <Modal isModalOpen={modalOpen} modalSetter={setModalOpen} />
       <IntroSection

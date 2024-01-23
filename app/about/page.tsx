@@ -8,121 +8,138 @@ export default function Home() {
     <div className="flex min-h-screen flex-col items-center justify-between">
       <Navbar highlightedButton={'about'} />
 
-      <div className="flex space-x-16 w-full justify-center mt-32 mb-32">
-        <div className="flex flex-col text-[#000] items-center justify-center mx-96">
+      <div className="flex flex-col max-w-[2000px]">
+        <div className="flex justify-center w-full px-36">
           <p
-            className="text-center w-fit mb-16"
+            className="w-fit mb-16"
             style={{
               fontFamily: 'Zodiak, serif',
-              fontSize: '4rem',
-              lineHeight: '3rem',
-              fontWeight: 700
+              fontSize: '10rem',
+              lineHeight: '14rem',
+              fontWeight: 100
             }}
           >
-            Hi, I&apos;m Tuan!
+            Hello, potential employer!
           </p>
-          <p
-            className="text-center w-fit mb-16"
-            style={{
-              fontFamily: 'Zodiak, serif',
-              fontSize: '1.25rem',
-              lineHeight: '4rem',
-              fontWeight: 375
-            }}
-          >
-            I went to York University for Software Engineering, and currently
-            live in Guelph, Ontario. I&apos;ve worked at Tesla, CertiK, Artemis
-            Data, 4PAY Inc (x2), Big Whale Labs, and Skinopathy building
-            automation tools and build CI/CD pipelines. I also love designing
-            websites and talking to clients.
-          </p>
-          <p
-            className="text-center w-fit mb-16"
-            style={{
-              fontFamily: 'Zodiak, serif',
-              fontSize: '1.25rem',
-              lineHeight: '4rem',
-              fontWeight: 375
-            }}
-          >
-            When I&apos;m not programming, I{' '}
-            <Link
-              className="text-violet-600 hover:text-violet-400"
-              href="https://www.tuandau.ca"
-              target="_blank"
-            >
-              do DJ/event photography,
-            </Link>{' '}
-            <Link
-              className="text-blue-600 hover:text-blue-400"
-              href="https://how-dry-is-moo.vercel.app/"
-              target="_blank"
-            >
-              play a lot of Runescape,
-            </Link>{' '}
-            <Link
-              className="text-[#4d94ca] hover:text-[#8fc4ea]"
-              href="https://scuderia.alphatauri.com/en/"
-              target="_blank"
-            >
-              patiently wait for the F1 season to start,
-            </Link>{' '}
-            <Link
-              className="text-[#FF4454] hover:text-[#f4979f]"
-              href="https://tracker.gg/valorant/profile/riot/Verified%20Email%23NA1/overview"
-              target="_blank"
-            >
-              derank in Valorant,
-            </Link>{' '}
-            enjoy the photography of others, read magazines, doomscroll, geek
-            about my skincare, occasionally rewatch Silicon Valley for the 5th+
-            time, go on little nature walks, get injured on the nature walk
-            without knowing where the damage came from, pump iron,
-            chit-chat/cook with friends, and take spontaneous trips.
-          </p>
-          {/* <p
-            className="text-center w-fit mb-16"
-            style={{
-              fontFamily: 'Zodiak, serif',
-              fontSize: '2.5rem',
-              lineHeight: '2rem',
-              fontWeight: 375
-            }}
-          >
-            Quotes that I think about often
-          </p>
-          <div className="flex flex-col items-center">
+        </div>
+        <div className="flex w-full text-[#000] px-36 space-x-24">
+          <div className="w-2/12">
             <p
-              className="text-center w-64 mb-4"
+              style={{
+                fontFamily: 'Zodiak, serif',
+                fontSize: '4rem',
+                lineHeight: '4rem',
+                fontWeight: 100
+              }}
+            >
+              Welcome to my portfolio page!
+            </p>
+          </div>
+          <div className="w-5/12">
+            <p
               style={{
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1.25rem',
-                lineHeight: '2rem',
+                lineHeight: '3rem',
                 fontWeight: 375
               }}
             >
-              &quot;If you&apos;ve got health insurance I want you to prove it
-              right now&quot;
-            </p>
+              First of all, thanks for taking the time to visit my portfolio - I
+              have slaved over this portfolio for a little while, and have been{' '}
+              <b style={{ fontWeight: 900 }}>DYING</b> for someone (other than
+              my friends) to see it! Hopefully you&apos;ve enjoyed this
+              portfolio - otherwise, I&apos;ll cry. Just kidding. This website
+              was inspired by my favourite photography magazines. My old{' '}
+              <a
+                href="https://davidnngo.com/"
+                className="text-[#9975D3] font-extrabold"
+                target="_blank"
+              >
+                roommate from university
+              </a>{' '}
+              was in Graphic Design, and a love of zines was one of the things
+              that I picked up from him.
+            </p>{' '}
+            <div className="mt-8" />
             <p
-              className="text-center w-full"
               style={{
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1.25rem',
-                lineHeight: '2rem',
-                fontWeight: 500
+                lineHeight: '3rem',
+                fontWeight: 375
               }}
             >
-              <Link
-                href="https://youtu.be/nonZwh7nKUQ?si=ZaStIwTSEX5Ua7BZ&t=2125"
-                className="text-gray-600 hover:text-black"
-              >
-                - Dillon Francis
-              </Link>
+              <b style={{ fontWeight: 900 }}>But hi!</b> I&apos;m Tuan Dau, and
+              I&apos;m a new grad full stack developer. I went to York
+              University, and I&apos;ve interned at a total of 6 different
+              companies, mainly creating + designing internal tools/websites,
+              containerizing + deploying backend services, creating CI/CD
+              testing/deployment pipelines whenever I am summoned (via Slack
+              message).
             </p>
-          </div> */}
+          </div>
+          <div className="w-5/12">
+            <p
+              style={{
+                fontFamily: 'Zodiak, serif',
+                fontSize: '1.25rem',
+                lineHeight: '3rem',
+                fontWeight: 375
+              }}
+            >
+              When I&apos;m not programming, I am usually{' '}
+              <Link
+                className="font-extrabold text-violet-600 hover:text-violet-400"
+                href="https://www.tuandau.ca"
+                target="_blank"
+              >
+                doing DJ/event photography,
+              </Link>{' '}
+              <Link
+                className="font-extrabold text-blue-600 hover:text-blue-400"
+                href="https://how-dry-is-moo.vercel.app/"
+                target="_blank"
+              >
+                playing a lot of Runescape,
+              </Link>{' '}
+              <Link
+                className="font-extrabold text-[#4d94ca] hover:text-[#8fc4ea]"
+                href="https://scuderia.alphatauri.com/en/"
+                target="_blank"
+              >
+                patiently waiting for the F1 season to start,
+              </Link>{' '}
+              <Link
+                className="font-extrabold text-[#FF4454] hover:text-[#f4979f]"
+                href="https://tracker.gg/valorant/profile/riot/Verified%20Email%23NA1/overview"
+                target="_blank"
+              >
+                deranking in Valorant,
+              </Link>{' '}
+              enjoying the photography of others, reading magazines,
+              doomscrolling, geeking about my skincare, rewatching Silicon
+              Valley for the 5th+ time, going on little nature walks, getting
+              injured on the nature walk without knowing where the damage came
+              from, pumping iron, chit-chatting/cooking with friends, or taking
+              a spontaneous trips (aka. the plans were in the group chat but
+              nobody did any actual planning until a day before).
+            </p>
+            <div className="mt-8" />
+            <p
+              style={{
+                fontFamily: 'Zodiak, serif',
+                fontSize: '1.25rem',
+                lineHeight: '3rem',
+                fontWeight: 375
+              }}
+            >
+              If you&apos;re looking for a full-stack developer who can
+              design/code prototypes, as well as create infrastructure to hold
+              up their code really really quickly, I&apos;d love to talk! Thanks
+              for checking out the portfolio, hope you enjoyed this word wall.
+            </p>
+          </div>
         </div>
-        <div className="mt-32" />
       </div>
 
       <Footer />
