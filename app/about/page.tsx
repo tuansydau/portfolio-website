@@ -59,23 +59,29 @@ export default function About() {
               fontFamily: 'Zodiak, serif',
               fontSize: '7em',
               lineHeight: '10rem',
-              fontWeight: 100
+              fontWeight: 400
             }}
           >
-            Hello, potential employer!
+            Hello, potential employer.
           </p>
         </div>
         <div className="flex w-full text-[#000] px-80 space-x-16">
-          <div className="w-2/12">
+          <div
+            className="flex w-1/12 rotate-180 justify-end items-end"
+            style={{
+              writingMode: 'vertical-lr',
+              textOrientation: 'sideways'
+            }}
+          >
             <p
               style={{
                 fontFamily: 'Zodiak, serif',
-                fontSize: '3rem',
-                lineHeight: '3rem',
-                fontWeight: 100
+                fontSize: '6rem',
+                lineHeight: '5rem',
+                fontWeight: 200
               }}
             >
-              Welcome to my portfolio page!
+              Welcome!
             </p>
           </div>
           <div className="w-5/12">
@@ -84,14 +90,13 @@ export default function About() {
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
                 lineHeight: '2.25rem',
-                fontWeight: 375
+                fontWeight: 400
               }}
             >
               First of all, thanks for taking the time to visit my portfolio, I
               have been <b style={{ fontWeight: 900 }}>DYING</b> for someone
               (other than my friends) to see the portfolio site! This website
-              was largely inspired by my favourite photography magazines - my
-              old{' '}
+              was largely inspired by random photography magazines - my old{' '}
               <a
                 href="https://davidnngo.com/"
                 className="text-[#9975D3] font-extrabold"
@@ -99,8 +104,8 @@ export default function About() {
               >
                 roommate from university
               </a>{' '}
-              was in Graphic Design when we lived together, and a love of zines
-              was one of the things that I picked up from him, as well as
+              was studying Graphic Design when we lived together, and a love of
+              zines was one of the things that I picked up from him, as well as
               actually cooking food instead of getting takeout every day.
             </p>{' '}
             <div className="mt-8" />
@@ -109,7 +114,7 @@ export default function About() {
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
                 lineHeight: '2.25rem',
-                fontWeight: 375
+                fontWeight: 400
               }}
             >
               <b style={{ fontWeight: 900 }}>But hi!</b> I&apos;m Tuan Dau, and
@@ -127,7 +132,7 @@ export default function About() {
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
                 lineHeight: '2.25rem',
-                fontWeight: 375
+                fontWeight: 400
               }}
             >
               When I&apos;m not programming, I am usually{' '}
@@ -173,13 +178,13 @@ export default function About() {
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
                 lineHeight: '2.25rem',
-                fontWeight: 375
+                fontWeight: 400
               }}
             >
               If you&apos;re looking for a full-stack developer who can
               design/code prototypes, as well as create infrastructure to hold
               up their code really really quickly, I&apos;d love to talk! Thanks
-              for checking out the portfolio! Hopefully you&apos;ve enjoyed this
+              for checking out my portfolio! Hopefully you&apos;ve enjoyed this
               website, I&apos;ll cry otherwise. Just kidding.
             </p>
           </div>
@@ -192,7 +197,7 @@ export default function About() {
           fontFamily: 'Zodiak, serif',
           fontSize: '1rem',
           lineHeight: '2.25rem',
-          fontWeight: 375
+          fontWeight: 400
         }}
       >
         <div className="w-full">
