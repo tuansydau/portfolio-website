@@ -9,26 +9,26 @@ export default function About() {
       <Navbar highlightedButton={'about'} />
       <div className="mt-8" />
       <div className="flex flex-col w-full max-w-[2000px]">
-        <div className="flex justify-center w-full px-36">
+        <div className="flex w-full px-80">
           <p
-            className="w-fit mb-16"
+            className="w-full mb-16"
             style={{
               fontFamily: 'Zodiak, serif',
-              fontSize: '10rem',
-              lineHeight: '14rem',
+              fontSize: '7em',
+              lineHeight: '10rem',
               fontWeight: 100
             }}
           >
             Hello, potential employer!
           </p>
         </div>
-        <div className="flex w-full text-[#000] px-36 space-x-24">
+        <div className="flex w-full text-[#000] px-80 space-x-16">
           <div className="w-2/12">
             <p
               style={{
                 fontFamily: 'Zodiak, serif',
-                fontSize: '4rem',
-                lineHeight: '4rem',
+                fontSize: '3rem',
+                lineHeight: '3rem',
                 fontWeight: 100
               }}
             >
@@ -39,17 +39,16 @@ export default function About() {
             <p
               style={{
                 fontFamily: 'Zodiak, serif',
-                fontSize: '1.25rem',
-                lineHeight: '3rem',
+                fontSize: '1rem',
+                lineHeight: '2.25rem',
                 fontWeight: 375
               }}
             >
-              First of all, thanks for taking the time to visit my portfolio - I
-              have slaved over this portfolio for a little while, and have been{' '}
-              <b style={{ fontWeight: 900 }}>DYING</b> for someone (other than
-              my friends) to see it! Hopefully you&apos;ve enjoyed this
-              portfolio - otherwise, I&apos;ll cry. Just kidding. This website
-              was inspired by my favourite photography magazines. My old{' '}
+              First of all, thanks for taking the time to visit my portfolio, I
+              have been <b style={{ fontWeight: 900 }}>DYING</b> for someone
+              (other than my friends) to see the portfolio site! This website
+              was largely inspired by my favourite photography magazines - my
+              old{' '}
               <a
                 href="https://davidnngo.com/"
                 className="text-[#9975D3] font-extrabold"
@@ -57,15 +56,16 @@ export default function About() {
               >
                 roommate from university
               </a>{' '}
-              was in Graphic Design, and a love of zines was one of the things
-              that I picked up from him.
+              was in Graphic Design when we lived together, and a love of zines
+              was one of the things that I picked up from him, as well as
+              actually cooking food instead of getting takeout every day.
             </p>{' '}
             <div className="mt-8" />
             <p
               style={{
                 fontFamily: 'Zodiak, serif',
-                fontSize: '1.25rem',
-                lineHeight: '3rem',
+                fontSize: '1rem',
+                lineHeight: '2.25rem',
                 fontWeight: 375
               }}
             >
@@ -73,17 +73,17 @@ export default function About() {
               I&apos;m a new grad full stack developer. I went to York
               University, and I&apos;ve interned at a total of 6 different
               companies, mainly creating + designing internal tools/websites,
-              containerizing + deploying backend services, creating CI/CD
-              testing/deployment pipelines whenever I am summoned (via Slack
-              message).
+              containerizing + deploying backend services, and creating CI/CD
+              testing/deployment pipelines whenever I am summoned via Slack
+              message.
             </p>
           </div>
           <div className="w-5/12">
             <p
               style={{
                 fontFamily: 'Zodiak, serif',
-                fontSize: '1.25rem',
-                lineHeight: '3rem',
+                fontSize: '1rem',
+                lineHeight: '2.25rem',
                 fontWeight: 375
               }}
             >
@@ -122,32 +122,33 @@ export default function About() {
               injured on the nature walk without knowing where the damage came
               from, pumping iron, chit-chatting/cooking with friends, or taking
               a spontaneous trips (aka. the plans were in the group chat but
-              nobody did any actual planning until a day before).
+              nobody did any actual planning until the night before).
             </p>
             <div className="mt-8" />
             <p
               style={{
                 fontFamily: 'Zodiak, serif',
-                fontSize: '1.25rem',
-                lineHeight: '3rem',
+                fontSize: '1rem',
+                lineHeight: '2.25rem',
                 fontWeight: 375
               }}
             >
               If you&apos;re looking for a full-stack developer who can
               design/code prototypes, as well as create infrastructure to hold
               up their code really really quickly, I&apos;d love to talk! Thanks
-              for checking out the portfolio, hope you enjoyed this word wall.
+              for checking out the portfolio! Hopefully you&apos;ve enjoyed this
+              website, I&apos;ll cry otherwise. Just kidding.
             </p>
           </div>
         </div>
       </div>
       <div className="mt-16" />
       <div
-        className="flex w-full max-w-[2200px] px-36 justify-between space-x-64"
+        className="flex w-full max-w-[2200px] px-80 justify-between space-x-64"
         style={{
           fontFamily: 'Zodiak, serif',
-          fontSize: '1.25rem',
-          lineHeight: '2rem',
+          fontSize: '1rem',
+          lineHeight: '2.25rem',
           fontWeight: 375
         }}
       >
