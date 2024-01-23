@@ -24,7 +24,7 @@ export default function About() {
   const textEnter = () => setIsHover(true);
   const textLeave = () => setIsHover(false);
   return (
-    <div className="flex min-h-screen w-full flex-col items-center justify-between">
+    <div className="flex min-h-screen w-full flex-col justify-center items-center">
       <motion.div
         className="cursor z-50"
         style={{
@@ -45,27 +45,27 @@ export default function About() {
       />
       <Navbar highlightedButton={'about'} />
 
-      <div className="mt-8" />
-
+      {/* <div className="flex w-full h-[1px] bg-[#222]"></div> */}
       <div className="flex flex-col w-full max-w-[2000px]">
         <div
-          className="flex w-full px-80"
+          className="flex w-full px-80 justify-between items-start"
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
         >
           <p
-            className="w-full mb-16"
+            className="w-8/12 mb-16"
             style={{
               fontFamily: 'Zodiak, serif',
-              fontSize: '7em',
-              lineHeight: '10rem',
+              fontSize: '6.25em',
+              lineHeight: '9rem',
               fontWeight: 400
             }}
           >
             Hello, potential employer.
           </p>
+          {/* <div className="flex w-8 h-8 bg-[#222] mt-9"></div> */}
         </div>
-        <div className="flex w-full text-[#000] px-80 space-x-16">
+        <div className="flex w-full px-80 space-x-16">
           <div
             className="flex w-1/12 rotate-180 justify-end items-end"
             style={{
@@ -76,9 +76,9 @@ export default function About() {
             <p
               style={{
                 fontFamily: 'Zodiak, serif',
-                fontSize: '6rem',
+                fontSize: '5.75rem',
                 lineHeight: '5rem',
-                fontWeight: 200
+                fontWeight: 300
               }}
             >
               Welcome!
@@ -89,14 +89,14 @@ export default function About() {
               style={{
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
-                lineHeight: '2.25rem',
+                lineHeight: '2rem',
                 fontWeight: 400
               }}
             >
               First of all, thanks for taking the time to visit my portfolio, I
               have been <b style={{ fontWeight: 900 }}>DYING</b> for someone
               (other than my friends) to see the portfolio site! This website
-              was largely inspired by random photography magazines - my old{' '}
+              was largely inspired by photography magazines - my old{' '}
               <a
                 href="https://davidnngo.com/"
                 className="text-[#9975D3] font-extrabold"
@@ -113,7 +113,7 @@ export default function About() {
               style={{
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
-                lineHeight: '2.25rem',
+                lineHeight: '2rem',
                 fontWeight: 400
               }}
             >
@@ -131,7 +131,7 @@ export default function About() {
               style={{
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
-                lineHeight: '2.25rem',
+                lineHeight: '2rem',
                 fontWeight: 400
               }}
             >
@@ -177,7 +177,7 @@ export default function About() {
               style={{
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
-                lineHeight: '2.25rem',
+                lineHeight: '2rem',
                 fontWeight: 400
               }}
             >
