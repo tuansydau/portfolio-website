@@ -48,17 +48,17 @@ export default function About() {
       {/* <div className="flex w-full h-[1px] bg-[#222]"></div> */}
       <div className="flex flex-col w-full max-w-[2000px]">
         <div
-          className="flex w-full px-80 justify-between items-start"
+          className="flex w-full px-80 justify-between items-start mt-12"
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
         >
           <p
-            className="w-8/12 mb-16"
+            className="w-full mb-16"
             style={{
               fontFamily: 'Zodiak, serif',
-              fontSize: '6.25em',
-              lineHeight: '9rem',
-              fontWeight: 400
+              fontSize: '8em',
+              lineHeight: '8rem',
+              fontWeight: 500
             }}
           >
             Hello, potential employer.
@@ -66,31 +66,25 @@ export default function About() {
           {/* <div className="flex w-8 h-8 bg-[#222] mt-9"></div> */}
         </div>
         <div className="flex w-full px-80 space-x-16">
-          <div
-            className="flex w-1/12 rotate-180 justify-end items-end"
-            style={{
-              writingMode: 'vertical-lr',
-              textOrientation: 'sideways'
-            }}
-          >
-            <p
+          <div className="flex w-2/12">
+            {/* <p
               style={{
                 fontFamily: 'Zodiak, serif',
-                fontSize: '5.75rem',
-                lineHeight: '5rem',
-                fontWeight: 300
+                fontSize: '3rem',
+                lineHeight: '4rem',
+                fontWeight: 450
               }}
             >
-              Welcome!
-            </p>
+              Welcome to my portfolio site!
+            </p> */}
           </div>
           <div className="w-5/12">
             <p
               style={{
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
-                lineHeight: '2rem',
-                fontWeight: 400
+                lineHeight: '2.25rem',
+                fontWeight: 425
               }}
             >
               First of all, thanks for taking the time to visit my portfolio, I
@@ -113,8 +107,8 @@ export default function About() {
               style={{
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
-                lineHeight: '2rem',
-                fontWeight: 400
+                lineHeight: '2.25rem',
+                fontWeight: 425
               }}
             >
               <b style={{ fontWeight: 900 }}>But hi!</b> I&apos;m Tuan Dau, and
@@ -131,20 +125,20 @@ export default function About() {
               style={{
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
-                lineHeight: '2rem',
-                fontWeight: 400
+                lineHeight: '2.25rem',
+                fontWeight: 425
               }}
             >
               When I&apos;m not programming, I am usually{' '}
               <Link
-                className="font-extrabold text-violet-600 hover:text-violet-400"
+                className="font-extrabold text-violet-600 hover:text-viole: 450"
                 href="https://www.tuandau.ca"
                 target="_blank"
               >
                 doing DJ/event photography,
               </Link>{' '}
               <Link
-                className="font-extrabold text-blue-600 hover:text-blue-400"
+                className="font-extrabold text-blue-600 hover:text-blu: 450"
                 href="https://how-dry-is-moo.vercel.app/"
                 target="_blank"
               >
@@ -177,8 +171,8 @@ export default function About() {
               style={{
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
-                lineHeight: '2rem',
-                fontWeight: 400
+                lineHeight: '2.25rem',
+                fontWeight: 425
               }}
             >
               If you&apos;re looking for a full-stack developer who can
