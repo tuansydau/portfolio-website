@@ -9,7 +9,7 @@ export default function Shaders() {
     <div className="flex min-h-screen flex-col justify-between">
       <Navbar />
       {/* Intro section */}
-      <div className="flex flex-col w-full h-full items-center text-xl">
+      {/* <div className="flex flex-col w-full h-full items-center text-xl">
         <div className="mt-16 px-72">
           <div className="w-full flex h-[400px]  border border-black">
             <div className="flex relative w-1/3 bg-black h-[400px]">
@@ -62,9 +62,9 @@ export default function Shaders() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="flex flex-col w-full mt-96 px-48 text-xl">
+      {/* <div className="flex flex-col w-full mt-96 px-48 text-xl">
         <div className="flex flex-col border py-24 px-16 bg-white border-black rounded-xl">
           <div className="flex items-center">
             <div className="w-2/3 pr-32 -mt-16">
@@ -156,9 +156,9 @@ export default function Shaders() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="mt-96 px-48 text-center mb-16">
+      {/* <div className="mt-96 px-48 text-center mb-16">
         <div className="py-16 px-8 rounded-xl border-8 border-black bg-white ">
           <div
             className="mt-6 text-3xl font-light"
@@ -178,9 +178,9 @@ export default function Shaders() {
             Fragment Shaders
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="flex w-full mt-96 px-48 text-xl">
+      {/* <div className="flex w-full mt-96 px-48 text-xl">
         <div className="flex flex-col border border-black px-8 py-24 rounded-xl bg-white items-center">
           <div className="flex">
             <div className="-mt-8 w-[450px] h-[550px] border-3 border-black px-4 pt-4 pb-8 rounded-md -rotate-2 bg-white">
@@ -238,11 +238,11 @@ export default function Shaders() {
                   <Image src="/Animation-2.gif" alt="" fill objectFit="cover" />
                 </div>
               </div>
-              {/* <div className="w-1/3 text-lg text-center">
+              <div className="w-1/3 text-lg text-center">
                 <div className="relative w-full h-[400px] bg-black">
-                  <Image src="/Animation.gif" alt="" fill objectFit="cover" />
+                  <Image src="/Animation-3.gif" alt="" fill objectFit="cover" />
                 </div>
-              </div> */}
+              </div>
             </div>
             <div className="mt-4 text-xl">
               My up to date shader work will be posted here:{' '}
@@ -255,7 +255,7 @@ export default function Shaders() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="mb-72" />
 
