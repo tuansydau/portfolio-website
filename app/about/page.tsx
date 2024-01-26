@@ -24,7 +24,7 @@ export default function About() {
   const textEnter = () => setIsHover(true);
   const textLeave = () => setIsHover(false);
   return (
-    <div className="flex min-h-screen w-full flex-col justify-center items-center">
+    <div className="flex min-h-screen w-full flex-col justify-between items-center">
       <motion.div
         className="cursor z-50"
         style={{
@@ -53,37 +53,25 @@ export default function About() {
           onMouseLeave={textLeave}
         >
           <p
-            className="w-full mb-16"
+            className="w-11/12 mb-16"
             style={{
               fontFamily: 'Zodiak, serif',
-              fontSize: '8em',
-              lineHeight: '8rem',
+              fontSize: '6.5rem',
+              lineHeight: '7.5rem',
               fontWeight: 500
             }}
           >
             Hello, potential employer.
           </p>
-          {/* <div className="flex w-8 h-8 bg-[#222] mt-9"></div> */}
         </div>
         <div className="flex w-full px-80 space-x-16">
-          <div className="flex w-2/12">
-            {/* <p
-              style={{
-                fontFamily: 'Zodiak, serif',
-                fontSize: '3rem',
-                lineHeight: '4rem',
-                fontWeight: 450
-              }}
-            >
-              Welcome to my portfolio site!
-            </p> */}
-          </div>
+          <div className="flex w-2/12" />
           <div className="w-5/12">
             <p
               style={{
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
-                lineHeight: '2.25rem',
+                lineHeight: '1.85rem',
                 fontWeight: 425
               }}
             >
@@ -107,7 +95,7 @@ export default function About() {
               style={{
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
-                lineHeight: '2.25rem',
+                lineHeight: '1.85rem',
                 fontWeight: 425
               }}
             >
@@ -125,7 +113,7 @@ export default function About() {
               style={{
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
-                lineHeight: '2.25rem',
+                lineHeight: '1.85rem',
                 fontWeight: 425
               }}
             >
@@ -171,7 +159,7 @@ export default function About() {
               style={{
                 fontFamily: 'Zodiak, serif',
                 fontSize: '1rem',
-                lineHeight: '2.25rem',
+                lineHeight: '1.85rem',
                 fontWeight: 425
               }}
             >
@@ -183,79 +171,143 @@ export default function About() {
             </p>
           </div>
         </div>
+        <div className="mt-16" />
+        <div className="flex w-full justify-end px-80">
+          <div className="w-6 h-6 bg-black"></div>
+        </div>
       </div>
-      <div className="mt-16" />
-      <div
-        className="flex w-full max-w-[2200px] px-80 justify-between space-x-64"
-        style={{
-          fontFamily: 'Zodiak, serif',
-          fontSize: '1rem',
-          lineHeight: '2.25rem',
-          fontWeight: 400
-        }}
-      >
-        <div className="w-full">
-          <div style={{ fontWeight: 700 }}>Work Experience</div>
-          <div>
-            <ul className="space-y-4">
-              <li className="flex flex-col">
-                <div className="flex justify-between">
-                  <p>job 1</p>
-                  <p>Year 1</p>
+
+      <div className="mt-24" />
+      <div className="flex w-full justify-center max-w-[2000px] px-80">
+        <div
+          className="flex w-full justify-between"
+          style={{
+            fontFamily: 'satoshi, serif',
+            fontSize: '1rem',
+            lineHeight: '1.85rem',
+            fontWeight: 400
+          }}
+        >
+          <div className="w-7/12 ">
+            <div style={{ fontSize: '1.25rem', fontWeight: 700 }}>
+              Work Experience
+            </div>
+            <div className="mt-4" />
+            <div className="">
+              <ul className="w-full space-y-4">
+                <li className="flex flex-col">
+                  <div className="flex justify-between font-bold bg-blackl">
+                    <p>Skinopathy</p>
+                    <p>Jan 2023 - May 2023</p>
+                  </div>
+                  <p className="w-9/12 leading-5">
+                    Software Engineer Intern - Backend/DevOps
+                  </p>
+                </li>
+                <li className="flex flex-col">
+                  <div className="flex justify-between font-bold">
+                    <p>Artemis Data</p>
+                    <p>Aug 2022 - Dec 2022</p>
+                  </div>
+                  <p className="w-9/12 leading-5">
+                    Software Engineer Intern - Frontend
+                  </p>
+                </li>
+                <li className="flex flex-col">
+                  <div className="flex justify-between font-bold">
+                    <p>Big Whale Labs</p>
+                    <p>May 2022 - Aug 2022</p>
+                  </div>
+                  <p className="w-9/12 leading-5">
+                    Software Engineer Intern - Frontend
+                  </p>
+                </li>
+                <li className="flex flex-col">
+                  <div className="flex justify-between font-bold">
+                    <p>Tesla</p>
+                    <p>Jan 2022 - Apr 2022</p>
+                  </div>
+                  <p className="w-9/12 leading-5">
+                    Software Engineer Intern - Full-Stack (Infotainment QA Tools
+                    Team)
+                  </p>
+                </li>{' '}
+                <li className="flex flex-col">
+                  <div className="flex justify-between font-bold">
+                    <p>CertiK</p>
+                    <p>Sep 2021 - Dec 2021</p>
+                  </div>
+                  <p className="w-9/12 leading-5">
+                    Software Engineer Intern - Backend, Static Analysis Team
+                  </p>
+                </li>{' '}
+                <li className="flex flex-col">
+                  <div className="flex justify-between font-bold">
+                    <p>4PAY Inc.</p>
+                    <p>May 2021 - Aug 2021</p>
+                  </div>
+                  <p className="w-9/12 leading-5">
+                    Software Engineer Intern - Backend, KYC Verification
+                  </p>
+                </li>{' '}
+                <li className="flex flex-col">
+                  <div className="flex justify-between font-bold">
+                    <p>4PAY Inc.</p>
+                    <p>Jan 2020 - Sep 2020</p>
+                  </div>
+                  <p className="w-9/12 leading-5">
+                    Technical Systems Analyst Intern - Payments
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex flex-col w-4/12 items-end">
+            <div>
+              <div className="mt-11"></div>
+              <div className="">
+                <div style={{ fontSize: '1.25rem', fontWeight: 700 }}>
+                  Languages & Tools
+                  <div className="mt-2" />
                 </div>
-                Role
-              </li>
-              <li className="flex flex-col">
-                <div className="flex justify-between">
-                  <p>job 1</p>
-                  <p>Year 1</p>
+                <ul
+                  style={{
+                    listStyleType: 'circle',
+                    listStylePosition: 'inside'
+                  }}
+                >
+                  <li>Typescript</li>
+                  <li>React</li>
+                  <li>Python</li>
+                  <li>Golang</li>
+                  <li>Java</li>
+                  <li>Docker</li>
+                  <li>Bash</li>
+                </ul>
+                <div className="mt-8"></div>
+              </div>
+              <div className="">
+                <div style={{ fontSize: '1.25rem', fontWeight: 700 }}>
+                  Skills
                 </div>
-                Role
-              </li>
-              <li className="flex flex-col">
-                <div className="flex justify-between">
-                  <p>job 1</p>
-                  <p>Year 1</p>
-                </div>
-                Role
-              </li>
-              <li className="flex flex-col">
-                <div className="flex justify-between">
-                  <p>job 1</p>
-                  <p>Year 1</p>
-                </div>
-                Role
-              </li>
-            </ul>
+                <div className="mt-2" />
+                <ul
+                  style={{
+                    listStyleType: 'circle',
+                    listStylePosition: 'inside'
+                  }}
+                >
+                  <li>Frontend Development</li>
+                  <li>API Design + Implementation</li>
+                  <li>Deployments + CI/CD Pipelines</li>
+                  <li>QA Tooling/Automated Testing</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="w-full">
-          <div style={{ fontWeight: 700 }}>Languages & Tools</div>
-          <ul>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-          </ul>
-        </div>
-        <div className="w-full">
-          <div style={{ fontWeight: 700 }}>Skills</div>
-          <ul>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-            <li>Item</li>
-          </ul>
-        </div>
       </div>
+      <div className="mt-24" />
       <div className="mt-16" />
       <Footer />
     </div>
