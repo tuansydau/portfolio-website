@@ -8,6 +8,57 @@ export default function Shaders() {
   return (
     <div className="flex min-h-screen flex-col justify-between">
       <Navbar />
+
+      <div className="min-h-screen flex flex-col justify-center">
+        <div className="flex items-center">
+          <div
+            className="-ml-80"
+            style={{
+              fontFamily: 'zodiak, serif',
+              fontSize: '48rem',
+              lineHeight: '48rem',
+              fontWeight: 100
+            }}
+          >
+            01
+          </div>
+          <div className="flex flex-col bg-blue-50 ml-80 p-16">
+            <div
+              style={{ fontSize: '4rem', lineHeight: '4rem', fontWeight: 600 }}
+            >
+              OpenGL Shaders
+            </div>
+            <div
+              className="mt-4"
+              style={{ fontSize: '3rem', lineHeight: '3rem', fontWeight: 300 }}
+            >
+              Side Project
+            </div>
+            <div
+              className="mt-4 w-2/3"
+              style={{
+                fontSize: '1.5rem',
+                lineHeight: '2rem',
+                fontWeight: 300
+              }}
+            >
+              A collection of OpenGL fragment shaders that I wrote to explore
+              the field of graphics programming.
+            </div>
+            <div className="mt-4" />
+            <ul>
+              <li>
+                <b>Categories/Tools:</b>
+              </li>
+              <li>OpenGL</li>
+              <li>GLSL</li>
+              <li>Graphics Programming</li>
+              <li>GPU Workloads</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       {/* Intro section */}
       {/* <div className="flex flex-col w-full h-full items-center text-xl">
         <div className="mt-16 px-72">
@@ -256,8 +307,8 @@ export default function Shaders() {
           </div>
         </div>
       </div> */}
-
-      <div className="mb-72" />
+      {/* 
+      <div className="mb-72" /> */}
 
       <Footer />
     </div>
