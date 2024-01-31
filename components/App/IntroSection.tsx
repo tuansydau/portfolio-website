@@ -71,13 +71,13 @@ export default function IntroSection({
       <div className="w-full h-full max-w-[2000px]">
         <div
           className="w-full h-full"
-          style={{ fontFamily: 'zodiak' }}
+          style={{ fontFamily: 'satoshi' }}
           onMouseEnter={textEnterFunction}
           onMouseLeave={textExitFunction}
         >
-          <div className="w-full h-full flex flex-col items-start justify-between">
+          <div className="w-full h-full flex flex-col items-center justify-between">
             <div
-              className="pl-16 -mt-24"
+              className="-mt-24"
               style={{
                 fontSize: '14rem',
                 lineHeight: '14rem',
@@ -86,41 +86,15 @@ export default function IntroSection({
             >
               programmer
             </div>
-            <div className="flex w-full justify-center items-center mt-24">
-              <div className="w-1/6" style={{ fontSize: '.75rem' }}>
-                <div>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industrys
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum. Lorem
-                  Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industrys standard dummy
-                  text ever since the 1500s, when an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged.
-                  It was popularised in the 1960s with the release of Letraset
-                  sheets containing Lorem Ipsum passages, and more recently with
-                  desktop publishing software like Aldus PageMaker including
-                  versions of Lorem Ipsum.
-                </div>
-              </div>
+            <div className="flex flex-col w-full items-center">
               <div
-                className="flex justify-center items-center w-1/2 -mt-8"
+                className="flex justify-center items-center w-1/2"
                 style={{ fontSize: '2rem' }}
               >
-                tuan dau:{' '}
-                <b className="pl-3" style={{ fontWeight: 900 }}>
-                  portfolio website
-                </b>
+                <b style={{ fontWeight: 900 }}>tuan dau: </b>
+                <div className="pl-2">portfolio website</div>
               </div>
-              <div className="w-1/6" style={{ fontSize: '.75rem' }}>
+              <div className="w-1/2 text-center" style={{ fontSize: '.95rem' }}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industrys standard dummy text
                 ever since the 1500s, when an unknown printer took a galley of
@@ -143,7 +117,7 @@ export default function IntroSection({
               </div>
             </div>
             <div
-              className="flex justify-end w-full pr-16 mt-24"
+              className="flex justify-center w-full"
               style={{ fontSize: '7rem', lineHeight: '7rem', fontWeight: 900 }}
             >
               <div>(sometimes designer)</div>

@@ -22,7 +22,7 @@ export default function Navbar({
   return (
     <div
       className="z-10 flex w-full justify-between items-center space-x-12 py-6 px-8 border-black"
-      style={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}
+      // style={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}
     >
       <Link href="/">
         <Image

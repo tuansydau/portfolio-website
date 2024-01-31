@@ -45,6 +45,8 @@ export default function About() {
       />
       <Navbar highlightedButton={'about'} />
 
+      {/* Hello Potential Employer Blurb */}
+
       {/* <div className="flex w-full h-[1px] bg-[#222]"></div> */}
       <div className="flex flex-col w-full max-w-[2000px]">
         <div
@@ -177,6 +179,8 @@ export default function About() {
         </div>
       </div>
 
+      {/* Work Summary */}
+
       <div className="mt-24" />
       <div className="flex w-full justify-center max-w-[2000px] px-80">
         <div
@@ -188,7 +192,7 @@ export default function About() {
             fontWeight: 400
           }}
         >
-          <div className="w-7/12 ">
+          <div className="w-7/12">
             <div style={{ fontSize: '1.25rem', fontWeight: 700 }}>
               Work Experience
             </div>
@@ -307,7 +311,12 @@ export default function About() {
           </div>
         </div>
       </div>
+
       <div className="mt-24" />
+
+      {/*  */}
+      <div>Like my work? Let&apos;s talk :-)</div>
+
       <div className="mt-16" />
       <Footer />
     </div>

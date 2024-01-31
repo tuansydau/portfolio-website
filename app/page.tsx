@@ -54,8 +54,8 @@ export default function Home() {
         textExitFunction={textLeave}
         modalFunction={setModalOpen}
       />
-      <div className="mt-48"></div>
-      <div className="flex flex-col w-full px-60 max-w-[2000px]">
+      <div className="mt-32"></div>
+      <div className="flex flex-col w-full px-24 max-w-[2000px]">
         <div className="flex w-full space-x-4">
           <ProjectCard
             category="Project"

@@ -14,7 +14,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #000;
+  background: #000000;
   border-radius: 8px;
   background-clip: content-box;
   border: 2px solid transparent;
@@ -22,7 +22,8 @@
 
 body {
   background-size: 80px 80px;
-  background-color: white;
+  background-color: #fff;
+  /* background-color: #e7eddb; */
   /* background-image: radial-gradient(circle, #d2d2d2 2px, rgba(0, 0, 0, 0) 1px); */
 }
 

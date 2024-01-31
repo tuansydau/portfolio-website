@@ -57,12 +57,12 @@ export default function ProjectCard({
           <p
             className="absolute text-white"
             style={{
-              fontFamily: 'Satoshi, sans-serif',
+              fontFamily: 'satoshi, sans-serif',
               fontSize: '1.25rem',
               top: (1.75 + topMargin).toString().concat('rem'),
               left: leftMargin,
               color: textColor,
-              fontWeight: 900
+              fontWeight: 800
             }}
           >
             {title}

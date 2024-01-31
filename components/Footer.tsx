@@ -9,7 +9,7 @@ const whiteButtonClass =
 const darkButtonClass =
   'border-white text-white border rounded-full py-2 px-8 bg-[#050D21] hover:bg-white hover:text-black border-b-3 border-r-2 hover:cursor-pointer';
 
-const whiteNavbarClass = 'flex bg-white w-full justify-center';
+const whiteNavbarClass = 'flex w-full justify-center';
 const darkNavbarClass = 'flex bg-[#050D21] w-full justify-center';
 interface FooterPropTypes {
   buttonEnterFunction?: () => void;
