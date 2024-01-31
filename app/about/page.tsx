@@ -7,6 +7,7 @@ import Link from 'next/link';
 import useMousePosition from '@/utils/useMousePosition';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Modal from '@/components/Modal';
 
 interface MousePosition {
   x: number;
@@ -14,6 +15,7 @@ interface MousePosition {
 }
 
 export default function About() {
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
   const { x, y } = useMousePosition();
   const [isHover, setIsHover] = useState<boolean>(false);
 
@@ -25,6 +27,7 @@ export default function About() {
   const textLeave = () => setIsHover(false);
   return (
     <div className="flex min-h-screen w-full flex-col justify-between items-center">
+      <Modal isModalOpen={modalOpen} modalSetter={setModalOpen} />
       <motion.div
         className="cursor z-50"
         style={{
@@ -44,26 +47,24 @@ export default function About() {
         transition={{ type: 'spring', stiffness: 300 }}
       />
       <Navbar highlightedButton={'about'} />
-
       {/* Hello Potential Employer Blurb */}
-
       {/* <div className="flex w-full h-[1px] bg-[#222]"></div> */}
-      <div className="flex flex-col w-full max-w-[2000px]">
-        <div
-          className="flex w-full px-80 justify-between items-start mt-12"
-          onMouseEnter={textEnter}
-          onMouseLeave={textLeave}
-        >
+      <div
+        className="flex flex-col w-full max-w-[2000px]"
+        onMouseEnter={textEnter}
+        onMouseLeave={textLeave}
+      >
+        <div className="flex w-full px-80 justify-between items-start mt-12">
           <p
             className="w-11/12 mb-16"
             style={{
-              fontFamily: 'Zodiak, serif',
+              fontFamily: 'satoshi, serif',
               fontSize: '6.5rem',
               lineHeight: '7.5rem',
-              fontWeight: 500
+              fontWeight: 900
             }}
           >
-            Hello, potential employer.
+            <span style={{ color: '#3ec760' }}>Hey, </span>potential employer!
           </p>
         </div>
         <div className="flex w-full px-80 space-x-16">
@@ -71,7 +72,7 @@ export default function About() {
           <div className="w-5/12">
             <p
               style={{
-                fontFamily: 'Zodiak, serif',
+                fontFamily: 'satoshi, serif',
                 fontSize: '1rem',
                 lineHeight: '1.85rem',
                 fontWeight: 425
@@ -95,7 +96,7 @@ export default function About() {
             <div className="mt-8" />
             <p
               style={{
-                fontFamily: 'Zodiak, serif',
+                fontFamily: 'satoshi, serif',
                 fontSize: '1rem',
                 lineHeight: '1.85rem',
                 fontWeight: 425
@@ -113,13 +114,13 @@ export default function About() {
           <div className="w-5/12">
             <p
               style={{
-                fontFamily: 'Zodiak, serif',
+                fontFamily: 'satoshi, serif',
                 fontSize: '1rem',
                 lineHeight: '1.85rem',
                 fontWeight: 425
               }}
             >
-              When I&apos;m not programming, I am usually{' '}
+              When I&apos;m not programming, I usually enjoy{' '}
               <Link
                 className="font-extrabold text-violet-600 hover:text-viole: 450"
                 href="https://www.tuandau.ca"
@@ -150,16 +151,15 @@ export default function About() {
               </Link>{' '}
               enjoying the photography of others, reading magazines,
               doomscrolling, geeking about my skincare, rewatching Silicon
-              Valley for the 5th+ time, going on little nature walks, getting
-              injured on the nature walk without knowing where the damage came
-              from, pumping iron, chit-chatting/cooking with friends, or taking
-              a spontaneous trips (aka. the plans were in the group chat but
-              nobody did any actual planning until the night before).
+              Valley for the 5th+ time, going on nature walks, getting injured
+              on my nature walks without knowing how, pumping iron,
+              chit-chatting/cooking with friends, and taking spontaneous trips
+              to new places.
             </p>
             <div className="mt-8" />
             <p
               style={{
-                fontFamily: 'Zodiak, serif',
+                fontFamily: 'satoshi, serif',
                 fontSize: '1rem',
                 lineHeight: '1.85rem',
                 fontWeight: 425
@@ -178,10 +178,8 @@ export default function About() {
           <div className="w-6 h-6 bg-black"></div>
         </div>
       </div>
-
       {/* Work Summary */}
-
-      <div className="mt-24" />
+      <div className="mt-48" />
       <div className="flex w-full justify-center max-w-[2000px] px-80">
         <div
           className="flex w-full justify-between"
@@ -192,12 +190,12 @@ export default function About() {
             fontWeight: 400
           }}
         >
-          <div className="w-7/12">
+          <div className="w-9/12">
             <div style={{ fontSize: '1.25rem', fontWeight: 700 }}>
               Work Experience
             </div>
             <div className="mt-4" />
-            <div className="">
+            <div>
               <ul className="w-full space-y-4">
                 <li className="flex flex-col">
                   <div className="flex justify-between font-bold bg-blackl">
@@ -232,8 +230,8 @@ export default function About() {
                     <p>Jan 2022 - Apr 2022</p>
                   </div>
                   <p className="w-9/12 leading-5">
-                    Software Engineer Intern - Full-Stack (Infotainment QA Tools
-                    Team)
+                    Software Engineer Intern - Full-Stack, Infotainment QA Tools
+                    Team
                   </p>
                 </li>{' '}
                 <li className="flex flex-col">
@@ -311,14 +309,52 @@ export default function About() {
           </div>
         </div>
       </div>
-
-      <div className="mt-24" />
-
+      <div className="mt-48" />
       {/*  */}
-      <div>Like my work? Let&apos;s talk :-)</div>
-
-      <div className="mt-16" />
-      <Footer />
+      <div className="flex w-full justify-center max-w-[2000px] px-80">
+        <div
+          className="flex w-full justify-center"
+          style={{ fontFamily: 'satoshi' }}
+        >
+          <div className="flex w-full space-x-16 justify-between">
+            <div className="w-full max-w-[875px]">
+              <div className="w-fit" style={{ fontSize: '3rem' }}>
+                Like my work? Let&apos;s chat!
+              </div>
+              <div
+                className="w-fit"
+                style={{ fontSize: '1.5rem', fontWeight: 250 }}
+              >
+                If you&apos;re looking for a developer for your company, or for
+                someone to talk about music and Runescape, I&apos;d love to meet
+                you! Open to emails and meetings, as well as coffee if
+                you&apos;re in the Toronto area{' '}
+                <b style={{ fontWeight: 500 }}>:)</b>
+              </div>
+            </div>
+            <div
+              className="flex flex-col space-y-8 justify-center items-center"
+              style={{ fontSize: '1.25rem', fontWeight: 350 }}
+            >
+              <div
+                className="flex border border-black text-center border-r-2 border-b-3 hover:bg-black hover:text-white hover:cursor-pointer w-64 h-16 items-center justify-center"
+                onClick={() => setModalOpen(true)}
+              >
+                Message me on LinkedIn
+              </div>
+              <a
+                className="flex h-16 border text-center border-black border-r-2 border-b-3 hover:bg-black hover:text-white items-center w-64 justify-center"
+                href="mailto:tuansdau@gmail.com"
+              >
+                Email me
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="mt-40" />
+      <div className="w-full bg-black h-5" />
+      {/* <Footer /> */}
     </div>
   );
 }

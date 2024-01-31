@@ -2,7 +2,7 @@
 import { Dispatch, SetStateAction, useEffect } from 'react';
 
 const buttonClass =
-  'border-black border rounded-full py-2 px-8 hover:bg-black hover:text-white border-b-2 hover:cursor-pointer';
+  'border-black border py-2 px-8 hover:bg-black hover:text-white border-b-2 hover:cursor-pointer';
 
 interface ModalProps {
   isModalOpen: boolean;
@@ -23,12 +23,15 @@ export default function Modal({ isModalOpen, modalSetter }: ModalProps) {
 
   return (
     isModalOpen && (
-      <div className="fixed w-screen h-screen z-50">
+      <div
+        style={{ fontFamily: 'satoshi, sans-serif' }}
+        className="fixed w-screen h-screen z-50"
+      >
         <div
           className="fixed w-screen h-screen opacity-30 bg-black left-0 bottom-0"
           onClick={() => modalSetter(false)}
         ></div>
-        <div className="flex flex-col fixed bg-white border-black border border-b-2 max-w-[25%] min-w-[20rem] h-[20rem] rounded-3xl z-20 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 -mt-8">
+        <div className="flex flex-col fixed bg-white border-black border border-b-2 max-w-[25%] min-w-[20rem] h-[20rem] z-20 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 -mt-8">
           <div
             className="fixed text-3xl right-4 top-2 rotate-45 hover:cursor-pointer"
             onClick={() => modalSetter(false)}

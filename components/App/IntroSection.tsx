@@ -10,17 +10,21 @@ export default function IntroSection({
   modalFunction
 }: IntroSectionProps) {
   return (
-    <div className="flex flex-col w-full items-center h-[800px] justify-center ">
+    <div
+      className="flex flex-col w-full items-center h-[800px] justify-center "
+      onMouseEnter={textEnterFunction}
+      onMouseLeave={textExitFunction}
+    >
       {/* Short Magazine Blurb */}
-      {/* <div className="flex flex-col lg:flex-row items-center bg-white justify-center md:space-x-4 -mt-16 px-4">
-        <div className="flex flex-col max-w-[1200px] justify-center items-center -ml-16">
+      <div className="flex w-full max-w-[2000px] flex-col lg:flex-row md:space-x-4 -mt-16 px-24">
+        <div className="flex flex-col items-center -ml-16">
           <div className="flex">
-            <div className="bg-black w-4 h-[360px] mt-8 -mr-8" />
+            <div className="bg-black w-4 h-[360px] mt-8 ml-16" />
             <div className="flex flex-col text-4xl rounded-md px-32 border-black">
               <div className="border-b-3 w-fit border-black">
                 <p
                   style={{
-                    fontFamily: 'Zodiak, serif',
+                    fontFamily: 'satoshi, serif',
                     fontSize: '4rem',
                     lineHeight: '8rem',
                     marginLeft: '-1rem'
@@ -31,8 +35,9 @@ export default function IntroSection({
               </div>
               <br />
               <p
+                className="w-full max-w-[800px]"
                 style={{
-                  fontFamily: 'Zodiak, serif',
+                  fontFamily: 'satoshi, serif',
                   fontSize: '1.25rem',
                   lineHeight: '3rem'
                 }}
@@ -45,7 +50,7 @@ export default function IntroSection({
               <br />
               <p
                 style={{
-                  fontFamily: 'Zodiak, serif',
+                  fontFamily: 'satoshi, serif',
                   fontSize: '1.25rem',
                   fontWeight: 600
                 }}
@@ -54,10 +59,10 @@ export default function IntroSection({
               </p>
               <br />
               <div
-                className="flex bg-white text-black text-xl hover:border-white hover:bg-black hover:text-white hover:cursor-pointer border-b-3 border-r-2 h-12 w-fit rounded-full px-4 border border-black items-center justify-center"
+                className="flex bg-white text-black text-xl hover:border-white hover:bg-black hover:text-white hover:cursor-pointer border-b-3 border-r-2 h-12 w-fit px-4 border border-black items-center justify-center"
                 onClick={() => modalFunction(true)}
                 style={{
-                  fontFamily: 'Zodiak, serif'
+                  fontFamily: 'satoshi, serif'
                 }}
               >
                 Let&apos;s talk!
@@ -65,10 +70,10 @@ export default function IntroSection({
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Designers/writers theme */}
-      <div className="w-full h-full max-w-[2000px]">
+      {/* <div className="w-full h-full max-w-[2000px]">
         <div
           className="w-full h-full"
           style={{ fontFamily: 'satoshi' }}
@@ -124,7 +129,7 @@ export default function IntroSection({
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -3,10 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const buttonClass =
-  'border-black border rounded-full py-2 px-8 bg-white hover:bg-black hover:text-white border-b-3 border-r-2';
+  'border-black border py-2 px-8 bg-white hover:bg-black hover:text-white border-b-3 border-r-2';
 
 const highlightedClass =
-  'border-black border rounded-full py-2 px-8 bg-black text-white border-b-2';
+  'border-black border  py-2 px-8 bg-black text-white border-b-2';
 
 interface NavbarPropTypes {
   highlightedButton?: string;

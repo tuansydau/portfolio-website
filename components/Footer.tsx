@@ -4,10 +4,10 @@ import Modal from './Modal';
 import { useState } from 'react';
 
 const whiteButtonClass =
-  'border-black text-black border rounded-full py-2 px-8 bg-white hover:bg-black hover:text-white border-b-3 border-r-2 hover:cursor-pointer';
+  'border-black text-black border py-2 px-8 bg-white hover:bg-black hover:text-white border-b-3 border-r-2 hover:cursor-pointer';
 
 const darkButtonClass =
-  'border-white text-white border rounded-full py-2 px-8 bg-[#050D21] hover:bg-white hover:text-black border-b-3 border-r-2 hover:cursor-pointer';
+  'border-white text-white border py-2 px-8 bg-[#050D21] hover:bg-white hover:text-black border-b-3 border-r-2 hover:cursor-pointer';
 
 const whiteNavbarClass = 'flex w-full justify-center';
 const darkNavbarClass = 'flex bg-[#050D21] w-full justify-center';
@@ -26,7 +26,7 @@ export default function Footer({
 
   return (
     <div className={dark ? darkNavbarClass : whiteNavbarClass}>
-      <div className="flex w-3/4 justify-center sm:justify-between items-center sm:space-x-12 mt-4 mb-4">
+      <div className="flex w-full px-24 justify-center sm:justify-between items-center sm:space-x-12 mt-4 mb-4">
         <Modal isModalOpen={modalOpen} modalSetter={setModalOpen} />
         <div
           className={'hidden sm:flex'.concat(
