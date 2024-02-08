@@ -179,7 +179,7 @@ export default function About() {
         </div>
       </div>
       {/* Work Summary */}
-      <div className="mt-48" />
+      <div className="mt-24" />
       <div className="flex w-full justify-center max-w-[2000px] px-80">
         <div
           className="flex w-full justify-between"
@@ -309,27 +309,27 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="mt-48" />
+      <div className="mt-32" />
       {/*  */}
-      <div className="flex w-full justify-center max-w-[2000px] px-80">
+      {/* <div className="flex w-full justify-center max-w-[2000px] px-80"> */}
+      <div className="flex w-full justify-center max-w-[2000px] px-64">
         <div
-          className="flex w-full justify-center"
+          className="flex w-full justify-center text-black"
           style={{ fontFamily: 'satoshi' }}
         >
-          <div className="flex w-full space-x-16 justify-between">
+          <div className="flex w-full space-x-16 justify-between bg-gray-100 py-8 px-16">
             <div className="w-full max-w-[875px]">
               <div className="w-fit" style={{ fontSize: '3rem' }}>
                 Like my work? Let&apos;s chat!
               </div>
               <div
-                className="w-fit"
+                className="w-fit mt-2"
                 style={{ fontSize: '1.5rem', fontWeight: 250 }}
               >
                 If you&apos;re looking for a developer for your company, or for
                 someone to talk about music and Runescape, I&apos;d love to meet
                 you! Open to emails and meetings, as well as coffee if
-                you&apos;re in the Toronto area{' '}
-                <b style={{ fontWeight: 500 }}>:)</b>
+                you&apos;re in the Toronto area :)
               </div>
             </div>
             <div
@@ -337,13 +337,13 @@ export default function About() {
               style={{ fontSize: '1.25rem', fontWeight: 350 }}
             >
               <div
-                className="flex border border-black text-center border-r-2 border-b-3 hover:bg-black hover:text-white hover:cursor-pointer w-64 h-16 items-center justify-center"
+                className="flex border border-black bg-white text-center border-r-2 border-b-3 hover:bg-black hover:text-white hover:cursor-pointer w-64 h-16 items-center justify-center"
                 onClick={() => setModalOpen(true)}
               >
                 Message me on LinkedIn
               </div>
               <a
-                className="flex h-16 border text-center border-black border-r-2 border-b-3 hover:bg-black hover:text-white items-center w-64 justify-center"
+                className="flex h-16 border text-center bg-white border-black border-r-2 border-b-3 hover:bg-black hover:text-white items-center w-64 justify-center"
                 href="mailto:tuansdau@gmail.com"
               >
                 Email me
@@ -352,7 +352,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="mt-40" />
+      <div className="mt-32" />
       <div className="w-full bg-black h-5" />
       {/* <Footer /> */}
     </div>

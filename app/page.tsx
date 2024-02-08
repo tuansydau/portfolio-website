@@ -87,8 +87,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <br />
-      <br />
+      <div className="mt-24"></div>
       <Footer />
     </div>
   );
