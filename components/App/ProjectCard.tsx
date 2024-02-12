@@ -11,6 +11,7 @@ interface ProjectCardProps {
   noCover?: boolean;
   textColor?: string;
   filter?: string;
+  lowBaseOpacity?: boolean;
 }
 
 export default function ProjectCard({
@@ -22,7 +23,8 @@ export default function ProjectCard({
   targetBlank,
   noCover,
   textColor,
-  filter
+  filter,
+  lowBaseOpacity
 }: ProjectCardProps) {
   const topMargin = 1;
   const leftMargin = '2rem';
@@ -30,9 +32,13 @@ export default function ProjectCard({
   return (
     <div className="w-full h-[600px]">
       <Link href={linkTo} target={targetBlank ? '_blank' : ''}>
-        <div className="relative w-full h-full mb-2">
+        <div className="relative w-full h-full mb-2 bg-black">
           <Image
-            className="transition ease-in-out hover:opacity-70"
+            className={
+              lowBaseOpacity
+                ? 'transition ease-in-out opacity-60 hover:opacity-40'
+                : 'transition ease-in-out hover:opacity-60'
+            }
             src={imagePath}
             alt=""
             objectFit={noCover ? '' : 'cover'}

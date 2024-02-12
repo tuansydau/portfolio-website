@@ -63,27 +63,48 @@ export default function Home() {
             description="A collection of OpenGL fragment shaders that I made while
                   learning graphics processing."
             imagePath="/Animation-3.gif"
-            linkTo="/shaders"
+            linkTo="https://github.com/tuansydau/shader-work"
+            targetBlank
           />
-          <ProjectCard
+          {/* <ProjectCard
             category="Internship"
             title="Big Whale Labs Website"
             description="A website redesign that I helped program while interning at Big Whale Labs."
             imagePath="/bwl_homepage.png"
             linkTo="/bwl-homepage"
             filter="grayscale(100%)"
+          /> */}
+          <ProjectCard
+            category="Project"
+            title="Tab2XML"
+            description="A program that converts guitar tablature into a playable MusicXML file."
+            imagePath="/tab2xml.png"
+            linkTo="https://github.com/tuansydau/TAB2XML"
+            filter="grayscale(100%)"
+            lowBaseOpacity
+            targetBlank
           />
         </div>
         <br />
-        <div className="flex w-full">
+        <div className="flex w-full space-x-4">
           <ProjectCard
             category="Project"
             title="3D Globe Visualizing Global Transactions"
-            description="A remake of a previous hackathon submission completed with Float's team at Decode 2021. Inspired by the GitHub globe."
+            description="A 3D Globe that visualizes transactions made on Float's card system, submitted for DeCode 2021."
             imagePath="/three-globe.png"
             linkTo="https://github.com/trentstauff/decode-2021/tree/main/frontend"
             targetBlank
             filter="grayscale(100%)"
+          />
+          <ProjectCard
+            category="Project"
+            title="NiftyArt"
+            description="A simple marketplace to buy and sell digital artwork, built on Ethereum."
+            imagePath="/niftyArt.jpg"
+            linkTo="https://github.com/tuansydau/TAB2XML"
+            filter="grayscale(100%)"
+            targetBlank
+            lowBaseOpacity
           />
         </div>
       </div>
