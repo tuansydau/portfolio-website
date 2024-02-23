@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 interface IntroSectionProps {
   textEnterFunction?: () => void;
   textExitFunction?: () => void;
@@ -11,12 +13,42 @@ export default function IntroSection({
 }: IntroSectionProps) {
   return (
     <div
-      className="flex flex-col w-full items-center h-[800px] justify-center "
+      className="flex flex-col w-full h-screen items-center justify-center pt-16"
       onMouseEnter={textEnterFunction}
       onMouseLeave={textExitFunction}
     >
+      <div
+        className="px-24 w-full"
+        style={{
+          fontFamily: 'satoshi',
+          fontSize: '2.5vw',
+          fontWeight: '900',
+          paddingRight: '40vw'
+        }}
+      >
+        Hello!{' '}
+        <span style={{ fontWeight: '100' }}>
+          I&apos;m Tuan, a fullstack engineer from Toronto! I&apos;m currently
+          working at{' '}
+          <span className="text-[#2fd063]" style={{ fontWeight: '600' }}>
+            Arima Data
+          </span>{' '}
+          as a <span style={{ fontWeight: '500' }}>Frontend Engineer</span> and{' '}
+          <span style={{ fontWeight: '500' }}>Designer</span>.
+          <div
+            className="flex bg-white font-light text-black text-[1.75vw] font-thin hover:border-white hover:bg-black hover:text-white hover:cursor-pointer border-b-3 border-r-2 h-[10vh] mt-[5vh] w-[9vw] px-2 border border-black items-center justify-center"
+            onClick={() => modalFunction(true)}
+            style={{
+              fontFamily: 'satoshi, serif'
+            }}
+          >
+            Let&apos;s talk!
+          </div>
+        </span>
+      </div>
+
       {/* Short Magazine Blurb */}
-      <div className="flex w-full max-w-[2000px] flex-col lg:flex-row md:space-x-4 -mt-16 px-24">
+      {/* <div className="flex w-full max-w-[2000px] flex-col lg:flex-row md:space-x-4 px-24">
         <div className="flex flex-col items-center -ml-16">
           <div className="flex">
             <div className="bg-black w-4 h-[360px] mt-8 ml-16" />
@@ -70,7 +102,7 @@ export default function IntroSection({
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Designers/writers theme */}
       {/* <div className="w-full h-full max-w-[2000px]">

@@ -64,7 +64,7 @@ export default function About() {
               fontWeight: 900
             }}
           >
-            <span style={{ color: '#3ec760' }}>Hey, </span>potential employer!
+            <span style={{ color: '#2fd063' }}>Hey, </span>potential employer!
           </p>
         </div>
         <div className="flex w-full px-80 space-x-16">
@@ -353,7 +353,7 @@ export default function About() {
         </div>
       </div>
       <div className="mt-32" />
-      <div className="w-full bg-black h-5" />
+      {/* <div className="w-full bg-black h-5" /> */}
       {/* <Footer /> */}
     </div>
   );

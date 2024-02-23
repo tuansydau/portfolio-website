@@ -27,8 +27,10 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-between">
-      <Navbar highlightedButton={'home'} />
-      <div className="mt-8"></div>
+      <div className="absolute w-full">
+        <Navbar highlightedButton={'home'} />
+      </div>
+      {/* <div className="mt-8"></div> */}
       <div className="cursor-outline" data-cursor-outline></div>
       <motion.div
         className="cursor z-50"
@@ -54,7 +56,7 @@ export default function Home() {
         textExitFunction={textLeave}
         modalFunction={setModalOpen}
       />
-      <div className="mt-32"></div>
+      {/* <div className="mt-32"></div> */}
       <div className="flex flex-col w-full px-24 max-w-[2000px]">
         <div className="flex w-full space-x-4">
           <ProjectCard
