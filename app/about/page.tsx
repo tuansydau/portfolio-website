@@ -54,7 +54,7 @@ export default function About() {
         onMouseEnter={textEnter}
         onMouseLeave={textLeave}
       >
-        <div className="flex w-full px-80 justify-between items-start mt-12">
+        <div className="flex w-full px-8 lg:px-32 justify-between items-start mt-12">
           <p
             className="w-11/12 mb-16"
             style={{
@@ -67,7 +67,7 @@ export default function About() {
             <span style={{ color: '#2fd063' }}>Hey, </span>potential employer!
           </p>
         </div>
-        <div className="flex w-full px-80 space-x-16">
+        <div className="flex w-full px-8 lg:px-32 space-x-16">
           <div className="flex w-2/12" />
           <div className="w-5/12">
             <p
@@ -174,13 +174,13 @@ export default function About() {
           </div>
         </div>
         <div className="mt-16" />
-        <div className="flex w-full justify-end px-80">
+        <div className="flex w-full justify-end px-8 lg:px-32">
           <div className="w-6 h-6 bg-black"></div>
         </div>
       </div>
       {/* Work Summary */}
       <div className="mt-24" />
-      <div className="flex w-full justify-center max-w-[2000px] px-80">
+      <div className="flex w-full justify-center max-w-[2000px] px-8 lg:px-32">
         <div
           className="flex w-full justify-between"
           style={{
@@ -311,8 +311,8 @@ export default function About() {
       </div>
       <div className="mt-32" />
       {/*  */}
-      {/* <div className="flex w-full justify-center max-w-[2000px] px-80"> */}
-      <div className="flex w-full justify-center max-w-[2000px] px-64">
+      {/* <div className="flex w-full justify-center max-w-[2000px] px-8 lg:px-32"> */}
+      <div className="flex w-full justify-center max-w-[2000px] px-8 lg:px-24">
         <div
           className="flex w-full justify-center text-black"
           style={{ fontFamily: 'satoshi' }}
