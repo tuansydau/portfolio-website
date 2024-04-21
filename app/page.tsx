@@ -8,6 +8,7 @@ import { useState } from 'react';
 import IntroSection from '@/components/App/IntroSection';
 import useMousePosition from '@/utils/useMousePosition';
 import ProjectCard from '@/components/App/ProjectCard';
+import SiftIntroSection from '@/components/App/SiftIntroSection';
 
 interface MousePosition {
   x: number;
@@ -56,6 +57,7 @@ export default function Home() {
         textExitFunction={textLeave}
         modalFunction={setModalOpen}
       />
+    {/* <SiftIntroSection /> */}
       {/* <div className="mt-32"></div> */}
       <div className="flex flex-col w-full px-24 max-w-[2000px]">
         <div className="flex w-full space-x-4">

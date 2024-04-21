@@ -13,11 +13,11 @@ export default function IntroSection({
 }: IntroSectionProps) {
   return (
     <div
-      className="flex flex-col w-full h-screen items-center justify-center pt-16"
+      className="flex flex-col w-full h-screen items-center justify-center"
       onMouseEnter={textEnterFunction}
       onMouseLeave={textExitFunction}
     >
-      <div
+      {/* <div
         className="px-24 w-full"
         style={{
           fontFamily: 'satoshi',
@@ -45,13 +45,13 @@ export default function IntroSection({
             Let&apos;s talk!
           </div>
         </span>
-      </div>
+      </div> */}
 
       {/* Short Magazine Blurb */}
-      {/* <div className="flex w-full max-w-[2000px] flex-col lg:flex-row md:space-x-4 px-24">
+      <div className="flex w-full max-w-[2000px] flex-col lg:flex-row md:space-x-4 px-24">
         <div className="flex flex-col items-center -ml-16">
           <div className="flex">
-            <div className="bg-black w-4 h-[360px] mt-8 ml-16" />
+            <div className="bg-black w-2 h-[360px] mt-8 ml-16" />
             <div className="flex flex-col text-4xl rounded-md px-32 border-black">
               <div className="border-b-3 w-fit border-black">
                 <p
@@ -74,8 +74,8 @@ export default function IntroSection({
                   lineHeight: '3rem'
                 }}
               >
-                Full-stack developer, designer, and DevOps engineer. I&apos;ve
-                worked at industry leaders like Tesla and CertiK, creating tools
+                Full-stack developer, designer, and occasional devops engineer (out of necessity, mainly). I&apos;ve
+                interned at a number of different startups and companies, creating tools
                 and pipelines to automate work that people hate doing. Also an
                 avid tea, music, and Runescape enjoyer.
               </p>
@@ -87,7 +87,7 @@ export default function IntroSection({
                   fontWeight: 600
                 }}
               >
-                Currently: Blasting Knock2 and redesigning this website
+                Currently: Front End Software Engineer at <a href="https://www.arimadata.com" target='_blank' className='text-[#1bcc04]'>Arima Data</a>, blasting Knock2, and redesigning this website
               </p>
               <br />
               <div
@@ -102,7 +102,7 @@ export default function IntroSection({
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Designers/writers theme */}
       {/* <div className="w-full h-full max-w-[2000px]">
