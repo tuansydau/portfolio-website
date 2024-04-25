@@ -21,7 +21,7 @@ export default function Navbar({
 }: NavbarPropTypes) {
   return (
     <div
-      className="z-10 flex w-full justify-between items-center space-x-12  px-8 border-black"
+      className="z-10 flex w-full justify-between items-center space-x-12 border-black bg-white"
       // style={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}
     >
       <Link href="/">
@@ -34,7 +34,7 @@ export default function Navbar({
           height={40}
         />
       </Link>
-          <div className="flex space-x-4">
+      <div className="flex space-x-4">
         <Link href="/">
           <div
             className={
