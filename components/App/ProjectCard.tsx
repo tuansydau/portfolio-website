@@ -30,7 +30,7 @@ export default function ProjectCard({
   const leftMargin = '2rem';
 
   return (
-    <div className="w-full h-[600px]">
+    <div className="w-full h-[450px]">
       <Link href={linkTo} target={targetBlank ? '_blank' : ''}>
         <div className="relative w-full h-full mb-2 bg-black">
           <Image

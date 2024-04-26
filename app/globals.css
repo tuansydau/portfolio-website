@@ -21,11 +21,11 @@
 }
 
 body {
-  background-size: 80px 80px;
+  background-size: 15px 15px;
   background-color: #fff;
-  /* background-color: #e7eddb; */
-  /* background-image: radial-gradient(circle, #d2d2d2 2px, rgba(0, 0, 0, 0) 1px); */
+  /* background-image: radial-gradient(circle, #d2d2d2 0.5px, rgba(0, 0, 0, 0) 1px); */
 }
+
 
 .cursor {
   background-color: #111;

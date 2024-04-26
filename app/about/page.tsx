@@ -46,17 +46,19 @@ export default function About() {
         }}
         transition={{ type: 'spring', stiffness: 300 }}
       />
-      <Navbar highlightedButton={'about'} />
+      <div className="fixed w-screen bg-white z-10">
+        <Navbar highlightedButton={'about'} />
+      </div>
       {/* Hello Potential Employer Blurb */}
       {/* <div className="flex w-full h-[1px] bg-[#222]"></div> */}
       <div
-        className="flex flex-col w-full max-w-[2000px]"
+        className="flex flex-col w-full max-w-[1360px]"
         onMouseEnter={textEnter}
         onMouseLeave={textLeave}
       >
         <div className="flex w-full px-8 lg:px-32 justify-between items-start mt-12">
           <p
-            className="w-11/12 mb-16"
+            className="w-full xl:w-8/12 mb-16"
             style={{
               fontFamily: 'satoshi, serif',
               fontSize: '6.5rem',
@@ -67,9 +69,9 @@ export default function About() {
             <span style={{ color: '#2fd063' }}>Hey, </span>potential employer!
           </p>
         </div>
-        <div className="flex w-full px-8 lg:px-32 space-x-16">
-          <div className="flex w-2/12" />
-          <div className="w-5/12">
+        <div className="block md:flex w-full px-8 lg:px-32 lg:space-x-16">
+          <div className="hidden md:flex w-2/12" />
+          <div className="md:w-5/12">
             <p
               style={{
                 fontFamily: 'satoshi, serif',
@@ -111,7 +113,7 @@ export default function About() {
               message.
             </p>
           </div>
-          <div className="w-5/12">
+          <div className="mt-10 md:mt-0 md:w-5/12">
             <p
               style={{
                 fontFamily: 'satoshi, serif',
@@ -180,7 +182,7 @@ export default function About() {
       </div>
       {/* Work Summary */}
       <div className="mt-24" />
-      <div className="flex w-full justify-center max-w-[2000px] px-8 lg:px-32">
+      <div className="flex w-full justify-center max-w-[1360px] px-8 lg:px-32">
         <div
           className="flex w-full justify-between"
           style={{
@@ -311,20 +313,20 @@ export default function About() {
       </div>
       <div className="mt-32" />
       {/*  */}
-      {/* <div className="flex w-full justify-center max-w-[2000px] px-8 lg:px-32"> */}
-      <div className="flex w-full justify-center max-w-[2000px] px-8 lg:px-24">
+      {/* <div className="flex w-full justify-center max-w-[1360px] px-8 lg:px-32"> */}
+      <div className="flex w-full justify-center max-w-[1360px] px-8 lg:px-24">
         <div
           className="flex w-full justify-center text-black"
           style={{ fontFamily: 'satoshi' }}
         >
           <div className="flex w-full space-x-16 justify-between bg-gray-100 py-8 px-16">
             <div className="w-full max-w-[875px]">
-              <div className="w-fit" style={{ fontSize: '3rem' }}>
+              <div className="w-fit" style={{ fontSize: '2.5rem' }}>
                 Like my work? Let&apos;s chat!
               </div>
               <div
                 className="w-fit mt-2"
-                style={{ fontSize: '1.5rem', fontWeight: 250 }}
+                style={{ fontSize: '1.25rem', fontWeight: 250 }}
               >
                 If you&apos;re looking for a developer for your company, or for
                 someone to talk about music and Runescape, I&apos;d love to meet
