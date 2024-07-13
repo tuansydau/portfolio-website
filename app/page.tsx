@@ -101,7 +101,7 @@ export default function Home() {
             onMouseEnter={textEnter}
             onMouseLeave={textLeave}
           >
-            &quot;About damn time&quot;, says Friend
+            &quot;About time&quot;, says Friend
           </div>
 
           {/* About me */}
