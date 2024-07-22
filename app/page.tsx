@@ -60,14 +60,16 @@ export default function Home() {
           description="A collection of OpenGL fragment shaders that I made while
                   learning graphics processing."
           imagePath="/Animation-3.gif"
-          linkTo="/shaders"
+          linkTo="https://github.com/tuansydau/shader-work"
+          targetBlank
         />
         <ProjectCard
           category="Internship"
           title="Big Whale Labs Website"
           description="A website redesign that I helped program while interning at Big Whale Labs."
           imagePath="/bwl_homepage.png"
-          linkTo="/bwl-homepage"
+          linkTo="https://github.com/BigWhaleLabs/bigwhalelabs"
+          targetBlank
           filter="grayscale(100%)"
         />
       </div>
