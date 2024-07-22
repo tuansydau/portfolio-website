@@ -26,7 +26,7 @@ export default function Footer({
 
   return (
     <div className={dark ? darkNavbarClass : whiteNavbarClass}>
-      <div className="flex w-full justify-center sm:justify-between items-center sm:space-x-12 mt-4 mb-4">
+      <div className="flex w-full justify-center sm:justify-between items-center sm:space-x-12 mt-4 mb-4 max-w-[1360px]">
         <Modal isModalOpen={modalOpen} modalSetter={setModalOpen} />
         <div
           className={'hidden sm:flex'.concat(

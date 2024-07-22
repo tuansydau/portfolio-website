@@ -57,7 +57,7 @@ export default function IntroSection({
               </p>
               <br />
               <div
-                className="flex bg-white text-black text-xl hover:border-white hover:bg-black hover:text-white hover:cursor-pointer border-b-3 border-r-2 h-12 w-fit rounded-full px-4 border border-black items-center justify-center"
+                className="flex bg-white text-black text-xl hover:border-white hover:bg-black hover:text-white hover:cursor-pointer border-b-3 border-r-2 h-12 w-fit px-4 border border-black items-center justify-center"
                 onClick={() => modalFunction(true)}
                 style={{
                   fontFamily: 'Zodiak, serif'
