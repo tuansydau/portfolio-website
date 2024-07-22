@@ -17,6 +17,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://cdn.fibr.shop" />
+        <link rel="dns-prefetch" href="https://cdn.fibr.shop" />
+        <script
+          src="https://cdn.fibr.shop/sdks/client/669df50c9370be37e3f49706/fpt-client-sdk.min.js"
+          async
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.fibrConfig = {pageLoad:"async"};
+              var root = document.querySelector(":root");
+              function scriptFailed () { document.querySelector(":root").style.filter = 'blur(0px)'; document.querySelector(":root").style.opacity = 1 };
+              localStorage.setItem('__fibr_current_url', window.location.href);
+              let imgStyle = document.createElement('style'); imgStyle.id = 'fibr-async-img-style'; imgStyle.innerHTML = "img { opacity: 0; }";
+              let bodyStyle = document.createElement('style'); bodyStyle.id = 'fibr-style'; bodyStyle.innerHTML = "body { opacity: 0; }";
+              document.head.appendChild(bodyStyle);
+              document.head.appendChild(imgStyle);
+            `
+          }}
+        ></script>
         <link
           href="https://api.fontshare.com/v2/css?f[]=khand@400&f[]=array@400&display=swap"
           rel="stylesheet"
