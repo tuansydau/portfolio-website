@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const [randomSentence, setRandomSentence] = useState('');
@@ -75,7 +76,7 @@ export default function Home() {
                   <div className="absolute w-full text-opacity-0 h-20 rounded-md bg-[#ffbaff] z-0 text-black">
                     Hire Me
                   </div>
-                  <div className="relative transition-all duration-300 ease-in-out flex items-center justify-center text-black px-8 h-20 rounded-md bg-[#f999f9] hover:cursor-pointer z-10 -top-1 -left-1 hover:top-0 hover:left-0">
+                  <div className="relative transition-all duration-300 ease-in-out flex items-center justify-center text-black px-8 h-20 rounded-md bg-[#f999f9] hover:cursor-pointer z-10 -top-2 -left-2 hover:top-0 hover:left-0">
                     Hire Me
                   </div>
                 </div>
@@ -85,26 +86,32 @@ export default function Home() {
                 <div className="absolute w-full text-opacity-0 h-20 rounded-md bg-[#c4c4ff] z-0 text-black">
                   See My Work
                 </div>
-                <div className="relative transition-all duration-300 ease-in-out flex items-center justify-center text-black px-8 h-20 rounded-md bg-[#9999ff] hover:cursor-pointer z-10 -top-1 -left-1 hover:top-0 hover:left-0">
+                <div className="relative transition-all duration-300 ease-in-out flex items-center justify-center text-black px-8 h-20 rounded-md bg-[#9999ff] hover:cursor-pointer z-10 -top-2 -left-2 hover:top-0 hover:left-0">
                   See My Work
                 </div>
               </div>
             </div>
 
             {/* Button Menu */}
-            <div className="flex space-x-8 -mt-2">
+            <div className="flex space-x-8 -mt-6">
               {/* About Buttom */}
-              <div className="decoration-solid underline-offset-8 underline hover:decoration-wavy hover:cursor-pointer ">
-                About
-              </div>
+              <Link href="/about">
+                <div className="decoration-solid underline-offset-8 underline hover:decoration-wavy hover:cursor-pointer ">
+                  About
+                </div>
+              </Link>
               {/* Work Button */}
-              <div className="decoration-solid underline-offset-8 underline hover:decoration-wavy hover:cursor-pointer ">
-                Work
-              </div>
+              <Link href="/about">
+                <div className="decoration-solid underline-offset-8 underline hover:decoration-wavy hover:cursor-pointer ">
+                  Work
+                </div>
+              </Link>
               {/* Download Resume Button */}
-              <div className="decoration-solid underline-offset-8 underline hover:decoration-wavy hover:cursor-pointer ">
-                Download Resume
-              </div>
+              <Link href="/about">
+                <div className="decoration-solid underline-offset-8 underline hover:decoration-wavy hover:cursor-pointer ">
+                  Download Resume
+                </div>
+              </Link>
             </div>
           </div>
         </div>
