@@ -46,15 +46,15 @@ export default function Home() {
             <span className="text-[#9999FF]">hire</span>.
             <p>
               <span>{'>>>'} Prev @</span>{' '}
-              <span className="text-white transition-colors duration-300 ease-in-out hover:text-red-500 hover:cursor-pointer">
+              <span className="text-white transition-colors duration-200 ease-in-out hover:text-red-500 hover:cursor-pointer">
                 Tesla
               </span>
               ,{' '}
-              <span className="text-white transition-colors duration-300 ease-in-out hover:text-gray-500 hover:cursor-pointer">
+              <span className="text-white transition-colors duration-200 ease-in-out hover:text-gray-500 hover:cursor-pointer">
                 CertiK
               </span>
               {', '}
-              <span className="text-white transition-colors duration-300 ease-in-out hover:text-green-500 hover:cursor-pointer">
+              <span className="text-white transition-colors duration-200 ease-in-out hover:text-green-500 hover:cursor-pointer">
                 Arima Data
               </span>
             </p>
