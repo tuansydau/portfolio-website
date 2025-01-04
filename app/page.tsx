@@ -21,11 +21,7 @@ export default function Home() {
           <NavigationMenu />
           <Spacer />
           <Spacer />
-          <Spacer />
-          <Spacer />
           <IntroSection />
-          <Spacer />
-          <Spacer />
           <Spacer />
           <Spacer />
           <Spacer />
