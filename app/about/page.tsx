@@ -12,6 +12,7 @@ export default function About() {
       <PageWrapper>
         <ScrollingTextBanner />
         <Spacer />
+        <Spacer />
 
         {/* Text Container */}
         <TextWrapper>
