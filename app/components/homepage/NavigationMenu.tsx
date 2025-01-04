@@ -17,14 +17,17 @@ export default function NavigationMenu() {
             About
           </div>
         </Link>
-        {/* Work Button */}
-        <Link href="/">
+        {/* For Fun Button */}
+        {/* <Link href="/">
           <div className="decoration-solid underline-offset-8 underline hover:decoration-wavy hover:cursor-pointer ">
             For Fun
           </div>
-        </Link>
+        </Link> */}
         {/* Download Resume Button */}
-        <Link href="/">
+        <Link
+          href="https://drive.google.com/file/d/15ee9NF4J-UAojcLkore_cBhtF1FVezUk/view?usp=drive_link"
+          target="_blank"
+        >
           <div className="decoration-solid underline-offset-8 underline hover:decoration-wavy hover:cursor-pointer ">
             Resume
           </div>

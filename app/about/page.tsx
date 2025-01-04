@@ -31,19 +31,19 @@ export default function About() {
               <Spacer />
               <p>
                 {
-                  "Thanks for visiting my website! I've spent a lot of time creating this website, so I hope that you had as much fun viewing it as I had making it."
+                  "Thanks for visiting my website! I've spent a lot of time creating this website, so I hope that you had as much fun viewing it as I had making it. I'm a new grad engineer who really enjoys backend and devops engineering, and I'm currently looking for a new role. If you're looking to hire, I'd love to talk!"
                 }
               </p>
             </div>
-            <Spacer />
             {/* Fave Thing Block */}
             <div>
               <p
-                className="text-[#f999f9]"
+                className="text-[#f999f9] mt-16"
                 style={{ fontFamily: 'Array-BoldWide' }}
               >
                 {'Outside of software engineering, I really like: '}
               </p>
+              <div className="h-1 w-full bg-[#f999f9] my-4" />
               <div className="flex w-full justify-between">
                 <ul className="text-2xl leading-loose">
                   <li>Runescape</li>
@@ -81,13 +81,14 @@ export default function About() {
             {/* Fave Song Block */}
             <div>
               <p
-                className="text-[#f999f9]"
+                className="text-[#f999f9] mt-16"
                 style={{ fontFamily: 'Array-BoldWide' }}
               >
                 {
-                  'And if you like music as much as I do, here are my favourite songs:'
+                  'If you like music as much as I do, here are my favourite songs:'
                 }
               </p>
+              <div className="h-1 w-full bg-[#f999f9] my-4" />
               <div className="flex w-full justify-between">
                 <ul className="text-2xl leading-loose w-1/2">
                   <li>1. Bruno Mars, Rosé - APT</li>
@@ -106,6 +107,8 @@ export default function About() {
               </div>
             </div>
           </div>
+
+          <div className="mt-32" />
         </TextWrapper>
       </PageWrapper>
     </>

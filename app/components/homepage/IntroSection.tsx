@@ -1,21 +1,18 @@
 import confetti from 'canvas-confetti';
 import { useRef } from 'react';
+import Link from 'next/link';
 
 export default function IntroSection() {
   const textRef = useRef<HTMLParagraphElement>(null);
 
   const launchConfetti = () => {
     if (textRef.current) {
-      // Get the position of the text element
       const rect = textRef.current.getBoundingClientRect();
-      const x = rect.left + rect.width / 2; // Center horizontally
-      const y = rect.top + rect.height / 2; // Center vertically
-
-      // Convert to relative coordinates for confetti
+      const x = rect.left + rect.width / 2;
+      const y = rect.top + rect.height / 2;
       const xPercent = x / window.innerWidth;
       const yPercent = y / window.innerHeight;
 
-      // Launch confetti
       confetti({
         particleCount: 150,
         spread: 60,
@@ -24,7 +21,6 @@ export default function IntroSection() {
     }
   };
 
-  // Smooth scroll handler
   const handleSmoothScroll = (
     event: React.MouseEvent<HTMLAnchorElement>,
     targetId: string
@@ -44,17 +40,23 @@ export default function IntroSection() {
         is a software engineer <span className="text-[#9999FF]">for hire</span>.
         <p>
           <span>{'>>'} Prev @</span>{' '}
-          <span className="text-white transition-colors duration-200 ease-in-out hover:text-red-500 hover:cursor-pointer">
-            Tesla
-          </span>
+          <Link href={'https://www.tesla.com/'} target="_blank">
+            <span className="text-white transition-colors duration-200 ease-in-out hover:text-red-500 hover:cursor-pointer">
+              Tesla
+            </span>
+          </Link>
           ,{' '}
-          <span className="text-white transition-colors duration-200 ease-in-out hover:text-gray-500 hover:cursor-pointer">
-            CertiK
-          </span>
+          <Link href={'https://www.certik.com/'} target="_blank">
+            <span className="text-white transition-colors duration-200 ease-in-out hover:text-gray-500 hover:cursor-pointer">
+              CertiK
+            </span>
+          </Link>
           {', '}
-          <span className="text-white transition-colors duration-200 ease-in-out hover:text-green-500 hover:cursor-pointer">
-            Arima Data
-          </span>
+          <Link href={'https://arimadata.com/'} target="_blank">
+            <span className="text-white transition-colors duration-200 ease-in-out hover:text-green-500 hover:cursor-pointer">
+              Arima Data
+            </span>
+          </Link>
         </p>
         <p>
           {'>> '}From{' '}
