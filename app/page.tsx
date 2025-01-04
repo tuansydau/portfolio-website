@@ -7,6 +7,8 @@ import ProjectCard from './components/homepage/ProjectCard';
 import ScrollingTextBanner from './components/common/ScrollingTextBanner';
 import Spacer from './components/common/Spacer';
 import TextWrapper from './components/common/TextWrapper';
+import Image from 'next/image';
+import NixOS from '@/public/images/nixos.png';
 
 export default function Home() {
   return (
@@ -29,41 +31,56 @@ export default function Home() {
             Work Projects
           </div>
           <Spacer />
-          {/* Mock Project Card */}
-          <ProjectCard
-            company="Arima Data"
-            description="Implementing report sharing for synthetic data analytics."
-            title="Fullstack Engineer (Feb 2024 - Nov 2024)"
-          />
+          {/* Mock Project Card */}{' '}
+          <div className="text-white hover:text-gray-400 transition-colors hover:cursor-pointer">
+            <ProjectCard
+              company="Arima Data"
+              description="Implementing report sharing for synthetic data analytics."
+              title="Fullstack Engineer (Feb 2024 - Nov 2024)"
+            />
+            <Spacer></Spacer>
+            <div className="w-full h-[500px] bg-white rounded-md" />
+          </div>
+          <Spacer />
+          <Spacer />
+          <Spacer />{' '}
+          <div className="text-white hover:text-gray-400 transition-colors hover:cursor-pointer">
+            <ProjectCard
+              company="Tesla"
+              description="Building deployment and observability tools for testing new firmwares."
+              title="Software Engineer Intern, Vehicle Software QA Tools (Winter 2022)"
+            />
+            <Spacer />
+            <div className="w-full h-[500px] bg-white rounded-md" />
+          </div>
           <Spacer />
           <Spacer />
           <Spacer />
-          <ProjectCard
-            company="Tesla"
-            description="Building deployment and observability tools for testing new firmwares."
-            title="Software Engineer Intern, Vehicle Software QA Tools (Winter 2022)"
-          />
+          <div className="text-white hover:text-gray-400 transition-colors hover:cursor-pointer">
+            <ProjectCard
+              company="CertiK"
+              description="Automating static analysis and formal verification tests for Web3 code audits."
+              title="Backend Engineer Intern, Static Analysis Tools (Fall 2021)"
+            />
+            <Spacer />
+            <div className="w-full h-[500px] bg-white rounded-md" />
+          </div>
           <Spacer />
           <Spacer />
           <Spacer />
-          <ProjectCard
-            company="CertiK"
-            description="Automating static analysis and formal verification tests for Web3 code audits."
-            title="Backend Engineer Intern, Static Analysis Tools (Fall 2021)"
-          />
-          <Spacer />
-          <Spacer />
-          <Spacer />
-
           <div className="w-full text-6xl text-[#f999ff]">
             Personal Projects
           </div>
           <Spacer />
-          <ProjectCard
-            company="Home Web Server + AWS Learning Environment"
-            description="A NixOS server to host websites, and a free AWS (localstack) test environment."
-            title="Motivation: To avoid going backrupt to AWS, and to have a consistent environment to learn about systems design."
-          />
+          <div className="text-white hover:text-gray-400 transition-colors hover:cursor-pointer">
+            <ProjectCard
+              company="Home Web Server + AWS Learning Environment"
+              description="A NixOS server to host websites, and a free AWS (localstack) test environment."
+              title="Motivation: To avoid going backrupt to AWS, and to have a consistent environment to learn about systems design."
+            />
+            <Spacer />
+            <Image src={NixOS} alt="" />
+          </div>
           <Spacer />
           <Spacer />
           <Spacer />

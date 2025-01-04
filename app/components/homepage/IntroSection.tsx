@@ -1,4 +1,29 @@
+import confetti from 'canvas-confetti';
+import { useRef } from 'react';
+
 export default function IntroSection() {
+  const textRef = useRef<HTMLParagraphElement>(null);
+
+  const launchConfetti = () => {
+    if (textRef.current) {
+      // Get the position of the text element
+      const rect = textRef.current.getBoundingClientRect();
+      const x = rect.left + rect.width / 2; // Center horizontally
+      const y = rect.top + rect.height / 2; // Center vertically
+
+      // Convert to relative coordinates for confetti
+      const xPercent = x / window.innerWidth;
+      const yPercent = y / window.innerHeight;
+
+      // Launch confetti
+      confetti({
+        particleCount: 150,
+        spread: 60,
+        origin: { x: xPercent, y: yPercent }
+      });
+    }
+  };
+
   // Smooth scroll handler
   const handleSmoothScroll = (
     event: React.MouseEvent<HTMLAnchorElement>,
@@ -31,7 +56,16 @@ export default function IntroSection() {
             Arima Data
           </span>
         </p>
-        <p>{'>> '}From Toronto, Canada</p>
+        <p>
+          {'>> '}From{' '}
+          <span
+            className="transition-colors text-white hover:text-red-500 hover:cursor-pointer"
+            ref={textRef}
+            onClick={launchConfetti}
+          >
+            Toronto, Canada
+          </span>
+        </p>
       </div>
 
       {/* Spacer */}
