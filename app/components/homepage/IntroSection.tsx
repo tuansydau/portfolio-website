@@ -22,7 +22,7 @@ export default function IntroSection() {
   };
 
   const handleSmoothScroll = (
-    event: React.MouseEvent<HTMLAnchorElement>,
+    event: React.MouseEvent<HTMLButtonElement>,
     targetId: string
   ) => {
     event.preventDefault();
