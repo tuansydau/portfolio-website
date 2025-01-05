@@ -53,7 +53,7 @@ export default function IntroSection() {
           </Link>
           {', '}
           <Link href={'https://arimadata.com/'} target="_blank">
-            <span className="text-white transition-colors duration-200 ease-in-out hover:text-green-500 hover:cursor-pointer">
+            <span className="text-white transition-colors duration-200 ease-in-out hover:text-[#AACD4A] hover:cursor-pointer">
               Arima Data
             </span>
           </Link>

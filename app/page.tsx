@@ -9,6 +9,8 @@ import Spacer from './components/common/Spacer';
 import TextWrapper from './components/common/TextWrapper';
 import Image from 'next/image';
 import NixOS from '@/public/images/nixos.png';
+import Arima from '@/public/images/arima-pixelated.png';
+import CertiK from '@/public/images/certik-pixelated.png';
 
 export default function Home() {
   return (
@@ -28,42 +30,30 @@ export default function Home() {
           <Spacer />
           <Spacer />
           <div id="section1" className="w-full text-6xl text-[#f999ff]">
-            Work Projects
+            Work Projects (non-NDA)
           </div>
           <Spacer />
           {/* Mock Project Card */}{' '}
-          <div className="text-white hover:text-gray-400 transition-colors hover:cursor-pointer">
+          <div className="text-white hover:text-[#AACD4A] transition-colors hover:cursor-pointer">
             <ProjectCard
               company="Arima Data"
-              description="Implementing report sharing for synthetic data analytics."
+              description="Implementing report sharing for synthetic data analytics, completing feature requests, and reworking the homepage."
               title="Fullstack Engineer (Feb 2024 - Nov 2024)"
             />
-            <Spacer></Spacer>
-            <div className="w-full h-[500px] bg-white rounded-md" />
+            <Spacer />
+            <Image src={Arima} className="bg-[#181818]" alt="" />
           </div>
           <Spacer />
           <Spacer />
           <Spacer />{' '}
-          <div className="text-white hover:text-gray-400 transition-colors hover:cursor-pointer">
-            <ProjectCard
-              company="Tesla"
-              description="Building deployment and observability tools for testing new firmwares."
-              title="Software Engineer Intern, Vehicle Software QA Tools (Winter 2022)"
-            />
-            <Spacer />
-            <div className="w-full h-[500px] bg-white rounded-md" />
-          </div>
-          <Spacer />
-          <Spacer />
-          <Spacer />
-          <div className="text-white hover:text-gray-400 transition-colors hover:cursor-pointer">
+          <div className="text-white hover:text-gray-500 transition-colors hover:cursor-pointer">
             <ProjectCard
               company="CertiK"
               description="Automating static analysis and formal verification tests for Web3 code audits."
               title="Backend Engineer Intern, Static Analysis Tools (Fall 2021)"
             />
             <Spacer />
-            <div className="w-full h-[500px] bg-white rounded-md" />
+            <Image src={CertiK} className="bg-[#181818]" alt="" />
           </div>
           <Spacer />
           <Spacer />
@@ -72,7 +62,7 @@ export default function Home() {
             Personal Projects
           </div>
           <Spacer />
-          <div className="text-white hover:text-gray-400 transition-colors hover:cursor-pointer">
+          <div className="text-white hover:text-[#3AB7C6] transition-colors hover:cursor-pointer">
             <ProjectCard
               company="Home Web Server + AWS Learning Environment"
               description="A NixOS server to host websites, and a free AWS (localstack) test environment."
