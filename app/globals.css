@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('./styles/array.css');
+@import url('./styles/poppins.css');
 
 .scrolling-text {
   white-space: nowrap; /* Ensures the text stays on a single line */

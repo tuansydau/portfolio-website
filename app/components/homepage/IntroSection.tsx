@@ -84,9 +84,12 @@ export default function IntroSection() {
               <div className="absolute w-full text-opacity-0 h-20 rounded-md bg-[#ffbaff] z-0 text-black">
                 Hire Me →
               </div>
-              <div className="relative transition-all duration-300 ease-in-out flex items-center justify-center text-black px-8 h-20 rounded-md bg-[#f999f9] hover:cursor-pointer z-10 -top-2 -left-2 hover:top-0 hover:left-0">
+              <button
+                className="relative transition-all duration-300 ease-in-out flex items-center justify-center text-black px-8 h-20 rounded-md bg-[#f999f9] hover:cursor-pointer z-10 -top-2 -left-2 hover:top-0 hover:left-0"
+                onClick={(e) => handleSmoothScroll(e, 'hire-me')}
+              >
                 Hire Me →
-              </div>
+              </button>
             </div>
           </div>
           {/* See My Work */}
@@ -94,13 +97,12 @@ export default function IntroSection() {
             <div className="absolute w-full text-opacity-0 h-20 rounded-md bg-[#c4c4ff] z-0 text-black">
               See My Work ↓
             </div>
-            <a
+            <button
               className="relative transition-all duration-300 ease-in-out flex items-center justify-center text-black px-8 h-20 rounded-md bg-[#9999ff] hover:cursor-pointer z-10 -top-2 -left-2 hover:top-0 hover:left-0"
-              href="#section1"
-              onClick={(e) => handleSmoothScroll(e, 'section1')}
+              onClick={(e) => handleSmoothScroll(e, 'projects')}
             >
               See My Work ↓
-            </a>
+            </button>
           </div>
         </div>
       </div>

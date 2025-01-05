@@ -11,6 +11,7 @@ import Image from 'next/image';
 import NixOS from '@/public/images/nixos.png';
 import Arima from '@/public/images/arima-pixelated.png';
 import CertiK from '@/public/images/certik-pixelated.png';
+import HireMeBlock from './components/common/HireMeBlock';
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
           <Spacer />
           <Spacer />
           <Spacer />
-          <div id="section1" className="w-full text-6xl text-[#f999ff]">
+          <div id="projects" className="w-full text-6xl text-[#f999ff]">
             Work Projects (non-NDA)
           </div>
           <Spacer />
@@ -65,7 +66,7 @@ export default function Home() {
           <div className="text-white hover:text-[#3AB7C6] transition-colors hover:cursor-pointer">
             <ProjectCard
               company="Home Web Server + AWS Learning Environment"
-              description="A NixOS server to host websites, and a free AWS (localstack) test environment."
+              description="A NixOS server to host websites, and a free AWS (LocalStack) test environment."
               title="Motivation: To avoid going bankrupt to AWS, and to have a consistent environment to learn about systems design."
             />
             <Spacer />
@@ -73,6 +74,9 @@ export default function Home() {
           </div>
           <Spacer />
           <Spacer />
+          <Spacer />
+          <div id="hire-me"></div>
+          <HireMeBlock />
           <Spacer />
           <Spacer />
         </TextWrapper>

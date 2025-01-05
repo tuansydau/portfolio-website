@@ -5,6 +5,7 @@ import PageWrapper from '../components/common/PageWrapper';
 import ScrollingTextBanner from '../components/common/ScrollingTextBanner';
 import Spacer from '../components/common/Spacer';
 import TextWrapper from '../components/common/TextWrapper';
+import HireMeBlock from '../components/common/HireMeBlock';
 
 export default function About() {
   return (
@@ -23,13 +24,13 @@ export default function About() {
             {/* About Block */}
             <div>
               <h1
-                className="flex w-full text-6xl tracking-tighter text-[#f999f9]"
+                className="flex w-full text-6xl text-[#f999f9]"
                 style={{ fontFamily: 'Array-BoldWide' }}
               >
                 {"Hi - I'm Tuan, nice to meet you!"}
               </h1>
               <Spacer />
-              <p>
+              <p className="font-poppinsLight leading-loose">
                 {
                   "Thanks for visiting my website! I've spent a lot of time creating this website, so I hope that you had as much fun viewing it as I had making it. I'm a new grad engineer who really enjoys backend and devops engineering, and I'm currently looking for a new role. If you're looking to hire, I'd love to talk!"
                 }
@@ -37,14 +38,14 @@ export default function About() {
             </div>
             {/* Fave Thing Block */}
             <div>
+              <div className="h-1 w-full bg-[#f999f9] my-12" />
               <p
-                className="text-[#f999f9] mt-16"
+                className="text-[#f999f9]"
                 style={{ fontFamily: 'Array-BoldWide' }}
               >
                 {'Outside of software engineering, I really like: '}
               </p>
-              <div className="h-1 w-full bg-[#f999f9] my-4" />
-              <div className="flex w-full justify-between">
+              <div className="flex w-full justify-between font-poppinsLight mt-4">
                 <ul className="text-2xl leading-loose">
                   <li>Runescape</li>
                   <li>Concerts</li>
@@ -80,20 +81,20 @@ export default function About() {
             <Spacer />
             {/* Fave Song Block */}
             <div>
+              <div className="h-1 w-full bg-[#f999f9] my-12" />
               <p
-                className="text-[#f999f9] mt-16"
+                className="text-[#f999f9]"
                 style={{ fontFamily: 'Array-BoldWide' }}
               >
                 {
                   'If you like music as much as I do, here are my favourite songs:'
                 }
               </p>
-              <div className="h-1 w-full bg-[#f999f9] my-4" />
-              <div className="flex w-full justify-between">
+              <div className="flex w-full justify-between font-poppinsLight mt-4">
                 <ul className="text-2xl leading-loose w-1/2">
                   <li>1. Bruno Mars, Rosé - APT</li>
                   <li>2. Bad Omens - Just Pretend</li>
-                  <li>3. Aespa - Flowers</li>
+                  <li>3. Remi Wolf - Soup</li>
                   <li>4. Sza - Low</li>
                   <li>5. Thirty Seconds To Mars - The Kill</li>
                 </ul>
@@ -108,7 +109,10 @@ export default function About() {
             </div>
           </div>
 
-          <div className="mt-32" />
+          <div className="mt-16" />
+
+          <HireMeBlock />
+          <Spacer />
         </TextWrapper>
       </PageWrapper>
     </>

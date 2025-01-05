@@ -12,8 +12,8 @@ export default function ProjectCard({
       <h2 className="text-6xl" style={{ fontFamily: 'Array-BoldWide' }}>
         {company}
       </h2>
-      <h3 className="text-4xl">{description}</h3>
-      <h4 className="text-2xl">{title}</h4>
+      <h3 className="text-3xl font-poppinsLight">{description}</h3>
+      <h4 className="text-2xl font-poppinsLight">{title}</h4>
     </div>
   );
 }

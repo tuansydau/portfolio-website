@@ -27,7 +27,7 @@ export default function ScrollingTextBanner() {
   return (
     <>
       {/* Scrolling Banner */}
-      <div className="flex w-screen items-center border-t-4 border-b-4 border-white py-8 h-8 text-3xl">
+      <div className="flex w-screen items-center border-t-2 border-b-2 border-white py-8 h-8 text-3xl">
         <p className="scrolling-text">{randomSentence}</p>
       </div>
     </>

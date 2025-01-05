@@ -18,7 +18,10 @@ const config: Config = {
       },
       fontFamily: {
         array: ['Array-Regular', 'sans-serif'],
-        arrayWide: ['Array-Wide', 'sans-serif']
+        arrayWide: ['Array-Wide', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        poppinsThin: ['Poppins-Thin', 'sans-serif'],
+        poppinsLight: ['Poppins-Light', 'sans-serif']
       }
     }
   },
