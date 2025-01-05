@@ -66,7 +66,7 @@ export default function Home() {
             <ProjectCard
               company="Home Web Server + AWS Learning Environment"
               description="A NixOS server to host websites, and a free AWS (localstack) test environment."
-              title="Motivation: To avoid going backrupt to AWS, and to have a consistent environment to learn about systems design."
+              title="Motivation: To avoid going bankrupt to AWS, and to have a consistent environment to learn about systems design."
             />
             <Spacer />
             <Image src={NixOS} alt="" />
