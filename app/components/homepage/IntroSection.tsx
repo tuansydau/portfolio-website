@@ -36,7 +36,7 @@ export default function IntroSection() {
     <>
       {/*  Intro Tagline */}
       <div className="text-6xl leading-tight">
-        <span className="text-[#F999F9] hover:cursor-pointer">Tuan Dau </span>
+        <span className="text-[#F999F9]">Tuan Dau </span>
         is a software engineer <span className="text-[#9999FF]">for hire</span>.
         <p>
           <span>{'>>'} Prev @</span>{' '}
