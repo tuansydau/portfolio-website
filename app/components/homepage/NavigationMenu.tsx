@@ -25,7 +25,7 @@ export default function NavigationMenu() {
         </Link> */}
         {/* Download Resume Button */}
         <Link
-          href="https://drive.google.com/file/d/15ee9NF4J-UAojcLkore_cBhtF1FVezUk/view?usp=drive_link"
+          href="https://drive.google.com/file/d/18-N_d8VcBpd33lO3JtqJL9fF1BEIm-ta/view?usp=drive_link"
           target="_blank"
         >
           <div className="decoration-solid underline-offset-8 underline hover:decoration-wavy hover:cursor-pointer ">
